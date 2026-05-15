@@ -43,9 +43,9 @@ Pranks are the lowest card in their suit. See *Prank Card Effects* below.
 
 ~15 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
 
-### Chair Initiative Deck
+### Chair Goals Deck
 
-~6-8 Chair Goal cards. The current Chair draws one public goal per Quarter. See *Chair Initiatives* below.
+~6-8 Chair Goal cards. The current Chair draws one public goal per Quarter. See *Chair Goals* below.
 
 ---
 
@@ -61,11 +61,11 @@ A Fiscal Period is a fixed number of Quarters. Most points at the end wins.
 
 ### Each Quarter
 
-1. **Chair Initiative:** The Chair draws one Chair Initiative card and places it face-up on the table. This is their victory condition for the Quarter.
+1. **Chair Goal:** The Chair draws one Chair Goal card and places it face-up on the table. This is their victory condition for the Quarter.
 2. **Executive Agendas:** Each Executive draws one Agenda card and keeps it face-down.
 3. **Deal:** Shuffle the playing deck. Deal 10 cards to each player. Burn the last card face-down.
 4. **Play 10 tricks** using the proposal mechanic.
-5. **Score:** At the end of the Quarter, all Agendas are revealed. Score points for any Agenda whose conditions were met. Score the Chair Initiative if achieved.
+5. **Score:** At the end of the Quarter, all Agendas are revealed. Score points for any Agenda whose conditions were met. Score the Chair Goal if achieved.
 6. **Chair rotation:** The player with the most share cards in their won tricks becomes the new Chair for the next Quarter. If there is a tie, or if the current Chair has the most share cards, the current Chair retains their position.
 
 ### Winner of the Game
@@ -143,11 +143,11 @@ When revealed, the Snitch-player names another Executive. That Executive must fl
 
 ---
 
-## Chair Initiatives
+## Chair Goals
 
-The Chair draws one Chair Initiative card per Quarter. The goal is public — all Executives can see what the Chair is playing for. Achieving the initiative scores 2 points for the Chair.
+The Chair draws one Chair Goal card per Quarter. The goal is public — all Executives can see what the Chair is playing for. Achieving the Goal scores 2 points for the Chair.
 
-### Example Chair Initiatives
+### Example Chair Goals
 
 **Maximize Shareholder Value:** The Chair wins the most tricks (more than any individual Executive).
 
@@ -253,7 +253,7 @@ Each Quarter, after the final trick:
 
 1. All Agendas are revealed.
 2. Each Executive scores their Agenda's points if its conditions were met.
-3. The Chair scores 2 points if their public initiative was achieved.
+3. The Chair scores 2 points if their Goal was achieved.
 4. Determine the next Chair (highest total score among Executives, ties go to current Chair).
 
 Cumulative points across Quarters. Most points after the final Quarter wins.

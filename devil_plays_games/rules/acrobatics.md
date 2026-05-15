@@ -4,6 +4,18 @@ A cooperative trick-taking card game for 4 players.
 
 ---
 
+## Premise
+
+You are a troupe of acrobats, performing daredevil deeds and impossible feats, all without saying a word.
+
+The audience is enthralled, holding its breath. The only sound is a single drop of sweat hitting the stage floor.
+
+You have an urgent message for the troupe. The show is in danger, but you must not break the spell.
+
+Luckily, every theater has its ghosts. Some of them are old friends. They can carry your message for you.
+
+This is Acrobatics.
+
 ## Overview
 
 Acrobatics is a cooperative trick-taking game. Each round, the players face a challenge together. They must coordinate their play to meet the challenge's objective — but they can't freely discuss their hands. Instead, they communicate through careful card play and Ghost cards, which let you speak a few precious words when played.
