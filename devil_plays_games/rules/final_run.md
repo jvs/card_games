@@ -16,7 +16,7 @@ The Company has sent the Fixer in cold to extract The Specialist. But only after
 
 This is your Final Run.
 
-## Struture
+## Structure
 
 Each **Run** is played over 5 rounds. The Specialist executes operations the Family wants done (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs, or sooner if they hit their target. Both players win or lose together.
 
@@ -75,23 +75,23 @@ A Run is five jobs. Each job follows the same structure.
 1. The Specialist draws **3 Job cards**, picks one, places it face-up on the table. The other two go back to the Job deck.
 2. The Job determines the **trump suit** for this job.
 3. The Fixer draws **3 Objective cards**, picks one, places it face-down on the table. The other two go back to the Objective deck.
-4. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the **supply**.
+4. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
 5. The Specialist leads the first trick.
 
 ### Playing out the Job
 
-The job has two phases.
+The job has two stages.
 
-**Supply Phase:** While cards remain in the supply.
+**The Shop:** While cards remain in the Take.
 
 - Specialist leads first trick. Plays any card face-up.
 - Fixer plays one card face-up in response. **No follow-suit requirement.**
 - Higher trump wins; otherwise higher card of the led suit wins. (Off-suit non-trump cards cannot win.)
 - Winner takes both cards to their trick pile.
-- Both players draw from the supply to refill hands to 6. (In case any special cards further reduce hand size, players draw back up to 6.)
+- Both players draw from the Take to refill hands to 6. (In case any special cards further reduce hand size, players draw back up to 6.)
 - Winner leads the next trick.
 
-**Endgame:** When the supply is empty.
+**The Field:** When the Take is empty.
 
 - Hands deplete from 6 down to 0 over the next 6 tricks.
 - **Strict follow-suit:** if you have a card of the led suit, you must play it.
@@ -145,7 +145,7 @@ If the Fox is led, the other player may play any card in response. The Fox alway
 
 The Joker always wins the trick it is played in. Either player may play it.
 
-In addition, the Job card specifies a secondary effect for the Joker. After the trick resolves, the player who played the Joker may optionally apply the Joker's job-specific effect.
+In addition, the Job card specifies a secondary effect for the Joker. After the trick resolves, the player who played the Joker may immediately apply the Joker's job-specific effect.
 
 ### The Cat (Clubs Prank)
 
@@ -169,19 +169,26 @@ If the Fixer plays the Devil, the roles reverse: Fixer offers, Specialist respon
 
 Either player may play.
 
-- **Grade 1:** Look at the top card of the supply. Set it aside for a specific player to draw on their next turn.
-- **Grade 2:** Look at the top 2 cards. Set one aside for each player's next draw.
-- **Grade 3:** Look at the top 4 cards. Set two aside for each player's next draw.
+- **Grade 1:** Secretly look at the top card of the Take. Give it to either player to add to their hand.
+- **Grade 2:** Secretly look at the top 2 cards. Give one card to each player to add to their hand.
+- **Grade 3:** Look at the top 2 cards and place them face-up on the table. The Fixer chooses one card to add to their hand, the other goes to the Specialist's hand.
+
+Notes:
+- If the Take does not have enough cards, the Hound has no effect.
+- If a player's hand has 6 or more cards, they do not draw any cards from the Take during the draw phase.
 
 ### The Snitch (Spades Prank)
 
-Specialist plays.
+Fixer plays.
 
-- **Grade 1:** Look at two random cards from the Objective deck.
-- **Grade 2:** Look at three random cards from the Objective deck.
-- **Grade 3:** Look at four random cards from the Objective deck.
+- **Grade 1:** Look through the Specialist's won tricks. Remove one, add it the the Take, then shuffle the Take.
+- **Grade 2:** Look through both player's won tricks. Remove one, add it to the Take, then shuffle the Take.
+- **Grade 3:** Look through both player's won tricks. Remove any two, add it to the Take, then shuffle the Take.
 
-If the Fixer plays the Snitch, it acts as a normal card (no effect).
+Notes:
+- If the Shop is closed, the Snitch has no effect.
+- If there are not enough tricks to remove, the Snitch has no effect.
+- If the Specialist plays the Snitch, it acts as a normal card (no effect).
 
 ### The Ghosts (one per suit)
 
@@ -214,7 +221,7 @@ Once a Job has been chosen, it is removed from the Job deck for the rest of the 
 **Pin the Mayor** *(Spades trump, 1★)*
 Win at least 5 tricks.
 Points: 3. Failure: −1.
-Joker effect: The player who played the Joker draws one extra card from the supply.
+Joker effect: The player who played the Joker draws one extra card from the Take.
 
 **The Sit-Down** *(Diamonds trump, 2★)*
 Win exactly 3 tricks.
@@ -224,12 +231,12 @@ Joker effect: Both players reveal one card from their hand.
 **Walk Out Clean** *(Hearts trump, 2★)*
 Lose at most 2 tricks (i.e., win at least the number of tricks-minus-2).
 Points: 4. Failure: −2.
-Joker effect: The Supply Phase ends immediately.
+Joker effect: Close the Shop immediately and move to the Field.
 
 **Burn the Books** *(Clubs trump, 2★)*
 Win every trick containing a Boss.
 Points: 5. Failure: −2.
-Joker effect: Look at the next 3 cards of the supply; set aside one for each player.
+Joker effect: Look at the next 3 cards of the Take; set aside one for each player.
 
 **The Money Drop** *(Diamonds trump, 1★)*
 Win the trick led with the Diamond Ace. (If no one leads the Diamond Ace, the Job fails.)
@@ -239,12 +246,12 @@ Joker effect: The trump suit changes to one named by the player who played the J
 **Weekly Tribute** *(any suit; Specialist picks trump at setup, 1★)*
 Win at least 3 tricks.
 Points: 2. Failure: −1.
-Joker effect: Both players draw 1 card from the supply.
+Joker effect: Both players draw 1 card from the Take.
 
 **Take the Block** *(Spades trump, 2★)*
 Win at least one trick of each suit.
 Points: 4. Failure: −1.
-Joker effect: Reshuffle the Specialist's hand with the supply and re-deal six cards. (Risky for the Family.)
+Joker effect: Reshuffle the Specialist's hand with the Take and re-deal six cards. (Risky for the Family.)
 
 **Cross the River** *(Clubs trump, 3★)*
 Win 4 tricks. Each must be led by a different suit.
@@ -265,12 +272,12 @@ Joker effect: Look at the Fixer's hand.
 Win at least 8 tricks.
 **Failure: Cover blown. Run ends immediately.**
 Points: 7.
-Joker effect: The Supply Phase ends immediately. The Endgame begins now.
+Joker effect: Close the Shop immediately and move to the Field.
 
 **Bust the Door** *(Diamonds trump, 1★)*
 Win the first 3 tricks.
 Points: 3. Failure: −1.
-Joker effect: Look at the top 4 cards of the Supply and rearrange in any order.
+Joker effect: Look at the top 4 cards of the Take and rearrange in any order.
 
 **Cool Running** *(Clubs trump, 1★)*
 Win exactly 4 tricks.
@@ -278,9 +285,9 @@ Points: 3. Failure: −1.
 Joker effect: The player who played the Joker draws 2 cards; the other draws 1.
 
 **The Squeeze** *(Spades trump, 2★)*
-Win at least 6 tricks during the Supply Phase.
+Win at least 6 tricks in the Shop.
 Points: 4. Failure: −2.
-Joker effect: The Supply Phase ends immediately.
+Joker effect: Close the Shop immediately and move to the Field.
 
 **The Switch** *(any suit; Specialist picks trump, 2★)*
 Win at least 2 tricks where you played a Prank card.
@@ -295,7 +302,7 @@ Joker effect: The Specialist may swap one card with the Fixer (Specialist choose
 **High and Low** *(Hearts trump, 2★)*
 Win at least one trick where you played a Ghost, and one where you played an Ace.
 Points: 4. Failure: −1.
-Joker effect: Both players draw 1 card from the Supply.
+Joker effect: Both players draw 1 card from the Take.
 
 **No Doubles** *(Clubs trump, 3★)*
 No trick you win contains two cards of the same rank.
@@ -310,7 +317,7 @@ Joker effect: The player who played the Joker leads the next trick.
 **Alternate Current** *(Spades trump, 3★)*
 You may not win two consecutive tricks.
 Points: 5. Failure: −2.
-Joker effect: The Supply Phase ends immediately.
+Joker effect: Close the Shop immediately and move to the Field.
 
 **Take the Hit** *(Hearts trump, 2★)*
 You may not win any trick that you led.
@@ -320,7 +327,7 @@ Joker effect: The lead passes to the other player for the next 2 tricks.
 **Hit Every Block** *(Clubs trump, 2★)*
 The first four tricks of the job must each be led with a different suit.
 Points: 4. Failure: −1.
-Joker effect: Both players draw 1 card from the Supply.
+Joker effect: Both players draw 1 card from the Take.
 
 **Shake the Tail** *(Diamonds trump, 2★)*
 You win at most one Prank card.
@@ -330,7 +337,7 @@ Joker effect: The Specialist may discard one Prank card from their hand.
 **Bossless** *(Hearts trump, 3★)*
 No Boss wins any trick.
 Points: 5. Failure: −2.
-Joker effect: Look at the top 3 cards of the Supply and rearrange.
+Joker effect: Look at the top 3 cards of the Take and rearrange.
 
 **The Brief** *(any suit; Specialist picks trump, 3★)*
 The Specialist predicts (publicly, at setup) how many tricks they will win. The Job is met if they win exactly that number.
@@ -368,7 +375,7 @@ Specialist wins at least one trick where the Fixer played a card that would have
 Points: 5.
 
 **The Skim** *(1★)*
-Specialist wins at least 3 tricks during the Supply Phase.
+Specialist wins at least 3 tricks in the Shop.
 Points: 3.
 
 **Ghost Story** *(2★)*
@@ -380,7 +387,7 @@ Specialist wins at least one trick of each suit.
 Points: 4.
 
 **Last Light** *(2★)*
-Specialist wins the final trick of the Supply Phase.
+Specialist wins the final trick in the Shop.
 Points: 4.
 
 **Dark Until Five** *(3★)*
@@ -404,8 +411,9 @@ Specialist wins exactly one trick where they played a trump card.
 Points: 4.
 
 **Off the Books** *(3★)*
-Specialist wins at least one Supply Phase trick where neither card was of the led suit. (Both players threw off-suit.)
+Specialist wins at least one trick in the Shop where neither card was of the led suit. (Both players threw off-suit.)
 Points: 5.
+Comment: Wait, this one makes no sense.
 
 **Two Pairs** *(3★)*
 Two of the tricks Specialist won each contain two cards of the same rank.
@@ -420,7 +428,7 @@ Every trick Specialist won contains at least one special card (Ghost, Prank, Fox
 Points: 5.
 
 **No Aces** *(3★)*
-No Ace wins any trick during the hand.
+No Ace wins any trick during the job.
 Points: 5.
 
 **Aces High** *(3★)*
@@ -467,7 +475,7 @@ Points: 3.
 
 The Specialist may speak. The Fixer may not speak, except:
 
-- When required to answer a Fox question (yes/no/suit/rank/number, per Grade).
+- When required to answer a Fox question (yes/no/suit/rank, per Grade).
 - When required by another card or rule to give a specific response.
 
 The Specialist's speech is constrained by Ghost cards:
@@ -487,8 +495,8 @@ The Fixer's signaling channels are:
 
 1. **Target score (15):** Likely needs tuning. Could be 12, 15, or 18.
 2. **Number of Job/Objective cards drawn (3):** Could be 2 or 4.
-3. **Supply size (14) and hand size (6):** Total cards may need adjustment for clean phase transitions.
-4. **Grade boundaries:** Hand 1–2 / 3–4 / 5 split is one option; could be 1–2 / 3 / 4–5 or others.
+3. **Take size (14) and hand size (6):** Total cards may need adjustment for clean phase transitions.
+4. **Grade boundaries:** Job 1–2 / 3–4 / 5 split is one option; could be 1–2 / 3 / 4–5 or others.
 5. **Frequency of catastrophic-failure Jobs:** Currently one ("The Big One"). Should there be 2–3?
 6. **Joker effect balance across Jobs:** Some Joker effects may be more powerful than others; needs play data.
 7. **Replayability across many Runs:** Deck size, card variety, role-switching between Runs.
@@ -497,8 +505,8 @@ The Fixer's signaling channels are:
 
 ## Designer Notes
 
-- **Make texture Job-specific.** Don't add global rules; let each Job overlay its own special texture (closing the Supply, card values, alternative leads, etc.) via printed text.
+- **Make texture Job-specific.** Don't add global rules; let each Job overlay its own special texture (closing the Shop, card values, alternative leads, etc.) via printed text.
 - **Communication asymmetry.** Specialist speaks (constrained); Fixer signals through play. Operational fiction (the Fixer is in disguise at the table, or remote, or in a constrained channel) justifies the asymmetry.
 - **Two-part victory.** Job + Objective both required for points. Reflects double-loyalty of the Specialist.
-- **Five-hand campaign.** Finite arc; extraction is the win condition.
+- **Five-job run.** Finite arc; extraction is the win condition.
 - **Grade-based escalation.** Special cards strengthen over the Run, encouraging late-Run risk-taking.
