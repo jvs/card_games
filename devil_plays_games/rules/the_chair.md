@@ -21,11 +21,11 @@ Welcome to the boardroom.
 
 ### Playing Deck (61 cards)
 
-**Four standard suits** — Spades, Hearts, Diamonds, Clubs — 13 cards each (52 total):
+**Four standard suits**
+- Spades, Hearts, Diamonds, Clubs
+- 13 cards each (52 total): Prank (2), 3-10, Jack, Queen, King, Ace.
 
-2-10, Jack, Queen, King, Ace.
-
-Standard rank order. Ace high. (The 2 of each suit is replaced by that suit's Prank card — see below.)
+Standard rank order. Ace high. (The 2 of each suit is also that suit's Prank card — see below.)
 
 **Shares** (the trump suit) — 9 cards:
 
@@ -44,11 +44,11 @@ Pranks are the lowest card in their suit. See *Prank Card Effects* below.
 
 ### Agenda Deck
 
-~15 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
+~14 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
 
 ### Chair Goals Deck
 
-~6-8 Chair Goal cards. The current Chair has one public goal per Quarter. See *Chair Goals* below.
+~13 Chair Goal cards. The current Chair has one public goal per Quarter. See *Chair Goals* below.
 
 ### Chair Powers Deck
 
@@ -73,9 +73,9 @@ Each game is played over a Term — a fixed number of Quarters, typically five. 
 3. **Executive Agendas:** Each Executive draws one Agenda card, looks at it secretly, and keeps it face-down.
 4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player. Put the last card face-down. This card is unused.
 5. **Play 10 sprints** using the Sprint Cycle rules.
-6. **Chair rotation:** To take the Chair, an Executive must finish the Quarter with more Share *cards* in their won tricks than any other player. Without a clear winner, the Chair retains the seat.
+6. **Chair Rotation:** To take the Chair, an Executive must finish the Quarter with more Share *cards* in their won tricks than any other player. Without a clear winner, the Chair retains the seat.
 7. **Score:** At the end of the Quarter, after determining the next Chair, all Agendas are revealed. Score points for any Agenda whose conditions were met. Score the Chair Goal if achieved.
-8. **Retirement:** The current Chair discards their Goal and Power cards, removing them from play for the rest of the Term.
+8. **Retirement:** The current Chair discards their Goal and Power cards, removing them from play for the rest of the Term. Return all Advancement tokens to the supply.
 
 ### Winner of the Game
 
@@ -91,25 +91,24 @@ Each sprint starts with proposals from all the Executives.
 
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down in front of themselves. This is their proposal for the sprint.
-   - Once all proposals are placed, the Chair closes submissions: All proposals are flipped face-up simultaneously.
-   - If an Executive has *Lead Information Advantage*, they select a card from their hand and present their proposal after the Chair closes submissions. See *Lead Information Advantage*.
+   - Once all proposals are placed, the Chair signals all Executives to reveal their proposals simultaneously.
+   - If an Executive has *Lead Information Advantage*, they select a card from their hand and present their proposal now, after all the other Executives have revealed their proposals. See *Lead Information Advantage*.
 2. **Chair Approval:**
    - The Chair reviews the proposals.
-   - Before Chair approves one, the Chair may now optionally use their quarterly Chair Power. If they do, they resolve the Chair Power immediately.
+   - Before Chair approves one, the Chair may optionally use their quarterly Chair Power. If they do, resolve the Chair Power immediately.
    - After the Chair Power is resolved, the Sprint continues normally, unless stated otherwise by the Chair Power.
    - The Chair approves one proposal.
-   - If The Chair approves your proposal, take one Innovation token.
+   - If The Chair approves your proposal, take one Advancement token.
    - The selected card becomes the **lead card** for this trick.
    - (Special case: a player with a face-down hostile Agenda may reveal their Agenda at this moment to override the Chair's approval.)
 3. **Deliverables:**
    - Rejected Executives return their proposed cards to their hand.
    - Each Executive then plays one card face-down as their deliverable.
-   - Once all deliverables are placed, the Chair closes deliverables.
-   - All deliverables are flipped face-up simultaneously.
+   - Once all deliverables are placed, the Chair signals all Executives to reveal their deliverables simultaneously.
 4. **The Call:**
    - The Chair reviews each Executive's deliverable for this sprint.
-   - Before Chair making the Call, the Chair may now optionally use their quarterly Chair Power. If they do, they resolve the Chair Power immediately.
-   - Then the Chair makes the call, playing a card from their hand. (See *Following Suit*.)
+   - Before Chair making the Call, the Chair may optionally use their quarterly Chair Power. If they do, resolve the Chair Power immediately.
+   - Then the Chair plays a card from their hand. (See *Following Suit*.)
 5. **Parking Lot Items:**
    - Prank cards resolve their effects now (see *Prank Card Effects*).
 6. **Regulatory Reporting:**
@@ -278,7 +277,6 @@ The Chair draws one Chair Goal card per Quarter. The goal is public — all Exec
 **Loyalty Goals**
 **Company Culture:** Add the number of tricks won by The Chair and all Executives with loyal Agendas. The total must be at least 5.
 **Foreign Investment:** Add the number of tricks won by all Executives with nuetral Agendas. The total must be at least 2. If no Executives have a neutral Agenda, this goal is automatically achieved.
-**Hostile Takeover:** Add the number of tricks won by all Executives with hostile Agendas. The total must be at least 4. If no Executives have a hostile Agenda, this goal is automatically achieved.
 
 **Chair Rotation Goals**
 **Leadership Development:** Another player takes the Chair next Quarter.
@@ -292,82 +290,85 @@ Each Executive draws one Agenda per Quarter. Each Agenda is hidden until the end
 
 Each Agenda has a printed point value: 1, 2, or 3 points.
 
+Each Agenda also has a loyalty: loyal, neutral, or hostile.
+
 
 ### Trick-Count Agendas
 
-**Climb the Ladder** *(2 points)*
+**Climb the Ladder** *(2 points, hostile)*
 Win the most tricks of any Executive. (Ties don't count.)
 
-**Severance Package** *(2 points)*
+**Severance Package** *(2 points, neutral)*
 Win zero tricks.
 
-**Hard Stop at 2** *(1 point)*
+**Hard Stop at 2** *(1 point, loyal)*
 Win exactly 2 tricks.
 
-**Corporate Infighting** *(2 points)*
+**Corporate Infighting** *(2 points, hostile)*
 At least one other Executive wins zero tricks.
 
 ### Trick-Content Agendas
 
-**Vanity Project** *(1 point)*
+**Vanity Project** *(1 point, neutral)*
 Win at least one Ace.
 
-**Stockpile** *(2 points)*
+**Stockpile** *(2 points, hostile)*
 Win at least 3 Share cards.
 
-**Cover All Your Bases** *(2 points)*
+**Cover All Your Bases** *(2 points, neutral)*
 Have at least one card of each suit in your won tricks.
 
-**Think Outside the Box** *(1 point)*
+**Think Outside the Box** *(1 point, loyal)*
 Win at least one trick containing a Prank card.
 
 ### Proposal-Layer Agendas
 
 **On The Boss's Radar** *(2 points, loyal)*
-Have the most Innovation tokens among Executives. (Ties don't count.)
+Have the most Advancement tokens among Executives. (Ties don't count.)
 
 **Keep Your Head Down** *(1 point, neutral)*
-Have the fewest Innovation tokens among Executives. (Ties don't count.)
+Have the fewest Advancement tokens among Executives. (Ties don't count.)
 
 **Boil The Ocean** *(3 points, hostile)*
-Have zero Innovation tokens at the end of the quarter.
-
-### Coalition Agenda
-
-**Hostile Takeover** *(2 points each)* — appears twice in the Agenda deck.
-
-At the end of the Quarter, combine your won Share cards with any other player holding Hostile Takeover. If together you hold **5 or more Share cards**, each Hostile Takeover player scores 2 points.
-
-**Reveal mechanic:** During any trick's proposal phase, after proposals are revealed face-up but *before* the Chair selects, you may reveal your Agenda card. If you do, your proposal is automatically approved for that trick, skipping the Chair's Approval Phase.
-
-Once revealed, your Agenda is public for the rest of the Quarter.
-
-The reveal is one-time-use per player. Use it to identify yourself to your hidden partner, or to grab a critical approval at a key moment.
-
-**Chair rotation:** If Hostile Takeover succeeds, the next Chair is the Hostile Takeover player with the most Share cards in their won tricks. If there is a tie, the current Chair retains their position.
-
-### Identification Agenda
-
-**Firm-Wide Audit** *(3 points)*
-At any point during the Quarter, you may name another Executive with a face-down Agenda and accuse them of holding Hostile Takeover. If correct, you score 3 points. If wrong, you lose 1 point.
-
-You may make at most one accusation per Quarter.
+Have zero Advancement tokens at the end of the quarter.
 
 
-### Anti-Chair Agenda
+### Chair-Goal Agendas
 
-**Corporate Sabotage** *(3 points)*
-The Chair fails their public goal.
+**Corporate Sabotage** *(3 points, hostile)*
+The Chair fails their goal.
+
+**Dedication to the Company** *(1 point, loyal)*
+The Chair achieves their goal.
+
+
+### Loyalty Agendas
+
+**Hostile Takeover** *(2 points, hostile)*
+Add the number of Share cards won by all Executives with hostile Agendas. The total must be at least 5.
+- Special: If you achieve this Agenda, ignore the results of Chair Rotation and take the Chair next Quarter.
+- Special: Score this Agenda first, before any other Agendas.
+
+
+## Loyalty Rules
+
+### Loyal agendas:
+- During Chair rotation, if the loyal player would take the Chair, the current Chair stays on, and does not switch.
+- If the current Chair keeps the seat for any reason, you get +1 point.
+- Reveal mechanic: when you win a trick, you may flip your Agenda card face-up. If you do so, the Chair wins the trick instead.
+
+### Hostile agendas:
+- If you or another hostile player takes the Chair, immediately score +1 point.
+- Reveal mechanic: During any trick's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, your proposal is automatically approved for that trick, skipping the Chair's Approval Phase.
+
 
 ---
 
 ## Communication
 
-Players may talk freely during the game. Table talk is encouraged. Lying about your Agenda is allowed.
+Players may talk freely during the game. Lying about your Agenda or your cards is allowed.
 
-However, **you may not show your Agenda card to other players** except when forced by the Snitch or when voluntarily revealing via Hostile Takeover.
-
-The Chair may freely discuss their public goal (it's already public).
+However, **you may not show your Agenda card to other players** except when forced by a special card.
 
 ---
 
@@ -375,41 +376,9 @@ The Chair may freely discuss their public goal (it's already public).
 
 Each Quarter, after the final trick:
 
-1. All Agendas are revealed.
-2. Each Executive scores their Agenda's points if its conditions were met.
-3. The Chair scores 2 points if their Goal was achieved.
-4. Determine the next Chair (highest total score among Executives, ties go to current Chair).
+1. Determine the next Chair (highest total score among Executives, ties go to current Chair). Do this first, since it can affect the scoring of some Agendas.
+2. All Agendas are revealed. If one of the Agendas is Hostile Takeover, score it first, since it may override the Chair rotation.
+3. Each Executive scores their Agenda's points if its conditions were met.
+4. The Chair scores 2 points if their Goal was achieved.
 
 Cumulative points across Quarters. Most points after the final Quarter wins.
-
----
-
-## Open Design Questions
-
-1. **Threshold for Hostile Takeover (5 Shares):** May need tuning. 5 of 9 Shares is majority; could be 6 for harder coalition victories.
-
-2. **Number of Quarters per Fiscal Year (5):** Could be 4 or 6 depending on play length. We may need a new name, since "Fiscal Year" implies 4 Quarters.
-
-3. **Hand size (10) and card count (61):** Fixed for now; playtest will validate.
-
-4. **Auditor accusation timing:** Currently "any point during the Quarter." Could be restricted to end-of-Quarter, or to specific moments.
-
-5. **Snitch's power level:** Forced agenda-reveal is dramatic but may be game-defining. Watch in playtest.
-
-6. Proposal-layer Agendas: may feel awkward or may be the best part of the game. May require extra tokens to manage proposal counts.
-
-7. **Whether Agenda points should scale with campaign progress** (similar to Final Run's Grade system) to add late-game pressure.
-
-8. **The full Agenda deck** is currently 13 entries (with Hostile Takeover counted as one). May need 15-20 for variety. Playtest will determine the right size.
-
-9. **The Number of Shares:** Maybe we should add more share cards. With six players, each player won't have many shares to work with.
-
----
-
-## Designer Notes
-
-- **The proposal mechanic is the engine.** Trick-taking is the substrate; the corporate-politics theater is in the proposals.
-- **The Chair rotates.** Power is mobile. Whoever takes the most shares inherits the Chair seat and shapes the next Quarter's structure.
-- **Hidden Agendas drive the game.** The deduction layer is the source of skill differentiation; experienced players read patterns better than newcomers.
-- **Hostile Takeover is the marquee mechanic.** A coalition that must find itself, with a dramatic active reveal as its identification tool. The Auditor is its natural counter.
-- **Tonal register:** 1980s corporate-thriller pulp. *Wall Street* via *Glengarry Glen Ross*. Suspenders. Saxophone.
