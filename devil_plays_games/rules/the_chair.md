@@ -278,6 +278,8 @@ Cumulative points across Quarters. Most points after the final Quarter wins.
 
 8. **The full Agenda deck** is currently 13 entries (with Hostile Takeover counted as one). May need 15-20 for variety. Playtest will determine the right size.
 
+9. **The Number of Shares:** Maybe we should add more share cards. With six players, each player won't have many shares to work with.
+
 ---
 
 ## Designer Notes
