@@ -20,13 +20,13 @@ The game lives in its hidden-agenda layer and its proposal mechanic. Trick-takin
 
 **Four standard suits** — Spades, Hearts, Diamonds, Clubs — 13 cards each (52 total):
 
-2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
+2-10, Jack, Queen, King, Ace.
 
 Standard rank order. Ace high. (The 2 of each suit is replaced by that suit's Prank card — see below.)
 
 **Shares** (the trump suit) — 9 cards:
 
-Penny Share, 2 Shares, 3 Shares, 4 Shares, 5 Shares, 6 Shares, 7 Shares, 8 Shares, Golden Share.
+Penny Share, 2-8, Golden Share.
 
 Penny Share is the lowest. Golden Share is the highest. Any Share beats any non-Share card regardless of rank.
 
