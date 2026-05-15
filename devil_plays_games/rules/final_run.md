@@ -76,7 +76,7 @@ A Run is five jobs. Each job follows the same structure.
 2. The Job determines the **trump suit** for this job.
 3. The Fixer draws **3 Objective cards**, picks one, places it face-down on the table. The other two go back to the Objective deck.
 4. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
-5. The Specialist leads the first trick.
+5. The Specialist leads the first trick, playing any card face-up.
 
 ### Playing out the Job
 
@@ -84,11 +84,12 @@ The job has two stages.
 
 **The Shop:** While cards remain in the Take.
 
-- Specialist leads first trick. Plays any card face-up.
+- The Specialist leads the first trick, playing any card face-up.
 - Fixer plays one card face-up in response. **No follow-suit requirement.**
 - Higher trump wins; otherwise higher card of the led suit wins. (Off-suit non-trump cards cannot win.)
 - Winner takes both cards to their trick pile.
-- Both players draw from the Take to refill hands to 6. (In case any special cards further reduce hand size, players draw back up to 6.)
+- Both players draw from the Take to refill hands to 6.
+- If a player has 6 or more cards, they do not draw from the Take.
 - Winner leads the next trick.
 
 **The Field:** When the Take is empty.
@@ -137,15 +138,21 @@ The Specialist plays the Fox. Specialist immediately asks the Fixer a question. 
 - **Grade 2:** One question. The answer may be: yes, no, a suit, or a rank.
 - **Grade 3:** Two questions, of any vocabulary type.
 
-If the Fixer plays the Fox, it acts as a normal card (no effect).
-
-If the Fox is led, the other player may play any card in response. The Fox always loses the trick.
+Notes:
+- If the Fixer plays the Fox, it acts as a normal card (no effect).
+- If the Fox is led, the other player may play any card in response.
+- The Fox always loses the trick.
+- The Fox is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
 
 ### The Joker (Wild)
 
 The Joker always wins the trick it is played in. Either player may play it.
 
 In addition, the Job card specifies a secondary effect for the Joker. After the trick resolves, the player who played the Joker may immediately apply the Joker's job-specific effect.
+
+Notes:
+- The Joker is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
+- The Joker is a gauranteed win for the trick, and the Fox is a gauranteed loss.
 
 ### The Cat (Clubs Prank)
 
@@ -175,15 +182,15 @@ Either player may play.
 
 Notes:
 - If the Take does not have enough cards, the Hound has no effect.
-- If a player's hand has 6 or more cards, they do not draw any cards from the Take during the draw phase.
+- If a player's hand has 6 or more cards, they do not draw any cards from the Take when refilling hands.
 
 ### The Snitch (Spades Prank)
 
 Fixer plays.
 
-- **Grade 1:** Look through the Specialist's won tricks. Remove one, add it the the Take, then shuffle the Take.
-- **Grade 2:** Look through both player's won tricks. Remove one, add it to the Take, then shuffle the Take.
-- **Grade 3:** Look through both player's won tricks. Remove any two, add it to the Take, then shuffle the Take.
+- **Grade 1:** Look through the Specialist's won tricks. Remove one, add it the Take, then shuffle the Take.
+- **Grade 2:** Look through both player's won tricks. Remove one, add it to the Take, then shuffle.
+- **Grade 3:** Look through both player's won tricks. Remove any two, add them to the Take, then shuffle.
 
 Notes:
 - If the Shop is closed, the Snitch has no effect.
@@ -251,7 +258,7 @@ Joker effect: Both players draw 1 card from the Take.
 **Take the Block** *(Spades trump, 2★)*
 Win at least one trick of each suit.
 Points: 4. Failure: −1.
-Joker effect: Reshuffle the Specialist's hand with the Take and re-deal six cards. (Risky for the Family.)
+Joker effect: Reshuffle the Specialist's hand with the Take and re-deal six cards.
 
 **Cross the River** *(Clubs trump, 3★)*
 Win 4 tricks. Each must be led by a different suit.
@@ -270,7 +277,7 @@ Joker effect: Look at the Fixer's hand.
 
 **The Big One** *(Spades trump, 3★)*
 Win at least 8 tricks.
-**Failure: Cover blown. Run ends immediately.**
+**Failure: Run ends immediately.**
 Points: 7.
 Joker effect: Close the Shop immediately and move to the Field.
 
