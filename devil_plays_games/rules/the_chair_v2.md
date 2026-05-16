@@ -162,9 +162,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 - Each Executive draws one random Agenda per Quarter, secretly looks at it, and then places it face-down on the table.
 - Each Agenda is hidden until the end of the Quarter, unless a special card or effect reveals it.
-- Each Agenda has a Win Condition and a Reveal Action.
-- Each Executive that meets their Win Condition scores +2 points at the end of the Quarter.
-- An Agenda's "Reveal Action" gives an Executive a special power they can use once per Quarter, at the cost of revealing their Agenda.
+- Each Executive that meets their Agenda's win condition scores +2 points at the end of the Quarter.
 
 
 **Climb the Ladder**
@@ -194,6 +192,9 @@ Each Executive (including you, not including the Chair) wins at least one trick 
 ---
 
 ## Executive Actions
+
+- Each Executive draws one random Action per Quarter and places it face-up on the table.
+- Most Actions require the Executive to flip their Agenda face-up. If their Agenda is already face-up, the Executive cannot use their Action.
 
 
 **Forcing Function**
