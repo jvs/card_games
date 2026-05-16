@@ -70,7 +70,7 @@ The game is played over six rounds.
  - Otherwise, the player to the left of the previous Chair becomes the new Chair.
 2. **Power:** The Chair draws a Power card and places it face-up on the table.
 3. **Agendas:** Each Executive draws one Agenda card, looks at it secretly, and places it face-down.
-4. **Actions**: Each Executive draws one Action card and places it face-up o the table.
+4. **Actions**: Each Executive draws one Action card and places it face-up on the table.
 4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player.
 5. **Sprints:** Play 10 sprints using the Sprint Cycle rules.
 6. **Score:**
