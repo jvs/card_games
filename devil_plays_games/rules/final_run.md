@@ -10,17 +10,17 @@ A two-player trick-taking spy thriller.
 
 You play as The Specialist and The Fixer, two operatives working for The Company.
 
-The Specialist is a deep cover agent embedded within The Family. But The Specialist's handler has been burned.
+The Specialist is a deep cover agent embedded within The Family. Recently, their handler was burned.
 
-The Company has sent the Fixer in cold to extract The Specialist. But only after they finish five last jobs...
+So the Company has sent the Fixer to extract The Specialist. But only after they finish five last jobs...
 
 This is your Final Run.
 
 ## Structure
 
-Each **Run** is played over 5 rounds. The Specialist executes operations the Family wants done (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs, or sooner if they hit their target. Both players win or lose together.
+Each **Run** is played over 5 rounds (or "jobs"). The Specialist executes operations for the Family (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs, or sooner if they hit their target. Both players win or lose together.
 
-The Specialist can speak (within constraints). The Fixer signals primarily through card play.
+Players may not share information about their cards or intentions except through Ghost cards, Prank abilities, the Fox, and the information revealed through normal card play. Reactions and table talk are fine — just don't smuggle strategy into them.
 
 ---
 
@@ -73,7 +73,7 @@ A Run is five jobs. Each job follows the same structure.
 ### Setup (per job)
 
 1. The Specialist draws **3 Job cards**, picks one, places it face-up on the table. The other two go back to the Job deck.
-2. The Job determines the **trump suit** for this job.
+2. The card determines the **trump suit** for this job.
 3. The Fixer draws **3 Objective cards**, picks one, places it face-down on the table. The other two go back to the Objective deck.
 4. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
 5. The Specialist leads the first trick, playing any card face-up.
@@ -107,8 +107,8 @@ After all tricks have been played:
 2. Flip the **Objective** card. Check the Objective condition.
 3. Add to your score only if both Job and Objective were successful.
 - Add Job points plus Objective points to your score.
-4. If job or objective failed, apply the failure costs (if any) to your score.
-5. Remove the Job and Objective cards from play, regardless of success or failure. They are not returned to their decks.
+4. If Job or Objective failed, apply the failure costs (if any) to your score.
+5. Remove the Job and Objective cards from play for the remainder of the Run, regardless of success or failure. They are not returned to their decks.
 
 ### Winning the Run
 
@@ -130,13 +130,14 @@ Each special card's effect is printed with three lines — the Grade 1, Grade 2,
 
 ## Special Cards
 
+
 ### The Fox (Wild)
 
-The Specialist plays the Fox. Specialist immediately asks the Fixer a question. The Fixer must answer truthfully within the available vocabulary.
+If the Specialist plays the Fox, the Specialist immediately asks the Fixer a question. The Fixer must answer truthfully within the available vocabulary.
 
 - **Grade 1:** One yes/no question.
 - **Grade 2:** One question. The answer may be: yes, no, a suit, or a rank.
-- **Grade 3:** Two questions, of any vocabulary type.
+- **Grade 3:** Two questions. Each answer may be: yes, no, a suit, or a rank.
 
 Notes:
 - If the Fixer plays the Fox, it acts as a normal card (no effect).
@@ -144,15 +145,17 @@ Notes:
 - The Fox always loses the trick.
 - The Fox is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
 
+
 ### The Joker (Wild)
 
 The Joker always wins the trick it is played in. Either player may play it.
 
-In addition, the Job card specifies a secondary effect for the Joker. After the trick resolves, the player who played the Joker may immediately apply the Joker's job-specific effect.
+In addition, each Job card specifies a secondary effect for the Joker. After the trick resolves, the player who played the Joker may immediately apply the Joker's job-specific effect.
 
 Notes:
 - The Joker is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
 - The Joker is a gauranteed win for the trick, and the Fox is a gauranteed loss.
+
 
 ### The Cat (Clubs Prank)
 
@@ -162,40 +165,42 @@ Either player may play. After the trick resolves:
 - **Grade 2:** Choose who leads the next 2 tricks. (Choose before each trick.)
 - **Grade 3:** Choose who leads the next 3 tricks. (Choose before each trick.)
 
+Note: If fewer tricks remain than the Cat's current Grade would allow, the Cat has no effect.
+
+
 ### The Devil (Diamonds Prank)
 
-Specialist plays. Specialist offers one of their cards face-up to the Fixer. Fixer responds by handing over one of their cards (Fixer's choice) in exchange.
+When you play this card, immediately place another card from your hand face-up on the table. The other player takes this card and hands you another card from their hand in exchange.
 
-- **Grade 1:** 1 card each way.
-- **Grade 2:** 2 cards each way.
-- **Grade 3:** 3 cards each way.
+- **Grade 1:** Exchange one card.
+- **Grade 2:** Exchange two cards, one at a time.
+- **Grade 3:** Exchange three cards, one at a time.
 
-If the Fixer plays the Devil, the roles reverse: Fixer offers, Specialist responds with their choice.
+Note: If you do not have enough cards in your hand to exchange, the Devil has no effect.
+
 
 ### The Hound (Hearts Prank)
-
-Either player may play.
 
 - **Grade 1:** Secretly look at the top card of the Take. Give it to either player to add to their hand.
 - **Grade 2:** Secretly look at the top 2 cards. Give one card to each player to add to their hand.
 - **Grade 3:** Look at the top 2 cards and place them face-up on the table. The Fixer chooses one card to add to their hand, the other goes to the Specialist's hand.
 
-Notes:
-- If the Take does not have enough cards, the Hound has no effect.
-- If a player's hand has 6 or more cards, they do not draw any cards from the Take when refilling hands.
+Note: If the Take does not have enough cards, the Hound has no effect.
+
 
 ### The Snitch (Spades Prank)
 
-Fixer plays.
+If the Fixer plays the Snitch:
 
-- **Grade 1:** Look through the Specialist's won tricks. Remove one, add it the Take, then shuffle the Take.
-- **Grade 2:** Look through both player's won tricks. Remove one, add it to the Take, then shuffle.
-- **Grade 3:** Look through both player's won tricks. Remove any two, add them to the Take, then shuffle.
+- **Grade 1:** Look through the Specialist's won tricks. Remove both cards from one trick, add them to the Take, then shuffle the Take.
+- **Grade 2:** Look through any player's won tricks. Remove both cards from one trick, add them to the Take, then shuffle.
+- **Grade 3:** Look through both player's won tricks. Remove both cards from any two tricks, add them to the Take, then shuffle.
 
 Notes:
 - If the Shop is closed, the Snitch has no effect.
 - If there are not enough tricks to remove, the Snitch has no effect.
 - If the Specialist plays the Snitch, it acts as a normal card (no effect).
+
 
 ### The Ghosts (one per suit)
 
@@ -370,7 +375,7 @@ Specialist wins at least 2 tricks containing a Fence.
 Points: 3.
 
 **Find the Wire** *(2★)*
-Specialist wins the trick containing the Club Ace.
+Specialist wins the trick containing the Ace of Clubs.
 Points: 4.
 
 **The Tell** *(2★)*
