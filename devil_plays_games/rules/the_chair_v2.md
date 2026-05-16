@@ -114,7 +114,7 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 - Executives may propose any card from their hand.
 - An Executive whose proposal is selected does *not* play a deliverable that trick — their proposal *is* their card for that trick. This is the lead card.
 - The Point Person for a sprint may propose a card after viewing all other proposals.
-- After the The Chair approves a proposal, each rejected Executive returns their proposal to hand and selects a deliverable.
+- After the Chair approves a proposal, each rejected Executive returns their proposal to hand and selects a deliverable.
 - When selecting a deliverable, all Executives must follow the suit or the lead card if they can. Otherwise, they may play any card.
 
 
