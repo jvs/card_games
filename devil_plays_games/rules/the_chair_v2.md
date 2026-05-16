@@ -47,7 +47,7 @@ Five suits of 12 cards.
 
 ### Powers Deck
 
-~8 Power cards. The current Chair has one Power per Quarter. See *Chair Powers* below.
+~7 Power cards. The current Chair has one Power per Quarter. See *Chair Powers* below.
 
 
 ---
@@ -150,10 +150,10 @@ The Shark-player names one Executive. The named Executive must reveal all the Sh
 The Snitch-player names one Executive. That Executive must flip their Agenda card face-up for the rest of the Quarter. Their Agenda is now public knowledge.
 
 
-## The Chair's Goal
+## The Chair's Quarterly Target
 
-- Each Quarter, the Chair's goal is always the same: To win 5 or more tricks.
-- If the Chair achieves this goal by the end of the Quarter, they score +3 points.
+- Each Quarter, the Chair's aim is always the same: To win 5 or more tricks.
+- If the Chair achieves their target by the end of the Quarter, they score +3 points.
 
 
 ## Agendas
@@ -202,18 +202,13 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 
 **Forcing Function**
-- During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
+- During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approve your proposal.
 - (Force the Chair to approve.)
 
 
 **In light of recent developments...**
 - During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
 - (Redo your deliverable.)
-
-
-**Knowledge Transfer**
-- When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
-- (Give your won trick away.)
 
 
 **Piggyback**
@@ -227,6 +222,11 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 **Pushback**
 - When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's Action has no effect, and their Agenda remains face-up.
 - (Cancel another Executive's Action.)
+
+
+**Team Effort**
+- When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
+- (Give your won trick away.)
 
 ---
 
@@ -243,18 +243,10 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - Timing: This power may be played at any time.
 
 
-**Executive Assitant**
+**Executive Assistant**
 - Target one Executive and place this card face-up in front of them.
-- They become Executive Assistant for the remainder of the Quarter.
-- The Executive Assistant scores +1 if the Chair achieves wins 5 or more tricks this Quarter, and -1 if the Chair fails.
+- The Executive scores +1 if the Chair achieves their Quarterly Target, and -1 if the Chair fails.
 - Timing: This power may be played at any time.
-
-
-**Executive Order**
-- Use this power during Chair Approval.
-- All proposals are placed on the table, forming a trick.
-- The Chair adds any one card from their hand to the trick, and then automatically wins the trick.
-- Timing: This power may only be played during Chair Approval.
 
 
 **Golden Handcuffs**
