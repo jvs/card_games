@@ -92,7 +92,7 @@ After the final Quarter, the player with the most points wins. If there's a tie,
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Chief Executive, that player waits before selecting a proposal.
    - Once all proposals are placed, the Chair tells Executives to reveal their proposals.
-   - If this sprint has a Chief Executive, the Chair tells them to select a proposal from their hand and reveal it.
+   - Finally, the Chair tells the Chief Executive to select a proposal from their hand and reveal it. (Skip if there's no Chief.)
 2. **Chair Approval:**
    - The Chair approves one proposal.
    - The approved proposal becomes the **lead card** for this trick.
