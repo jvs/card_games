@@ -24,7 +24,7 @@ Five suits, each with 12 cards, plus one Wild card.
 - Prank is lowest, Ace is highest.
 
 **Trump Suit: Shares**
-- Prank, 4-10, Class C Shares, Class B Shares, Class A Shares, Golden Shares.
+- Prank, 4-10, Class C, Class B, Class A, Golden.
 - Prank is lowest, Golden Shares is highest.
 
 
