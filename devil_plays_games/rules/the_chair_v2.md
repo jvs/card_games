@@ -86,6 +86,8 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ## The Sprint Cycle
 
+Throughout the game, when cards are revealed, the Chair calls for the reveal and all cards are flipped simultaneously.
+
 
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
@@ -108,8 +110,6 @@ After the final Quarter, the player with the most points wins. If there's a tie,
    - The winner collects the cards into their trick pile.
    - If the winner is an Executive, they serve as Point Person for the next sprint.
    - If the winner is The Chair, the next sprint has no Point Person.
-
-Note: Throughout the game, when cards are revealed, the Chair calls for the reveal and all cards are flipped simultaneously.
 
 
 ### Proposal Rules
@@ -255,8 +255,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 **Golden Handcuffs**
 - Name any card, for example "Jack of Hearts".
 - If an Executive has the named card in their hand, they may reveal it.
-- You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
-- If you take their card, the Executive immediately adds +1 to their score.
+- Add the revealed card to your hand, secretly exchanging it for a card from your hand, and the Executive immediately adds +1 to their score.
 - Timing: This power may be played at any time during the Quarter.
 
 
@@ -264,7 +263,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - Name a suit during Chair Approval.
 - Executives leave their current proposal face-up on the table and place a second proposal face-down on the table as a second proposal.
 - If an Executive has a card of the named suit, this second proposal must be of the named suit.
-- Once all proposals are placed, The Chair tells Executives to reveal their second proposals.
+- Once all proposals are placed, Executives to reveal them.
 - The sprint then proceeds as normal, only with more proposals this time.
 - The Chair may select any proposal, from either the first set or the second set.
 - Timing: This power may only be played during Chair Approval.
