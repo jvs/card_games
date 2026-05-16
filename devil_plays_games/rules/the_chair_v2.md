@@ -93,7 +93,7 @@ Throughout the game, when cards are revealed, the Chair calls for the reveal and
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Point Person, that player waits before selecting a proposal.
    - Once all proposals are placed, Executives reveal their proposals.
-   - Finally, the Chair tells the Point Person to select a proposal from their hand and reveal it. (Skip if there's no Point.)
+   - Finally, the Point Person to select a proposal from their hand and reveal it. (Skip if there's no Point.)
 2. **Chair Approval:**
    - The Chair approves one proposal.
    - The approved proposal becomes the **lead card** for this trick.
@@ -130,27 +130,38 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 ### The Cat (Clubs Prank)
 
-The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal they must approve. The Cat has no effect during the final sprint of the Quarter.
+- The Cat-player names any one Executive.
+- During the next Chair Approval, the named Executive tells the Chair which proposal they must approve.
+- The Cat has no effect during the final sprint of the Quarter.
+- The Cat-player may name themselves.
 
 
 ### The Devil (Diamonds Prank)
 
-The Devil-player names two other players (one may be themselves). Those two players secretly exchange one card face-down from their hands. (Only those two players know the identity of the exchanged cards.)
+- The Devil-player names two other players.
+- Those two players secretly exchange one card face-down from their hands. (Only those two players know the identity of the exchanged cards.)
+- The Devil-player may target themselves, or the Chair, or any Executive.
 
 
 ### The Hound (Hearts Prank)
 
-The Hound-player names one Executive and secretly looks at that Executive's hand. The Hound-player may not target the Chair, only Executives.
+- The Hound-player names one Executive and secretly looks at that Executive's hand.
+- The Hound-player may not target the Chair, only Executives.
 
 
 ### The Shark (Shares Prank)
 
-The Shark-player names one Executive. The named Executive must reveal all Shares cards in their hand, or state that they have none. The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
+- The Shark-player names one Executive.
+- The named Executive must reveal all Shares cards in their hand, or state that they have none.
+- The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
+- The Shark-player may not target the Chair.
 
 
 ### The Snitch (Spades Prank)
 
-The Snitch-player names one Executive. That Executive must flip their Agenda card face-up for the rest of the Quarter. Their Agenda is now public knowledge.
+- The Snitch-player names one Executive.
+- That Executive must flip their Agenda card face-up for the rest of the Quarter.
+- Their Agenda is now public knowledge.
 
 
 ## The Chair's Quarterly Target
@@ -255,7 +266,8 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 **Golden Handcuffs**
 - Name any card, for example "Jack of Hearts".
 - If an Executive has the named card in their hand, they may reveal it.
-- Add the revealed card to your hand, secretly exchanging it for a card from your hand, and the Executive immediately adds +1 to their score.
+- Add the revealed card to your hand, secretly exchanging it for a card from your hand.
+- The Executive immediately adds +1 to their score.
 - Timing: This power may be played at any time during the Quarter.
 
 
@@ -263,7 +275,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - Name a suit during Chair Approval.
 - Executives leave their current proposal face-up on the table and place a second proposal face-down on the table as a second proposal.
 - If an Executive has a card of the named suit, this second proposal must be of the named suit.
-- Once all proposals are placed, Executives to reveal them.
+- Once all proposals are placed, Executives reveal them.
 - The sprint then proceeds as normal, only with more proposals this time.
 - The Chair may select any proposal, from either the first set or the second set.
 - Timing: This power may only be played during Chair Approval.
