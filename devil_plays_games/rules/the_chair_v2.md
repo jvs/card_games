@@ -68,7 +68,7 @@ The game is played over six rounds.
 2. **Chair Power:** The Chair draws a Power card and places it face-up on the table.
 3. **Executive Agendas:** Each Executive draws one Agenda card, looks at it secretly, and places it face-down.
 4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player, then deal the last extra card to the Chair player. (The Chair will have at least one card left over in their hand at the end of the Quarter.)
-5. **Play 10 sprints** using the Sprint Cycle rules.
+5. **Sprints:** Play 10 sprints using the Sprint Cycle rules.
 6. **Score:**
  - The Chair scores +3 points if the Chair won 5 or more tricks this Quarter.
  - Each Executive scores +2 points if they met their Agenda's Win Condition.
@@ -84,28 +84,27 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ## The Sprint Cycle
 
-
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Chief Executive, that player waits before selecting a proposal.
    - Once all proposals are placed, the Chair tells Executives to reveal their proposals.
    - If this sprint has a Chief Executive, the Chair tells them to select a proposal from their hand and reveal it.
 2. **Chair Approval:**
-   - The Chair reviews the proposals and approves one.
+   - The Chair approves one proposal.
    - The approved proposal becomes the **lead card** for this trick.
 3. **Deliverables:**
    - Rejected Executives return their proposal cards to their hand.
    - Each rejected Executive then places one card face-down as their deliverable. This is the card they will play in the current trick, following suit if possible.
    - Once all deliverables are placed, the Chair tells Executives to reveal their deliverables.
 4. **The Call:**
-   - The Chair reviews all the deliverables for this sprint, and then plays a card from their hand, following suit if possible.
+   - The Chair plays a card from their hand, following suit if possible.
 5. **Parking Lot Items:**
    - Prank cards resolve their effects now (see *Prank Cards*).
 6. **Regulatory Reporting:**
-   - The trick is resolved: highest Share wins. Otherwise, highest card of the lead suit wins.
+   - The trick is resolved: highest trump card wins. Otherwise, highest card of the lead suit wins.
    - The winner collects the cards into their trick pile.
-   - If the winner is an Executive (and not the Chair), then the Executive serves as Chief Executive for the next sprint.
-   - If the winnder is The Chair, the next sprint has no Chief Executive.
+   - If the winner is an Executive, they serve as Chief Executive for the next sprint.
+   - If the winner is The Chair, the next sprint has no Chief Executive.
 
 
 ### Proposal Rules
@@ -125,16 +124,18 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 ### The Cat (Clubs Prank)
 
-The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal to accept.
+The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal they must approve.
 
 
 ### The Devil (Diamonds Prank)
 
-The Devil-player names two other players (one may be themselves). Those two players must exchange one card face-down from their hands. Only those two players know the identity of the exchanged cards.
+The Devil-player names two other players (one may be themselves). Those two players secretly exchange one card face-down from their hands. (Only those two players know the identity of the exchanged cards.)
+
 
 ### The Hound (Hearts Prank)
 
 The Hound-player names one Executive and secretly looks at that Executive's hand. The Hound-player may not target the Chair, only Executives.
+
 
 ### The Shark (Shares Prank)
 
