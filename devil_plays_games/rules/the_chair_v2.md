@@ -2,13 +2,12 @@
 
 A six-player competitive trick-taking game with simultaneous play and secret roles.
 
-(Work in progress)
 
 ## Premise
 
-Six players. One holds **the Chair**. The others are **Executives**, each with a hidden **Agenda**. It's a game of winner-take-all corporate infighting.
+Six players. One holds **the Chair**. The others are **Executives**, each with a hidden **Agenda**.
 
-Welcome to the boardroom. This is your Chair.
+Take the elevator to the top floor. Welcome to the boardroom. This is your Chair.
 
 
 ---
