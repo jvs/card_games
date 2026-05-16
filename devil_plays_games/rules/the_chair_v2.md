@@ -204,7 +204,9 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 **On the Same Page**
 - Special: Use this Action without revealing your Agenda card.
-- When another Executive flips their Agenda card face-up and plays their Action, flip this card face-down. After their Action resolves, take their card and move it in front of you. This is now your new Action card. Flip your Agenda face-up in order to use it.
+- When another Executive flips their Agenda card face-up and plays their Action, you may discard this card. If you do, wait for their Action card to resolve, and then take the Executive's Action card and move it in front of you. This is now your new Action card.
+- (Later, you will need to flip your Agenda face-up in order to use it, as usual.)
+- Timing: This effect does not interact with other effects. After an Executive plays their Action, you can take their card and use it later.
 - (Copy another Executive's Action.)
 
 
@@ -236,10 +238,10 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 
 **Audit**
-- The Chair targes one Executive, calling for an audit.
+- The Chair targets one Executive, calling for an audit.
 - The Chair secretly views the target Executive's Agenda.
 - The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
-- The Agenda's Reveal Action does not take effect.
+- The Executive's Action does not take effect.
 - Timing: This power may be played at any time.
 
 
