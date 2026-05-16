@@ -47,7 +47,7 @@ Five suits of 12 cards.
 
 ### Powers Deck
 
-~8 Power cards. The current Chair has one public Power per Quarter. See *Chair Powers* below.
+~8 Power cards. The current Chair has one Power per Quarter. See *Chair Powers* below.
 
 
 ---
