@@ -166,27 +166,27 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 
 **Climb the Ladder**
-You win the most tricks of any Executive this Quarter. (Ties don't count. The Chair doesn't count.)
+- You win the most tricks of any Executive this Quarter. (Ties don't count. The Chair doesn't count.)
 
 
 **Corporate Sabotage**
-At least one Executive (not including you) does not win any tricks this Quarter.
+- At least one Executive (not including you) does not win any tricks this Quarter.
 
 
 **Dedication to the Company**
-The Chair wins 5 or more tricks this Quarter.
+- The Chair wins 5 or more tricks this Quarter.
 
 
 **Hostile Takeover**
-The Chair wins fewer than 5 tricks this Quarter.
+- The Chair wins fewer than 5 tricks this Quarter.
 
 
 **Severance Package**
-You do not win any tricks this Quarter.
+- You do not win any tricks this Quarter.
 
 
 **Team Player**
-Each Executive (including you, not including the Chair) wins at least one trick this Quarter.
+- Each Executive (including you, not including the Chair) wins at least one trick this Quarter.
 
 
 ---
@@ -198,35 +198,34 @@ Each Executive (including you, not including the Chair) wins at least one trick 
 
 
 **Forcing Function**
-During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
-(Force the Chair to approve.)
+- During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
+- (Force the Chair to approve.)
 
 
 **On the Same Page**
-Special: Use this Action without revealing your Agenda card.
-
-When another Executive flips their Agenda card face-up and plays their Action, flip this card face-down. After their Action resolves, take their card and move it in front of you. This is now your new Action card. Flip your Agenda face-up in order to use it.
-(Copy another Executive's Action.)
+- Special: Use this Action without revealing your Agenda card.
+- When another Executive flips their Agenda card face-up and plays their Action, flip this card face-down. After their Action resolves, take their card and move it in front of you. This is now your new Action card. Flip your Agenda face-up in order to use it.
+- (Copy another Executive's Action.)
 
 
 **Push the Envelope**
-During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
-(Redo your deliverable.)
+- During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
+- (Redo your deliverable.)
 
 
 **Pushback**
-When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's Action has no effect, and their Agenda remains face-up.
-(Cancel another Executive's Action.)
+- When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's Action has no effect, and their Agenda remains face-up.
+- (Cancel another Executive's Action.)
 
 
 **Shared Victory**
-When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
-(Give your won trick away.)
+- When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
+- (Give your won trick away.)
 
 
 **Team Building Exercise**
-During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
-(Force the Chair to lose the trick.)
+- During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
+- (Force the Chair to lose the trick.)
 
 ---
 
