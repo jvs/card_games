@@ -17,7 +17,7 @@ Welcome to the boardroom. This is your Chair.
 
 ### Playing Deck (61 cards)
 
-Five suits, each with 12 cards, plus one Wild card.
+Five suits of 12 cards, plus one Wild card.
 
 **Standard Suits: Clubs, Diamonds, Hearts, Spades**
 - Prank, 4-10, Jack, Queen, King, Ace.
@@ -25,7 +25,7 @@ Five suits, each with 12 cards, plus one Wild card.
 
 **Trump Suit: Shares**
 - Prank, 4-10, Class C, Class B, Class A, Golden.
-- Prank is lowest, Golden Shares is highest.
+- Prank is lowest, Golden is highest.
 
 **Prank cards**
 - **The Cat** (3 of Clubs)
@@ -33,8 +33,7 @@ Five suits, each with 12 cards, plus one Wild card.
 - **The Hound** (3 of Hearts)
 - **The Shark** (3 of Shares)
 - **The Snitch** (3 of Spades)
-
-Each Prank is the lowest card in its suit. See *Prank Card Effects* below.
+- Each Prank card has a special effect. See *Prank Cards* below.
 
 **Wild Card: The Joker**
 - Wins any trick.
@@ -101,7 +100,7 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 4. **The Call:**
    - The Chair reviews all the deliverables for this sprint, and then plays a card from their hand, following suit if possible.
 5. **Parking Lot Items:**
-   - Prank cards resolve their effects now (see *Prank Card Effects*).
+   - Prank cards resolve their effects now (see *Prank Cards*).
 6. **Regulatory Reporting:**
    - The trick is resolved: highest Share wins. Otherwise, highest card of the lead suit wins.
    - The winner collects the cards into their trick pile.
@@ -120,7 +119,7 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ---
 
-## Prank Card Effects
+## Prank Cards
 
 Prank effects resolve during Parking Lot Items. If multiple Pranks are played in the same trick, they resolve in alphabetical order: Cat, Devil, Hound, Shark, Snitch.
 
