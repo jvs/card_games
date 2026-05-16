@@ -27,16 +27,14 @@ Five suits, each with 12 cards, plus one Wild card.
 - Prank, 4-10, Class C, Class B, Class A, Golden.
 - Prank is lowest, Golden Shares is highest.
 
-
-**Prank cards** — 5 cards, one per suit:
-
+**Prank cards**
 - **The Cat** (3 of Clubs)
 - **The Devil** (3 of Diamonds)
 - **The Hound** (3 of Hearts)
 - **The Shark** (3 of Shares)
 - **The Snitch** (3 of Spades)
 
-Pranks are the lowest card in their suit. See *Prank Card Effects* below.
+Each Prank is the lowest card in its suit. See *Prank Card Effects* below.
 
 **Wild Card: The Joker**
 - Wins any trick.
