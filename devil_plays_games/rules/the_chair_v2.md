@@ -186,12 +186,12 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 **Severance Package**
 - Win Condition: Don't win any tricks this Quarter.
-- Reveal Action: "Dodge a Bullet" when you win a trick, you may flip your Agenda card face-up. If you do so, the Chair wins the trick instead.
+- Reveal Action: "Dodge a Bullet" when you win a trick, you may flip your Agenda card face-up. If you do so, remove the won trick from the game. It doesn't count.
 
 
 **Team Player**
 - Win Condition: Each Executive (including you) wins at least one trick this Quarter.
-- Reveal Action: "On the Same Page" When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, flip the other Executive's Agenda face-down. Their reveal action still takes effect.
+- Reveal Action: "All Hands" During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do so, the Chair must play a losing card if possible, while still following suit.
 
 
 ---
@@ -235,10 +235,10 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 
 **PIP**
-- Target one Executive during The Call.
+- Target one Executive during the Call.
 - That Executive must play an additional card for the current trick. Follow suit rules still apply.
 - The Executive then takes their original deliverable and adds it to their hand.
-- Timing: This power may only be played during The Call.
+- Timing: This power may only be played during the Call.
 
 
 **Performance Bonus**
