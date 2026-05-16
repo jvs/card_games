@@ -6,7 +6,7 @@ A six-player competitive trick-taking game with simultaneous play and secret rol
 
 ## Premise
 
-Six players. One holds **the Chair**. The others are **Executives**, each with a hidden **Agenda**. It's a game of winner-take-all corporate politics.
+Six players. One holds **the Chair**. The others are **Executives**, each with a hidden **Agenda**. It's a game of winner-take-all corporate infighting.
 
 Welcome to the boardroom. This is your Chair.
 
@@ -55,32 +55,33 @@ Pranks are the lowest card in their suit. See *Prank Card Effects* below.
 
 ---
 
-## The Term
+## The Game
 
-Each game is played over six rounds.
+The game is played over six rounds.
 
 - Each round is called a Quarter.
 - The Chair rotates each Quarter.
-- Together all six Quarters form the Term.
-- Most points at the end of the Term wins.
+- Most points at the end of the game wins.
 
 
 ### Each Quarter
 
-1. **Chair Rotation:**:
- - If this is the first Quarter, choose the first Chair player arbitrarily (random draw, oldest player, etc).
+1. **Chair Rotation:**
+ - If this is the first Quarter, choose the first Chair arbitrarily (random draw, oldest player, etc).
  - Otherwise, the player to the left of the previous Chair becomes the new Chair.
 2. **Chair Power:** The Chair draws a Power card and places it face-up on the table.
 3. **Executive Agendas:** Each Executive draws one Agenda card, looks at it secretly, and places it face-down.
-4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player, then deal the last extra card to the Chair player. (The Chair will have at least one left over card in their hand at the end of the Quarter.)
+4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player, then deal the last extra card to the Chair player. (The Chair will have at least one card left over in their hand at the end of the Quarter.)
 5. **Play 10 sprints** using the Sprint Cycle rules.
-6. **Score:** Score +2 points for any Agenda whose conditions were met. Score +3 points for the Chair Goal if achieved.
-7. **Retirement:** The current Chair discards their Power card, removing it from play for the rest of the Term.
+6. **Score:**
+ - The Chair scores +3 points if the Chair won 5 or more tricks this Quarter.
+ - Each Executive scores +2 points if they met their Agenda's Win Condition.
+7. **Retirement:** The current Chair discards their Power card, removing it from play for the rest of the game.
 
 
-### Winner of the Game
+### Winning the Game
 
-After the final Quarter, the player with the most cumulative points wins. If there's a tie, then there's a tie. You've met your match!
+After the final Quarter, the player with the most points wins. If there's a tie, then there's a tie. You've met your match!
 
 
 ---
