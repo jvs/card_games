@@ -142,7 +142,7 @@ The Hound-player names one Executive and secretly looks at that Executive's hand
 
 ### The Shark (Shares Prank)
 
-The Shark-player names one Executive. The named Executive must reveal all the Shares cards in their hand, or state that they have none. The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
+The Shark-player names one Executive. The named Executive must reveal all Shares cards in their hand, or state that they have none. The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
 
 
 ### The Snitch (Spades Prank)
