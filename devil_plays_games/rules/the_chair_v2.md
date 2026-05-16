@@ -146,7 +146,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 ### The Hound (Hearts Prank)
 
 - The Hound-player names one Executive and secretly looks at that Executive's hand.
-- The Hound-player may not target the Chair, only Executives.
+- The Hound-player may not target the Chair.
 
 
 ### The Shark (Shares Prank)
