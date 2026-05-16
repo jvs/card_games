@@ -73,7 +73,7 @@ The game is played over six rounds.
 5. **Sprints:** Play 10 sprints using the Sprint Cycle rules.
 6. **Score:**
  - The Chair scores +3 points if the Chair won 5 or more tricks this Quarter.
- - Each Executive scores +2 points if they met their Agenda's Win Condition.
+ - Each Executive scores +2 points if they met their Agenda's win condition.
 7. **Retirement:** The current Chair discards their Power card, removing it from play for the rest of the game.
 
 
@@ -86,10 +86,11 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ## The Sprint Cycle
 
+
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Point Person, that player waits before selecting a proposal.
-   - Once all proposals are placed, the Chair tells Executives to reveal their proposals.
+   - Once all proposals are placed, Executives reveal their proposals.
    - Finally, the Chair tells the Point Person to select a proposal from their hand and reveal it. (Skip if there's no Point.)
 2. **Chair Approval:**
    - The Chair approves one proposal.
@@ -97,7 +98,7 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 3. **Deliverables:**
    - Rejected Executives return their proposal cards to their hand.
    - Each rejected Executive then places one card face-down as their deliverable. This is the card they will play in the current trick, following suit if possible.
-   - Once all deliverables are placed, the Chair tells Executives to reveal their deliverables.
+   - Once all deliverables are placed, Executives reveal their deliverables.
 4. **The Call:**
    - The Chair plays a card from their hand, following suit if possible.
 5. **Parking Lot Items:**
@@ -107,6 +108,8 @@ After the final Quarter, the player with the most points wins. If there's a tie,
    - The winner collects the cards into their trick pile.
    - If the winner is an Executive, they serve as Point Person for the next sprint.
    - If the winner is The Chair, the next sprint has no Point Person.
+
+Note: Throughout the game, when cards are revealed, the Chair calls for the reveal and all cards are flipped simultaneously.
 
 
 ### Proposal Rules
@@ -240,13 +243,13 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - The Chair targets one Executive, calling for an audit.
 - The Chair secretly views the target Executive's Agenda.
 - The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
-- Timing: This power may be played at any time.
+- Timing: This power may be played at any time during the Quarter.
 
 
 **Executive Assistant**
 - Target one Executive and place this card face-up in front of them.
 - The Executive scores +1 if the Chair achieves their Quarterly Target, and -1 if the Chair fails.
-- Timing: This power may be played at any time.
+- Timing: This power may be played at any time during the Quarter.
 
 
 **Golden Handcuffs**
@@ -254,7 +257,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - If an Executive has the named card in their hand, they may reveal it.
 - You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
 - If you take their card, the Executive immediately adds +1 to their score.
-- Timing: This power may be played at any time.
+- Timing: This power may be played at any time during the Quarter.
 
 
 **I need ideas, people!**
@@ -279,7 +282,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - The Chair names a suit.
 - Each Executive must reveal a card of that suit.
 - If the Executive does not have a card of that suit, they must show any one card from their hand.
-- Timing: This power may be played at any time.
+- Timing: This power may be played at any time during the Quarter.
 
 
 **You’re on mute**
