@@ -8,12 +8,9 @@ A six-player trick-taking game of corporate politics.
 
 ## Premise
 
-The Chair is where the big dog sits. The Chair calls the shots. Nothing happens around here without the Chair's say-so.
+Six players. One holds **the Chair**. The other five are **Executives**, each with a hidden **Agenda**. Over the course of five brutal quarters, players compete for tricks, for shares, and of course, for the Chair. 
 
-The Chair is power. Everyone wants it. Are you going to take it?
-
-Welcome to the boardroom.
-
+Take the elevator to the top floor, where the seats are high and the stakes are higher. Welcome to the boardroom. This is your Chair.
 
 ---
 
@@ -54,6 +51,10 @@ Pranks are the lowest card in their suit. See *Prank Card Effects* below.
 
 ~13 Chair Power cards. The current Chair has one public Chair Power per Quarter. See *Chair Powers* below.
 
+### Leader Tokens
+
+10 tokens to track the leader of each trick.
+
 ---
 
 ## The Term
@@ -73,9 +74,9 @@ Each game is played over a Term — a fixed number of Quarters, typically five. 
 3. **Executive Agendas:** Each Executive draws one Agenda card, looks at it secretly, and keeps it face-down.
 4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player. Put the last card face-down. This card is unused.
 5. **Play 10 sprints** using the Sprint Cycle rules.
-6. **Chair Rotation:** To take the Chair, an Executive must finish the Quarter with more Share *cards* in their won tricks than any other player. Without a clear winner, the Chair retains the seat.
+6. **Chair Rotation:** To take the Chair, an Executive must finish the Quarter with more Share *cards* in their won tricks than any other player. Without a clear winner, for example ties, the Chair retains the seat.
 7. **Score:** At the end of the Quarter, after determining the next Chair, all Agendas are revealed. Score points for any Agenda whose conditions were met. Score the Chair Goal if achieved.
-8. **Retirement:** The current Chair discards their Goal and Power cards, removing them from play for the rest of the Term. Return all Advancement tokens to the supply.
+8. **Retirement:** The current Chair discards their Goal and Power cards, removing them from play for the rest of the Term. Return all Leader tokens to the supply.
 
 ### Winner of the Game
 
@@ -90,51 +91,45 @@ Each sprint starts with proposals from all the Executives.
 ### Each Sprint
 
 1. **Sprint Planning:**
-   - Each Executive selects one card from their hand and places it face-down in front of themselves. This is their proposal for the sprint.
-   - Once all proposals are placed, the Chair signals all Executives to reveal their proposals simultaneously.
+   - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
+   - Once all proposals are placed, the Chair tells Executives to reveal their proposals simultaneously.
    - If an Executive has *Lead Information Advantage*, they select a card from their hand and present their proposal now, after all the other Executives have revealed their proposals. See *Lead Information Advantage*.
 2. **Chair Approval:**
    - The Chair reviews the proposals.
-   - Before Chair approves one, the Chair may optionally use their quarterly Chair Power. If they do, resolve the Chair Power immediately.
-   - After the Chair Power is resolved, the Sprint continues normally, unless stated otherwise by the Chair Power.
-   - The Chair approves one proposal.
-   - If The Chair approves your proposal, take one Advancement token.
+   - Before Chair approves one, the Chair may optionally use their quarterly Chair Power.
+   - Next, the Chair approves one proposal, passing the Executive a Leader token.
    - The selected card becomes the **lead card** for this trick.
-   - (Special case: a player with a face-down hostile Agenda may reveal their Agenda at this moment to override the Chair's approval.)
+   - (Special case: a player with a face-down Agenda may reveal their Agenda at this moment to override the Chair's approval.)
 3. **Deliverables:**
-   - Rejected Executives return their proposed cards to their hand.
+   - Rejected Executives return their proposal cards to their hand.
    - Each Executive then plays one card face-down as their deliverable.
-   - Once all deliverables are placed, the Chair signals all Executives to reveal their deliverables simultaneously.
+   - Once all deliverables are placed, the Chair tells Executives to reveal their deliverables simultaneously.
 4. **The Call:**
-   - The Chair reviews each Executive's deliverable for this sprint.
-   - Before Chair making the Call, the Chair may optionally use their quarterly Chair Power. If they do, resolve the Chair Power immediately.
-   - Then the Chair plays a card from their hand. (See *Following Suit*.)
+   - The Chair reviews all the deliverable for this sprint.
+   - Before making the Call, the Chair may optionally use their quarterly Chair Power.
+   - Then the Chair plays a card from their hand, following suit if possible.
 5. **Parking Lot Items:**
    - Prank cards resolve their effects now (see *Prank Card Effects*).
 6. **Regulatory Reporting:**
-   - The result is filed: highest Share wins. Otherwise, highest card of the lead suit wins. Off-suit non-Share cards cannot win.
+   - The trick is resolved: highest Share wins. Otherwise, highest card of the lead suit wins.
    - The winner collects the cards into their trick pile.
 
 ### Following Suit
 
-When a card is played to a trick, all subsequent players must play a card of the same suit (the lead suit) if able. If a player has no card of the lead suit, they may play any card.
+When playing their deliverable, Executives must follow the lead suit if they have any cards of that suit in their hand. If they have no cards of the lead suit, they may play any card.
 
-This rule applies to:
-- The Chair's card at the end of the Sprint, the Call.
-- Executives playing deliverables.
-
-The lead suit is set by the Chair's approved proposal during Chair Approval.
+Similarly, when the Chair plays their card, they must follow the lead suit if possible. If they have no cards of the lead suit, they may play any card.
 
 ### Proposal Rules
 
 - Executives may propose any card from their hand.
 - An Executive whose proposal is selected does *not* play a deliverable that trick — their proposal *is* their card for that trick.
-- Rejected Executives return their proposal to hand and play a deliverable normally.
-- All other players (including The Chair) must follow suit if they can. Otherwise, they may play any card as their deliverable.
+- Rejected Executives return their proposal to hand and play a deliverable normally,
+- All other players (including The Chair) must follow suit if they can. Otherwise, they may play any card.
 
 ### Lead Information Advantage
 
-When an Executive wins a trick, they also gain Lead Information Advantage during the next sprint. The Executive selects and presents their proposal after the Chair closes submissions and all other proposals are revealed. This allows the Executive with *Lead Information Advantage* to see all other proposals before making their own.
+When an Executive wins a trick, they also gain Lead Information Advantage during the next sprint. The Executive selects and presents their proposal after all the other Executives have revealed their proposals, giving them the opportunity to see what their competitors are proposing before making their own proposal.
 
 ---
 
@@ -144,7 +139,8 @@ Prank effects resolve after the Chair plays but before the trick is resolved. If
 
 ### The Cat (Clubs Prank)
 
-The Cat-player names any one Executive. The Cat-player may name themselves. That Executive automatically plays the lead card next sprint. Skip Sprint Planning and Chair Approval. The named Executive plays the lead card from their hand, and then move to Deliverables as normal.
+The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal to accept.
+
 
 ### The Devil (Diamonds Prank)
 
@@ -214,7 +210,7 @@ The Chair may optionally use their power during the Chair Approval, before appro
 **Mission Statement**
 - The Chair names a suit.
 - That suit acts as the greater Trump during the next sprint.
-- The greater trump suit beats Shares, except for Golden Shares, which still always wins the trick.
+- The greater trump suit beats Shares, even Golden Shares.
 
 **Promotion**
 - Target one Executive and place this card face-up in front of them.
@@ -222,11 +218,10 @@ The Chair may optionally use their power during the Chair Approval, before appro
 - The Vice Chair scores +1 if the Chair achieves their goal, and -1 if the Chair fails it.
 
 **Performance Bonus**
-- Offer one Executive a Performance Bonus by asking them to complete a specific, measureable, observable task.
-- If the Executive successfully completes the task, they score +1 point at the end of the Quarter. Put this card face-up in front of them as a reminder.
-- Note: This power is left open-ended, trusting players to be creative and fair in their use of it. Make a deal, but be sure to uphold your end of the bargain!
-- Note: If you feel your table needs more structure, simply remove this power from the game.
-
+- Name any card, for example "Jack of Hearts".
+- If an executive has the nammed card in their hand, they may reveal it.
+- You may add the revealed card to your hand, secretly exchanging it for a card from your hand.
+- The Executive immediately adds +1 to their score.
 
 **I need ideas, people!**
 - Special: This power may only be played during Chair Approval.
@@ -262,24 +257,39 @@ The Chair draws one Chair Goal card per Quarter. The goal is public — all Exec
 ### Example Chair Goals
 
 **Trick Count Goals**
+
 **Maximize Shareholder Value:** The Chair wins the most tricks (more than any individual Executive).
+
 **Reduce Headcount:** At least one Executive wins zero tricks.
+
 **Training and Development:** Every Executive wins at least one trick.
+
 **Cut Costs:** No Executive wins more than 3 tricks. (TODO: Consider changing this to 2 tricks.)
 
+
 **Trick Content Goals**
+
 **Set a New Standard:** At least one card of each suit is present in your won tricks.
+
 **Operational Efficiency**: At least two Executives won tricks where three or more cards have the same suit.
+
 **Diversity and Inclusion:** At least two Executives each have at least one King, one Queen, and one Jack in their won tricks.
+
 **Drive Innovation:** At least three players each have a Prank card in their won tricks. (You may count a Prank card in the Chair's won tricks for this goal.)
+
 **Stock Buybacks:** No Executive has more than 3 Share cards in their won tricks. (TODO: Consider changing this to 2 Share cards.)
 
+
 **Loyalty Goals**
+
 **Company Culture:** Add the number of tricks won by The Chair and all Executives with loyal Agendas. The total must be at least 5.
+
 **Foreign Investment:** Add the number of tricks won by all Executives with nuetral Agendas. The total must be at least 2. If no Executives have a neutral Agenda, this goal is automatically achieved.
 
 **Chair Rotation Goals**
+
 **Leadership Development:** Another player takes the Chair next Quarter.
+
 **Strategic Vision:** Stay on as Chair next Quarter.
 
 ---
@@ -324,13 +334,13 @@ Win at least one trick containing a Prank card.
 ### Proposal-Layer Agendas
 
 **On The Boss's Radar** *(2 points, loyal)*
-Have the most Advancement tokens among Executives. (Ties don't count.)
+Have the most Leader tokens among Executives. (Ties don't count.)
 
 **Keep Your Head Down** *(1 point, neutral)*
-Have the fewest Advancement tokens among Executives. (Ties don't count.)
+Have the fewest Leader tokens among Executives. (Ties don't count.)
 
 **Boil The Ocean** *(3 points, hostile)*
-Have zero Advancement tokens at the end of the quarter.
+Have zero Leader tokens at the end of the quarter.
 
 
 ### Chair-Goal Agendas
@@ -368,7 +378,7 @@ Add the number of Share cards won by all Executives with hostile Agendas. The to
 
 Players may talk freely during the game. Lying about your Agenda or your cards is allowed.
 
-However, **you may not show your Agenda card to other players** except when forced by a special card.
+However, **you may not show your Agenda card to other players** unless expressly allowed by a card effect.
 
 ---
 
