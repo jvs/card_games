@@ -17,19 +17,18 @@ Welcome to the boardroom. This is your Chair.
 
 ### Playing Deck (61 cards)
 
-**Four standard suits**
-- Spades, Hearts, Diamonds, Clubs
-- 12 cards each (48 total): Prank (3), 4-10, Jack, Queen, King, Ace.
+Five suits, each with 12 cards, plus one Wild card.
 
-Standard rank order. Ace high. (The 3 of each suit is also that suit's Prank card — see below.)
+**Standard Suits: Clubs, Diamonds, Hearts, Spades**
+- Prank, 4-10, Jack, Queen, King, Ace.
+- Prank is lowest, Ace is highest.
 
-**Trump Suit: Shares** (the trump suit) — 12 cards:
+**Trump Suit: Shares**
+- Prank, 4-10, Class C Shares, Class B Shares, Class A Shares, Golden Shares.
+- Prank is lowest, Golden Shares is highest.
 
-The Shark (3), 4-10, Class C Shares, Class B Shares, Class A Shares, Golden Shares.
 
-The Shark (3) is the lowest. Golden Shares is the highest. Any Shares beats any non-Share card regardless of rank.
-
-**Prank cards** — 5 cards, one per suit, replacing the 3:
+**Prank cards** — 5 cards, one per suit:
 
 - **The Cat** (3 of Clubs)
 - **The Devil** (3 of Diamonds)
