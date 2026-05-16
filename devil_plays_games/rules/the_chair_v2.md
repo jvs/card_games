@@ -128,7 +128,7 @@ Throughout the game, when cards are revealed, the Chair calls for the reveal and
 Prank effects resolve during Parking Lot Items. If multiple Pranks are played in the same trick, they resolve in alphabetical order: Cat, Devil, Hound, Shark, Snitch.
 
 
-### The Cat (Clubs Prank)
+### The Cat (Clubs)
 
 - The Cat-player names any one Executive.
 - During the next Chair Approval, the named Executive tells the Chair which proposal they must approve.
@@ -136,20 +136,20 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 - The Cat-player may name themselves.
 
 
-### The Devil (Diamonds Prank)
+### The Devil (Diamonds)
 
 - The Devil-player names two other players.
 - Those two players secretly exchange one card face-down from their hands. (Only those two players know the identity of the exchanged cards.)
 - The Devil-player may target themselves, or the Chair, or any Executive.
 
 
-### The Hound (Hearts Prank)
+### The Hound (Hearts)
 
 - The Hound-player names one Executive and secretly looks at that Executive's hand.
 - The Hound-player may not target the Chair.
 
 
-### The Shark (Shares Prank)
+### The Shark (Shares)
 
 - The Shark-player names one Executive.
 - The named Executive must reveal all Shares cards in their hand, or state that they have none.
@@ -157,7 +157,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 - The Shark-player may not target the Chair.
 
 
-### The Snitch (Spades Prank)
+### The Snitch (Spades)
 
 - The Snitch-player names one Executive.
 - That Executive must flip their Agenda card face-up for the rest of the Quarter.
