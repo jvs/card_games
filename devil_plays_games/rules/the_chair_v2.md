@@ -15,9 +15,9 @@ Welcome to the boardroom. This is your Chair.
 
 ## Components
 
-### Playing Deck (61 cards)
+### Playing Deck (60 cards)
 
-Five suits of 12 cards, plus one Wild card.
+Five suits of 12 cards.
 
 **Standard Suits: Clubs, Diamonds, Hearts, Spades**
 - Prank, 4-10, Jack, Queen, King, Ace.
@@ -35,19 +35,22 @@ Five suits of 12 cards, plus one Wild card.
 - **The Snitch** (3 of Spades)
 - Each Prank card has a special effect. See *Prank Cards* below.
 
-**Wild Card: The Joker**
-- Wins any trick.
-- Always counts as following suit.
-
 
 ### Agenda Deck
 
-~7 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
+~6 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
+
+
+### Actions Deck
+
+~6 Action cards. Each Executive draws one Action card per Quarter. See *Executive Actions* below.
+
 
 ### Powers Deck
 
 ~10 Power cards. The current Chair has one public Power per Quarter. See *Chair Powers* below.
 
+TODO: Ask if there are too many Chair Powers. Maybe 7 or 8 would be better.
 
 ---
 
@@ -67,7 +70,8 @@ The game is played over six rounds.
  - Otherwise, the player to the left of the previous Chair becomes the new Chair.
 2. **Chair Power:** The Chair draws a Power card and places it face-up on the table.
 3. **Executive Agendas:** Each Executive draws one Agenda card, looks at it secretly, and places it face-down.
-4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player, then deal the last extra card to the Chair player. (The Chair will have at least one card left over in their hand at the end of the Quarter.)
+4. **Execuitve Actions**: Each Executive draws one Action card and places it face-up o the table.
+4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player.
 5. **Sprints:** Play 10 sprints using the Sprint Cycle rules.
 6. **Score:**
  - The Chair scores +3 points if the Chair won 5 or more tricks this Quarter.
@@ -122,6 +126,7 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 Prank effects resolve during Parking Lot Items. If multiple Pranks are played in the same trick, they resolve in alphabetical order: Cat, Devil, Hound, Shark, Snitch.
 
+
 ### The Cat (Clubs Prank)
 
 The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal they must approve.
@@ -139,7 +144,7 @@ The Hound-player names one Executive and secretly looks at that Executive's hand
 
 ### The Shark (Shares Prank)
 
-The Shark-player takes one card from the sprint and adds it to their hand. The selected card must be from one of the four traditional suits: Clubs, Diamonds, Hearts, or Spades. It may not be a Wild card or a Shares card. (The Shark-player will end the Quarter with at least one left-over card.)
+The Shark-player names one Executive. The named Executive must reveal all the Shares cards in their hand, or state that they have none. The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
 
 
 ### The Snitch (Spades Prank)
@@ -163,36 +168,64 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 
 **Climb the Ladder**
-- Win Condition: Win the most tricks of any Executive this Quarter.
-- (Ties don't count. The Chair doesn't count.)
-- Reveal Action: "Push the Envelope" During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
+You win the most tricks of any Executive this Quarter. (Ties don't count. The Chair doesn't count.)
 
 
 **Corporate Sabotage**
-- Win Condition: At least one Executive (not including you) wins zero tricks this Quarter.
-- Reveal Action: "Pushback" When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's reveal action has no effect, and remains face-up.
+At least one Executive (not including you) does not win any tricks this Quarter.
 
 
 **Dedication to the Company**
-- Win Condition: The Chair wins 5 or more tricks this Quarter.
-- Reveal Action: "Shared Victory" when you win a trick, you may flip your Agenda card face-up. If you do so, the Chair wins the trick instead.
+The Chair wins 5 or more tricks this Quarter.
 
 
-**Hostile Takeover x2**
-- Win Condition: The Chair wins fewer than 5 tricks this Quarter.
-- Reveal Action: "Forcing Function" During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
-- Note: This Agenda appears in the deck twice.
+**Hostile Takeover**
+The Chair wins fewer than 5 tricks this Quarter.
 
 
 **Severance Package**
-- Win Condition: Don't win any tricks this Quarter.
-- Reveal Action: "Dodge a Bullet" when you win a trick, you may flip your Agenda card face-up. If you do so, remove the won trick from the game. It doesn't count.
+You do not win any tricks this Quarter.
 
 
 **Team Player**
-- Win Condition: Each Executive (including you) wins at least one trick this Quarter.
-- Reveal Action: "All Hands" During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do so, the Chair must play a losing card if possible, while still following suit.
+Each Executive (including you, not including the Chair) wins at least one trick this Quarter.
 
+
+---
+
+## Executive Actions
+
+
+**Forcing Function**
+During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
+(Force the Chair to approve.)
+
+
+**On the Same Page**
+Special: Use this Action without revealing your Agenda card.
+
+When another Executive flips their Agenda card face-up and plays their Action, flip this card face-down. After their Action resolves, take their card and move it in front of you. This is now your new Action card. Flip your Agenda face-up in order to use it.
+(Copy another Executive's Action.)
+
+
+**Push the Envelope**
+During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
+(Redo your deliverable.)
+
+
+**Pushback**
+When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's Action has no effect, and their Agenda remains face-up.
+(Cancel another Executive's Action.)
+
+
+**Shared Victory**
+When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
+(Give your won trick away.)
+
+
+**Team Building Exercise**
+During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
+(Force the Chair to lose the trick.)
 
 ---
 
@@ -243,7 +276,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 **Performance Bonus**
 - Name any card, for example "Jack of Hearts".
-- If an Executive has the nammed card in their hand, they may reveal it.
+- If an Executive has the named card in their hand, they may reveal it.
 - You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
 - The Executive immediately adds +1 to their score.
 - Timing: This power may be played at any time.
