@@ -48,9 +48,8 @@ Five suits of 12 cards.
 
 ### Powers Deck
 
-~10 Power cards. The current Chair has one public Power per Quarter. See *Chair Powers* below.
+~8 Power cards. The current Chair has one public Power per Quarter. See *Chair Powers* below.
 
-TODO: Ask if there are too many Chair Powers. Maybe 7 or 8 would be better.
 
 ---
 
@@ -129,7 +128,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 ### The Cat (Clubs Prank)
 
-The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal they must approve.
+The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal they must approve. The Cat has no effect during the final sprint of the Quarter.
 
 
 ### The Devil (Diamonds Prank)
@@ -262,25 +261,19 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - Timing: This power may only be played during Chair Approval.
 
 
-**Mission Statement**
-- The Chair names a suit during Sprint Planning, before telling Executives to reveal their proposals.
-- The named suit acts as the greater Trump until the end of the current sprint.
-- The greater trump suit beats any Shares cards.
-- Timing: This power may only be played during Sprint Planning, before Executives reveal their proposals.
-
-
 **PIP**
 - Target one Executive during the Call.
 - That Executive must play an additional card for the current trick. Follow suit rules still apply.
 - The Executive then takes their original deliverable and adds it to their hand.
-- Timing: This power may only be played during the Call.
+- PIP cannot target the Executive whose proposal was approved for this sprint.
+- Timing: This power may only be played during the Call. If an Executive also plays "Team Building Exercise," the Chair decides which effect to resolve first.
 
 
 **Performance Bonus**
 - Name any card, for example "Jack of Hearts".
 - If an Executive has the named card in their hand, they may reveal it.
 - You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
-- The Executive immediately adds +1 to their score.
+- If you take their card, the Executive immediately adds +1 to their score.
 - Timing: This power may be played at any time.
 
 
@@ -288,15 +281,6 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - Target one Executive and place this card face-up in front of them.
 - They become Vice Chair for the remainder of the Quarter.
 - The Vice Chair scores +1 if the Chair achieves wins 5 or more tricks this Quarter, and -1 if the Chair fails.
-- Timing: This power may be played at any time.
-
-
-**Reorg**
-- The Chair puts their hand face down on the table.
-- The Chair names three Executives.
-- Their proposals remain face-up on the table.
-- Each named Executive secretly passes one card from their hand to the Chair.
-- The Chair looks at the three cards, and secretly passes one card back to each of the three Executives.
 - Timing: This power may be played at any time.
 
 
