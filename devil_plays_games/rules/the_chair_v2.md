@@ -289,7 +289,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 - Timing: This power may only be played during the Call. If an Executive also plays an Action, the Chair decides which effect to resolve first.
 
 
-**Status Update:**
+**Status Update**
 - The Chair names a suit.
 - Each Executive must reveal a card of that suit.
 - If the Executive does not have a card of that suit, they must show any one card from their hand.
