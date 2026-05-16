@@ -1,0 +1,289 @@
+# The Chair
+
+A six-player trick-taking game of corporate politics.
+
+(Work in progress)
+
+## Premise
+
+Six players. One holds **the Chair**. The others are **Executives**, each with a hidden **Agenda**. It's a game of winner-take-all corporate politics.
+
+Welcome to the boardroom. This is your Chair.
+
+---
+
+## Components
+
+### Playing Deck (61 cards)
+
+**Four standard suits**
+- Spades, Hearts, Diamonds, Clubs
+- 12 cards each (48 total): Prank (3), 4-10, Jack, Queen, King, Ace.
+
+Standard rank order. Ace high. (The 3 of each suit is also that suit's Prank card — see below.)
+
+**Trump Suit: Shares** (the trump suit) — 12 cards:
+
+The Shark (3), 4-10, Class C Shares, Class B Shares, Class A Shares, Golden Shares.
+
+The Shark (3) is the lowest. Golden Shares is the highest. Any Shares beats any non-Share card regardless of rank.
+
+**Prank cards** — 4 cards, one per traditional suit, replacing the 3 in that suit:
+
+- **The Cat** (Clubs)
+- **The Devil** (Diamonds)
+- **The Hound** (Hearts)
+- **The Shark** (Shares)
+- **The Snitch** (Spades)
+
+Pranks are the lowest card in their suit. See *Prank Card Effects* below.
+
+**Wild Card: The Joker**
+- Wins any trick.
+- Always counts as following suit.
+
+
+### Agenda Deck
+
+~7 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
+
+### Powers Deck
+
+~10 Power cards. The current Chair has one public Power per Quarter. See *Chair Powers* below.
+
+
+---
+
+## The Term
+
+Each game is played over six rounds.
+- Each round is called a Quarter.
+- Together all six Quarters form the Term.
+- Most points at the end wins.
+- The Chair rotates each Quarter.
+
+
+### Setup
+
+1. Choose the first Chair arbitrarily (random draw, oldest player, etc.).
+3. Begin Quarter 1.
+
+
+### Each Quarter
+
+1. **Chair Rotation:**:
+ - If this is the first Quarter, choose the first Chair player arbitrarily (random draw, oldest player, etc).
+ - Otherwise, the player to the left of the previous Chair becomes the Chair for this Quarter.
+2. **Chair Power:** The Chair draws a Power card and places it face-up on the table.
+3. **Executive Agendas:** Each Executive draws one Agenda card, looks at it secretly, and keeps it face-down.
+4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player, then deal the last extra card to the Chair player.
+5. **Play 10 sprints** using the Sprint Cycle rules.
+6. **Score:** Score +2 points for any Agenda whose conditions were met. Score +3 points for the Chair Goal if achieved.
+7. **Retirement:** The current Chair discards their Power card, removing it from play for the rest of the Term.
+
+
+### Winner of the Game
+
+After the final Quarter, the player with the most cumulative points wins. If there's a tie, then there's a tie. You've met your match!
+
+---
+
+## The Sprint Cycle
+
+Each sprint starts with proposals from all the Executives.
+
+### Each Sprint
+
+1. **Sprint Planning:**
+   - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
+   - If this sprint has a Chief Executive, that player waits before selecting a proposal.
+   - Once all proposals are placed, the Chair tells Executives to reveal their proposals simultaneously.
+   - If this sprint has a Chief Executive, the Chair tells them to select a proposal from their hand and reveal it.
+2. **Chair Approval:**
+   - The Chair reviews the proposals.
+   - The Chair approves one proposal.
+   - The selected proposal becomes the **lead card** for this trick.
+3. **Deliverables:**
+   - Rejected Executives return their proposal cards to their hand.
+   - Each rejected Executive then places one card face-down as their deliverable. This is the card they will play in the current trick, and must follow suit if possible.
+   - Once all deliverables are placed, the Chair tells Executives to reveal their deliverables simultaneously.
+4. **The Call:**
+   - The Chair reviews all the deliverables for this sprint.
+   - The Chair plays a card from their hand, following suit if possible.
+5. **Parking Lot Items:**
+   - Prank cards resolve their effects now (see *Prank Card Effects*).
+6. **Regulatory Reporting:**
+   - The trick is resolved: highest Share wins. Otherwise, highest card of the lead suit wins.
+   - The winner collects the cards into their trick pile.
+   - If the winner is an Executive (and not the Chair), then the Executive serves as Chief Executive for the next sprint.
+   - If the winnder is The Chair, the next sprint has no Chief Executive.
+
+
+### Proposal Rules
+
+- Executives may propose any card from their hand.
+- An Executive whose proposal is selected does *not* play a deliverable that trick — their proposal *is* their card for that trick. This is the lead card.
+- The Chief Executive for a sprint may propose a card after viewing all other proposals.
+- After the The Chair approves a proposal, each rejected Executive returns their proposal to hand and selects a deliverable.
+- When selecting a deliverable, all Executives must follow the suit or the lead card if they can. Otherwise, they may play any card.
+
+---
+
+## Prank Card Effects
+
+Prank effects resolve during Parking Lot Items. If multiple Pranks are played in the same trick, they resolve in alphabetical order: Cat, Devil, Hound, Shark, Snitch.
+
+### The Cat (Clubs Prank)
+
+The Cat-player names any one Executive. The Cat-player may name themselves. During the next Chair Approval, the named Executive tells the Chair which proposal to accept.
+
+
+### The Devil (Diamonds Prank)
+
+The Devil-player names two other players (one may be themselves). Those two players must exchange one card face-down from their hands. Only those two players know the identity of the exchanged cards.
+
+### The Hound (Hearts Prank)
+
+The Hound-player names one Executive and secretly looks at that Executive's hand. The Hound-player may not target the Chair, only Executives.
+
+### The Shark (Shares Prank)
+
+The Shark-player takes one card from the sprint and adds it to their hand. The selected card must be from one of the four traditional suits: Clubs, Diamonds, Hearts, or Spades. It may not be a Wild card or a Shares card. (The Shark-player will end the Quarter with at least one left-over card.)
+
+
+### The Snitch (Spades Prank)
+
+The Snitch-player names one Executive. That Executive must flip their Agenda card face-up for the rest of the Quarter. Their Agenda is now public knowledge.
+
+
+## The Chair's Goal
+
+- Each Quarter, the Chair's goal is always the same: To win 5 or more tricks.
+- If the Chair achieves this goal by the end of the Quarter, they score +3 points.
+
+
+## Agendas
+
+- Each Executive draws one random Agenda per Quarter, secretly looks at it, and then places it face-down on the table.
+- Each Agenda is hidden until the end of the Quarter, unless a special card or effect reveals it.
+- Each Agenda has a Win Condition and a Reveal Action.
+- Each Executive that meets their Win Condition scores +2 points at the end of the Quarter.
+- An Agenda's "Reveal Action" gives an Executive a special power they can use once per Quarter, at the cost of revealing their Agenda.
+
+
+**Climb the Ladder**
+- Win Condition: Win the most tricks of any Executive this Quarter.
+- (Ties don't count. The Chair doesn't count.)
+- Reveal Action: "Push the Envelope" During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
+
+
+**Corporate Sabotage**
+- Win Condition: At least one Executive (not including you) wins zero tricks this Quarter.
+- Reveal Action: "Pushback" When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's reveal action has no effect, and remains face-up.
+
+
+**Dedication to the Company**
+- Win Condition: The Chair achieves their goal this Quarter.
+- Reveal Action: "Shared Victory" when you win a trick, you may flip your Agenda card face-up. If you do so, the Chair wins the trick instead.
+
+
+**Hostile Takeover x2**
+- Win Condition: The Chair fails to achieve their goal this Quarter.
+- Reveal Action: "Forcing Function" During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
+- Note: This Agenda appears in the deck twice.
+
+
+**Severance Package**
+- Win Condition: Don't win any tricks this Quarter.
+- Reveal Action: "Dodge a Bullet" when you win a trick, you may flip your Agenda card face-up. If you do so, the Chair wins the trick instead.
+
+
+**Team Player**
+- Win Condition: Each Executive (including you) wins at least one trick this Quarter.
+- Reveal Action: "On the Same Page" When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, flip the other Executive's Agenda face-down. Their reveal action still takes effect.
+
+
+---
+
+## Chair Powers
+
+- The Chair draws one random Power card at the start of each Quarter, and then places it face-up on the table.
+- The Chair flips the Power card face-down after using it.
+
+
+**Audit**
+- The Chair targes one Executive, calling for an audit.
+- The Chair secretly views the target Executive's Agenda.
+- The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
+- The Agenda's Reveal Action does not take effect.
+- Timing: This power may be played at any time.
+
+
+**Executive Order**
+- Use this power during Chair Approval.
+- All proposals are placed on the table, forming a trick.
+- The Chair adds any one card from their hand to the trick, and then automatically wins the trick.
+- Timing: This power may only be played during Chair Approval.
+
+
+**I need ideas, people!**
+- Name a suit during Chair Approval.
+- Executives leave their current proposal face-up on the table and place a second proposal face-down on the table as a second proposal.
+- If an Executive has a card of the named suit, this second proposal must be of the named suit.
+- Once all proposals are placed, The Chair tells Executives to reveal their second proposals.
+- The sprint then proceeds as normal, only with more proposals this time.
+- The Chair may select any proposal, from either the first set or the second set.
+- Timing: This power may only be played during Chair Approval.
+
+
+**Mission Statement**
+- The Chair names a suit during Sprint Planning, before telling Executives to reveal their proposals.
+- The named suit acts as the greater Trump until the end of the current sprint.
+- The greater trump suit beats any Shares cards.
+- Timing: This power may only be played during Sprint Planning, before Executives reveal their proposals.
+
+
+**PIP**
+- Target one Executive during The Call.
+- That Executive must play an additional card for the current trick. Follow suit rules still apply.
+- The Executive then takes their original deliverable and adds it to their hand.
+- Timing: This power may only be played during The Call.
+
+
+**Performance Bonus**
+- Name any card, for example "Jack of Hearts".
+- If an Executive has the nammed card in their hand, they may reveal it.
+- You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
+- The Executive immediately adds +1 to their score.
+- Timing: This power may be played at any time.
+
+
+**Promotion**
+- Target one Executive and place this card face-up in front of them.
+- They become Vice Chair for the remainder of the Quarter.
+- The Vice Chair scores +1 if the Chair achieves their goal, and -1 if the Chair fails it.
+- Timing: This power may be played at any time.
+
+
+**Reorg**
+- The Chair puts their hand face down on the table.
+- The Chair names three Executives.
+- Their proposals remain face-up on the table.
+- Each named Executive secretly passes one card from their hand to the Chair.
+- The Chair looks at the three cards, and secretly passes one card back to each of the three Executives.
+- Timing: This power may be played at any time.
+
+
+**Status Update:**
+- The Chair names a suit.
+- Each Executive must reveal a card of that suit.
+- If the Executive does not have a card of that suit, they must show any one card from their hand.
+- Timing: This power may be played at any time.
+
+
+**You’re on mute**
+- Target one Executive during Chair Approval.
+- Their proposal is placed on the table face-down.
+- The face-down card is included in the sprint, but has no effect and cannot win the trick.
+- The target player does not play a deliverable this sprint.
+- Timing: This power may only be played during Chair Approval.
