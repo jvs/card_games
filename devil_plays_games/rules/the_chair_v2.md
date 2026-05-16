@@ -174,12 +174,12 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 
 
 **Dedication to the Company**
-- Win Condition: The Chair achieves their goal this Quarter.
+- Win Condition: The Chair wins 5 or more tricks this Quarter.
 - Reveal Action: "Shared Victory" when you win a trick, you may flip your Agenda card face-up. If you do so, the Chair wins the trick instead.
 
 
 **Hostile Takeover x2**
-- Win Condition: The Chair fails to achieve their goal this Quarter.
+- Win Condition: The Chair wins fewer than 5 tricks this Quarter.
 - Reveal Action: "Forcing Function" During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approval your proposal.
 - Note: This Agenda appears in the deck twice.
 
@@ -252,7 +252,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 **Promotion**
 - Target one Executive and place this card face-up in front of them.
 - They become Vice Chair for the remainder of the Quarter.
-- The Vice Chair scores +1 if the Chair achieves their goal, and -1 if the Chair fails it.
+- The Vice Chair scores +1 if the Chair achieves wins 5 or more tricks this Quarter, and -1 if the Chair fails.
 - Timing: This power may be played at any time.
 
 
