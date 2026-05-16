@@ -88,9 +88,9 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
-   - If this sprint has a Chief Executive, that player waits before selecting a proposal.
+   - If this sprint has a Point Person, that player waits before selecting a proposal.
    - Once all proposals are placed, the Chair tells Executives to reveal their proposals.
-   - Finally, the Chair tells the Chief Executive to select a proposal from their hand and reveal it. (Skip if there's no Chief.)
+   - Finally, the Chair tells the Point Person to select a proposal from their hand and reveal it. (Skip if there's no Point.)
 2. **Chair Approval:**
    - The Chair approves one proposal.
    - The approved proposal becomes the **lead card** for this trick.
@@ -105,15 +105,15 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 6. **Regulatory Reporting:**
    - The trick is resolved: highest trump card wins. Otherwise, highest card of the lead suit wins.
    - The winner collects the cards into their trick pile.
-   - If the winner is an Executive, they serve as Chief Executive for the next sprint.
-   - If the winner is The Chair, the next sprint has no Chief Executive.
+   - If the winner is an Executive, they serve as Point Person for the next sprint.
+   - If the winner is The Chair, the next sprint has no Point Person.
 
 
 ### Proposal Rules
 
 - Executives may propose any card from their hand.
 - An Executive whose proposal is selected does *not* play a deliverable that trick — their proposal *is* their card for that trick. This is the lead card.
-- The Chief Executive for a sprint may propose a card after viewing all other proposals.
+- The Point Person for a sprint may propose a card after viewing all other proposals.
 - After the The Chair approves a proposal, each rejected Executive returns their proposal to hand and selects a deliverable.
 - When selecting a deliverable, all Executives must follow the suit or the lead card if they can. Otherwise, they may play any card.
 
@@ -192,7 +192,13 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 ## Executive Actions
 
 - Each Executive draws one random Action per Quarter and places it face-up on the table.
-- Most Actions require the Executive to flip their Agenda face-up. If their Agenda is already face-up, the Executive cannot use their Action.
+- Actions require the Executive to flip their Agenda face-up. If their Agenda is already face-up, the Executive cannot use their Action.
+- Actions can only be activated by the Executive who holds them. If an external effect flips your Agenda face-up, this does not activate your Action.
+
+
+**360 Review**
+- During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
+- (Force the Chair to lose the trick.)
 
 
 **Forcing Function**
@@ -200,7 +206,17 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - (Force the Chair to approve.)
 
 
-**On the Same Page**
+**In light of recent developments...**
+- During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
+- (Redo your deliverable.)
+
+
+**Knowledge Transfer**
+- When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
+- (Give your won trick away.)
+
+
+**Piggyback**
 - Special: Use this Action without revealing your Agenda card.
 - When another Executive flips their Agenda card face-up and plays their Action, you may discard this card. If you do, wait for their Action card to resolve, and then take the Executive's Action card and move it in front of you. This is now your new Action card.
 - (Later, you will need to flip your Agenda face-up in order to use it, as usual.)
@@ -208,24 +224,9 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - (Copy another Executive's Action.)
 
 
-**Push the Envelope**
-- During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
-- (Redo your deliverable.)
-
-
 **Pushback**
 - When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's Action has no effect, and their Agenda remains face-up.
 - (Cancel another Executive's Action.)
-
-
-**Shared Victory**
-- When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
-- (Give your won trick away.)
-
-
-**Team Building Exercise**
-- During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
-- (Force the Chair to lose the trick.)
 
 ---
 
@@ -239,7 +240,13 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - The Chair targets one Executive, calling for an audit.
 - The Chair secretly views the target Executive's Agenda.
 - The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
-- The Executive's Action does not take effect.
+- Timing: This power may be played at any time.
+
+
+**Executive Assitant**
+- Target one Executive and place this card face-up in front of them.
+- They become Executive Assistant for the remainder of the Quarter.
+- The Executive Assistant scores +1 if the Chair achieves wins 5 or more tricks this Quarter, and -1 if the Chair fails.
 - Timing: This power may be played at any time.
 
 
@@ -248,6 +255,14 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - All proposals are placed on the table, forming a trick.
 - The Chair adds any one card from their hand to the trick, and then automatically wins the trick.
 - Timing: This power may only be played during Chair Approval.
+
+
+**Golden Handcuffs**
+- Name any card, for example "Jack of Hearts".
+- If an Executive has the named card in their hand, they may reveal it.
+- You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
+- If you take their card, the Executive immediately adds +1 to their score.
+- Timing: This power may be played at any time.
 
 
 **I need ideas, people!**
@@ -265,22 +280,7 @@ The Snitch-player names one Executive. That Executive must flip their Agenda car
 - That Executive must play an additional card for the current trick. Follow suit rules still apply.
 - The Executive then takes their original deliverable and adds it to their hand.
 - PIP cannot target the Executive whose proposal was approved for this sprint.
-- Timing: This power may only be played during the Call. If an Executive also plays "Team Building Exercise," the Chair decides which effect to resolve first.
-
-
-**Performance Bonus**
-- Name any card, for example "Jack of Hearts".
-- If an Executive has the named card in their hand, they may reveal it.
-- You may then add the revealed card to your hand, secretly exchanging it for a card from your hand.
-- If you take their card, the Executive immediately adds +1 to their score.
-- Timing: This power may be played at any time.
-
-
-**Promotion**
-- Target one Executive and place this card face-up in front of them.
-- They become Vice Chair for the remainder of the Quarter.
-- The Vice Chair scores +1 if the Chair achieves wins 5 or more tricks this Quarter, and -1 if the Chair fails.
-- Timing: This power may be played at any time.
+- Timing: This power may only be played during the Call. If an Executive also plays an Action, the Chair decides which effect to resolve first.
 
 
 **Status Update:**
