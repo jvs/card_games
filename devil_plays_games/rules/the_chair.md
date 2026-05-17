@@ -37,24 +37,24 @@ Five suits of 12 cards.
 
 ### Agenda Deck
 
-~6 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
+6 Agenda cards. Each Executive draws one secret Agenda per Quarter. See *Agendas* below.
 
 
 ### Actions Deck
 
-~6 Action cards. Each Executive draws one Action card per Quarter. See *Executive Actions* below.
+6 Action cards. Each Executive draws one Action card per Quarter. See *Executive Actions* below.
 
 
 ### Powers Deck
 
-~7 Power cards. The current Chair has one Power per Quarter. See *Chair Powers* below.
+7 Power cards. The Chair draws one Power per Quarter. See *Chair Powers* below.
 
 
 ---
 
 ## The Game
 
-The game is played over six rounds.
+The game is played over 6 rounds.
 
 - Each round is called a Quarter.
 - The Chair rotates each Quarter.
@@ -72,9 +72,9 @@ The game is played over six rounds.
 4. **Deal:** Shuffle the playing deck. Deal 10 cards to each player.
 5. **Sprints:** Play 10 sprints using the Sprint Cycle rules.
 6. **Score:**
- - The Chair scores +3 points if the Chair won 5 or more tricks this Quarter.
- - Each Executive scores +2 points if they met their Agenda's win condition.
-7. **Retirement:** The current Chair discards their Power card, removing it from play for the rest of the game.
+ - The Chair scores +3 points if the Chair wins 5 or more tricks this Quarter.
+ - Each Executive scores +2 points if they meet their Agenda's win condition.
+7. **Retirement:** The Chair discards their Power card, removing it from play for the rest of the game.
 
 
 ### Winning the Game
@@ -86,21 +86,20 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ## The Sprint Cycle
 
-Throughout the game, when cards are revealed, the Chair calls for the reveal and all cards are flipped simultaneously.
+Throughout the game, when cards are revealed, the Chair tells Executives when to reveal them. All cards are flipped simultaneously.
 
 
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Point Person, that player waits before selecting a proposal.
    - Once all proposals are placed, Executives reveal their proposals.
-   - Finally, the Point Person to select a proposal from their hand and reveal it. (Skip if there's no Point.)
+   - Finally, the Point Person selects a proposal from their hand and reveals it. (Skip if there's no Point.)
 2. **Chair Approval:**
-   - The Chair approves one proposal.
-   - The approved proposal becomes the **lead card** for this trick.
+   - The Chair approves one proposal, making it the **lead card** for this trick.
 3. **Deliverables:**
-   - Rejected Executives return their proposal cards to their hand.
-   - Each rejected Executive then places one card face-down as their deliverable. This is the card they will play in the current trick, following suit if possible.
-   - Once all deliverables are placed, Executives reveal their deliverables.
+   - Rejected Executives return their proposals to their hand.
+   - Each rejected Executive then places one card face-down as their deliverable. This is the card they are playing in the current trick, following suit if possible.
+   - Once all cards are placed, Executives reveal their deliverables.
 4. **The Call:**
    - The Chair plays a card from their hand, following suit if possible.
 5. **Parking Lot Items:**
@@ -132,21 +131,22 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 - The Cat-player names any one Executive.
 - During the next Chair Approval, the named Executive tells the Chair which proposal they must approve.
-- The Cat has no effect during the final sprint of the Quarter.
 - The Cat-player may name themselves.
+- The Cat has no effect during the final sprint of the Quarter.
 
 
 ### The Devil (Diamonds)
 
-- The Devil-player names two other players.
-- Those two players secretly exchange one card face-down from their hands. (Only those two players know the identity of the exchanged cards.)
-- The Devil-player may target themselves, or the Chair, or any Executive.
+- The Devil-player names two players.
+- Those two players secretly exchange one card face-down from their hands.
+- (Only those two players know the identity of the exchanged cards.)
+- The Devil-player may name any two Players, including themselves, the Chair, or any Executive.
 
 
 ### The Hound (Hearts)
 
-- The Hound-player names one Executive and secretly looks at that Executive's hand.
-- The Hound-player may not target the Chair.
+- The Hound-player names one Executive and secretly looks at their hand.
+- The Hound-player may not name the Chair.
 
 
 ### The Shark (Shares)
@@ -154,7 +154,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 - The Shark-player names one Executive.
 - The named Executive must reveal all Shares cards in their hand, or state that they have none.
 - The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
-- The Shark-player may not target the Chair.
+- The Shark-player may not name the Chair.
 
 
 ### The Snitch (Spades)
@@ -167,7 +167,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 ## The Chair's Quarterly Target
 
 - Each Quarter, the Chair's aim is always the same: To win 5 or more tricks.
-- If the Chair achieves their target by the end of the Quarter, they score +3 points.
+- If the Chair achieves their Target by the end of the Quarter, they score +3 points.
 
 
 ## Agendas
@@ -186,11 +186,11 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 
 **Dedication to the Company**
-- The Chair wins 5 or more tricks this Quarter.
+- The Chair meets their Quarterly Target (wins 5 or more tricks).
 
 
 **Hostile Takeover**
-- The Chair wins fewer than 5 tricks this Quarter.
+- The Chair does not meet their Quarterly Target (wins fewer than 5 tricks).
 
 
 **Severance Package**
@@ -251,14 +251,14 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 
 **Audit**
-- The Chair targets one Executive, calling for an audit.
-- The Chair secretly views the target Executive's Agenda.
+- The Chair names one Executive, calling for an audit.
+- The Chair secretly views the Executive's Agenda.
 - The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
 - Timing: This power may be played at any time during the Quarter.
 
 
 **Executive Assistant**
-- Target one Executive and place this card face-up in front of them.
+- Name one Executive and place this card face-up in front of them.
 - The Executive scores +1 if the Chair achieves their Quarterly Target, and -1 if the Chair fails.
 - Timing: This power may be played at any time during the Quarter.
 
@@ -282,10 +282,10 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 
 **PIP**
-- Target one Executive during the Call.
+- Name one Executive during the Call.
 - That Executive must play an additional card for the current trick. Follow suit rules still apply.
 - The Executive then takes their original deliverable and adds it to their hand.
-- PIP cannot target the Executive whose proposal was approved for this sprint.
+- PIP cannot name the Executive whose proposal was approved for this sprint.
 - Timing: This power may only be played during the Call. If an Executive also plays an Action, the Chair decides which effect to resolve first.
 
 
@@ -297,8 +297,8 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 
 **You’re on mute**
-- Target one Executive during Chair Approval.
+- Name one Executive during Chair Approval.
 - Their proposal is placed on the table face-down.
 - The face-down card is included in the sprint, but has no effect and cannot win the trick.
-- The target player does not play a deliverable this sprint.
+- The Executive does not play a deliverable this sprint.
 - Timing: This power may only be played during Chair Approval.
