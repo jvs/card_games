@@ -91,14 +91,15 @@ Throughout the game, when cards are revealed, the Chair tells Executives when to
 
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
-   - If this sprint has a Point Person, that player waits before selecting a proposal.
+   - If this sprint has a Point Person, that player waits before selecting their proposal.
    - Once all proposals are placed, Executives reveal their proposals.
    - Finally, the Point Person selects a proposal from their hand and reveals it. (Skip if there's no Point.)
 2. **Chair Approval:**
    - The Chair approves one proposal, making it the **lead card** for this trick.
 3. **Deliverables:**
-   - Rejected Executives return their proposals to their hand.
-   - Each rejected Executive then places one card face-down as their deliverable. This is the card they are playing in the current trick, following suit if possible.
+   - Each rejected Executive returns their proposal to their hand.
+   - Each then places one card face-down as their deliverable.
+   - This is the card they are playing in the current trick, following suit if possible.
    - Once all cards are placed, Executives reveal their deliverables.
 4. **The Call:**
    - The Chair plays a card from their hand, following suit if possible.
@@ -108,23 +109,23 @@ Throughout the game, when cards are revealed, the Chair tells Executives when to
    - The trick is resolved: highest trump card wins. Otherwise, highest card of the lead suit wins.
    - The winner collects the cards into their trick pile.
    - If the winner is an Executive, they serve as Point Person for the next sprint.
-   - If the winner is The Chair, the next sprint has no Point Person.
+   - If the winner is the Chair, the next sprint has no Point Person.
 
 
 ### Proposal Rules
 
 - Executives may propose any card from their hand.
-- An Executive whose proposal is selected does *not* play a deliverable that trick — their proposal *is* their card for that trick. This is the lead card.
-- The Point Person for a sprint may propose a card after viewing all other proposals.
-- After the Chair approves a proposal, each rejected Executive returns their proposal to hand and selects a deliverable.
-- When selecting a deliverable, all Executives must follow the suit or the lead card if they can. Otherwise, they may play any card.
+- An Executive whose proposal is approved does *not* play a deliverable that trick — their proposal *is* their card for that trick. It is the lead card.
+- The Point Person for a sprint proposes a card after viewing all other proposals.
+- After the Chair approves a proposal, each rejected Executive returns their proposal to their hand and selects a deliverable.
+- When selecting a deliverable, each Executive must follow the suit or the lead card if they can. Otherwise, they may play any card.
 
 
 ---
 
 ## Prank Cards
 
-Prank effects resolve during Parking Lot Items. If multiple Pranks are played in the same trick, they resolve in alphabetical order: Cat, Devil, Hound, Shark, Snitch.
+Prank effects happen during Parking Lot Items. If multiple Pranks are played in the same trick, resolve them in alphabetical order: Cat, Devil, Hound, Shark, Snitch.
 
 
 ### The Cat (Clubs)
@@ -137,9 +138,9 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 ### The Devil (Diamonds)
 
-- The Devil-player names two players.
+- The Devil-player names any two players.
 - Those two players secretly exchange one card face-down from their hands.
-- (Only those two players know the identity of the exchanged cards.)
+- (Only those two players know which cards are exchanged.)
 - The Devil-player may name any two Players, including themselves, the Chair, or any Executive.
 
 
@@ -167,7 +168,7 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 ## The Chair's Quarterly Target
 
 - Each Quarter, the Chair's aim is always the same: To win 5 or more tricks.
-- If the Chair achieves their Target by the end of the Quarter, they score +3 points.
+- If the Chair hits their Target by the end of the Quarter, they score +3 points.
 
 
 ## Agendas
@@ -178,7 +179,8 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 
 
 **Climb the Ladder**
-- You win the most tricks of any Executive this Quarter. (Ties don't count. The Chair doesn't count.)
+- You win the most tricks of any Executive this Quarter.
+- Ties don't count. The Chair doesn't count.
 
 
 **Corporate Sabotage**
@@ -206,41 +208,44 @@ Prank effects resolve during Parking Lot Items. If multiple Pranks are played in
 ## Executive Actions
 
 - Each Executive draws one random Action per Quarter and places it face-up on the table.
-- Actions require the Executive to flip their Agenda face-up. If their Agenda is already face-up, the Executive cannot use their Action.
+- Actions require the Executive to flip their Agenda face-up.
+- If their Agenda is already face-up, the Executive cannot use their Action.
 - Actions can only be activated by the Executive who holds them. If an external effect flips your Agenda face-up, this does not activate your Action.
 
 
 **360 Review**
 - During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
-- (Force the Chair to lose the trick.)
+- (In short: Force the Chair to lose the trick.)
 
 
 **Forcing Function**
 - During any sprint's proposal phase, after proposals are revealed face-up but before the Chair approves one, you may flip your Agenda card face-up. If you do, the Chair must approve your proposal.
-- (Force the Chair to approve.)
+- (In short: Force the Chair to approve.)
 
 
 **In light of recent developments...**
 - During Parking Lot Items, you may flip your Agenda card face-up. If you do, you may add a second deliverable to the sprint, following suit if possible. Then take your original deliverable from the sprint and return it to your hand.
-- (Redo your deliverable.)
+- (In short: Redo your deliverable.)
 
 
 **Piggyback**
+- (Copy another Executive's Action.)
 - Special: Use this Action without revealing your Agenda card.
 - When another Executive flips their Agenda card face-up and plays their Action, you may discard this card. If you do, wait for their Action card to resolve, and then take the Executive's Action card and move it in front of you. This is now your new Action card.
 - (Later, you will need to flip your Agenda face-up in order to use it, as usual.)
 - Timing: This effect does not interact with other effects. After an Executive plays their Action, you can take their card and use it later.
-- (Copy another Executive's Action.)
+- Your Agenda card must be face-down to use this Action.
+- (In short: Copy another Executive's Action and use it later.)
 
 
 **Pushback**
 - When another Executive flips their Agenda card face-up, you may flip your Agenda card face-up. If you do, the other Executive's Action has no effect, and their Agenda remains face-up.
-- (Cancel another Executive's Action.)
+- (In short: Cancel another Executive's Action.)
 
 
 **Team Effort**
 - When you win a trick, you may flip your Agenda card face-up. If you do, name another Executive. They win the trick instead.
-- (Give your won trick away.)
+- (In short: Give your won trick away.)
 
 ---
 
