@@ -1,26 +1,25 @@
 # Final Run
 
-A two-player trick-taking spy thriller.
-
-(Work in progress)
+A two-player cooperative trick-taking game with hidden information and restricted communication.
 
 ---
 
 ## Premise
 
-You play as The Specialist and The Fixer, two operatives working for The Company.
+You play as **The Specialist** and **The Fixer**, two operatives working for The Company.
 
-The Specialist is a deep cover agent embedded within The Family. Recently, their handler was burned.
+The Specialist is an undercover agent in The Family. But their handler was burned.
 
-So the Company has sent the Fixer to extract The Specialist. But only after they finish five last jobs...
+So the Company is sending the Fixer to extract the Specialist. But only after they finish five last jobs...
 
-This is your Final Run.
+*This is your Final Run.*
+
 
 ## Structure
 
-Each **Run** is played over 5 rounds (or "jobs"). The Specialist executes operations for the Family (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs, or sooner if they hit their target. Both players win or lose together.
+Each **Run** is played over 5 rounds. The Specialist executes operations for the Family (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs. Both players win or lose together.
 
-Players may not share information about their cards or intentions except through Ghost cards, Prank abilities, the Fox, and the information revealed through normal card play. Reactions and table talk are fine — just don't smuggle strategy into them.
+Players may not share information about their cards or intentions except through Ghost cards, Prank abilities, the Fox, and the information revealed through normal card play. Reactions and table talk are fine — just don't smuggle strategy into them. Try not to let on too much!
 
 ---
 
@@ -74,7 +73,7 @@ A Run is five jobs. Each job follows the same structure.
 
 1. The Specialist draws **3 Job cards**, picks one, places it face-up on the table. The other two go back to the Job deck.
 2. The card determines the **trump suit** for this job.
-3. The Fixer draws **3 Objective cards**, picks one, places it face-down on the table. The other two go back to the Objective deck.
+3. The Fixer draws **5 Objective cards**, picks one, places it face-down on the table. The other two go back to the Objective deck.
 4. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
 5. The Specialist leads the first trick, playing any card face-up.
 
