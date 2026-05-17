@@ -6,9 +6,9 @@ A two-player cooperative trick-taking game with hidden information and restricte
 
 ## Premise
 
-You play as **The Specialist** and **The Fixer**, two operatives working for The Company.
+You play as **the Specialist** and **the Fixer**, two operatives working for the Company.
 
-The Specialist is an undercover agent in The Family. But their handler was burned.
+The Specialist is an undercover agent in the Family. But their handler was burned.
 
 So the Company is sending the Fixer to extract the Specialist. But only after they finish five last jobs...
 
