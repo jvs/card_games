@@ -260,12 +260,14 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - The Chair secretly views the Executive's Agenda.
 - The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
 - Timing: This power may be played at any time during the Quarter.
+- (In short: Spy on an Executive's Agenda, and optionally reveal it.)
 
 
 **Executive Assistant**
 - Name one Executive and place this card face-up in front of them.
 - The Executive scores +1 if the Chair achieves their Quarterly Target, and -1 if the Chair fails.
 - Timing: This power may be played at any time during the Quarter.
+- (In short: Tie an Executive to your success.)
 
 
 **Golden Handcuffs**
@@ -274,6 +276,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - Add the revealed card to your hand, secretly exchanging it for a card from your hand.
 - The Executive immediately adds +1 to their score.
 - Timing: This power may be played at any time during the Quarter.
+- (In short: Bribe an Executive to give you a card.)
 
 
 **I need ideas, people!**
@@ -284,6 +287,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - The sprint then proceeds as normal, only with more proposals this time.
 - The Chair may select any proposal, from either the first set or the second set.
 - Timing: This power may only be played during Chair Approval.
+- (In short: Get more proposals to choose from.)
 
 
 **PIP**
@@ -292,6 +296,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - The Executive then takes their original deliverable and adds it to their hand.
 - PIP cannot name the Executive whose proposal was approved for this sprint.
 - Timing: This power may only be played during the Call. If an Executive also plays an Action, the Chair decides which effect to resolve first.
+- (In short: Force an Executive to play a different card.)
 
 
 **Status Update**
@@ -299,6 +304,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - Each Executive must reveal a card of that suit.
 - If the Executive does not have a card of that suit, they must show any one card from their hand.
 - Timing: This power may be played at any time during the Quarter.
+- (In short: Force Executives to reveal cards.)
 
 
 **You’re on mute**
@@ -307,3 +313,4 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - The face-down card is included in the sprint, but has no effect and cannot win the trick.
 - The Executive does not play a deliverable this sprint.
 - Timing: This power may only be played during Chair Approval.
+- (In short: Freeze an Executive out of the sprint.)
