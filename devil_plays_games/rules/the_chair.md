@@ -57,7 +57,6 @@ Five suits of 12 cards.
 The game is played over 6 rounds.
 
 - Each round is called a Quarter.
-- The Chair rotates each Quarter.
 - Most points at the end of the game wins.
 
 
@@ -92,7 +91,7 @@ Throughout the game, when cards are revealed, the Chair tells Executives when to
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Point Person, that player waits before selecting their proposal.
-   - Once all proposals are placed, Executives reveal their proposals.
+   - Once all cards are placed, Executives reveal their proposals.
    - Finally, the Point Person selects a proposal from their hand and reveals it. (Skip if there's no Point.)
 2. **Chair Approval:**
    - The Chair approves one proposal, making it the **lead card** for this trick.
@@ -112,13 +111,20 @@ Throughout the game, when cards are revealed, the Chair tells Executives when to
    - If the winner is the Chair, the next sprint has no Point Person.
 
 
+**In Short:**
+- Everyone proposes a lead card (except the Chair).
+- The Chair chooses one to be the actual lead.
+- Everyone else then plays a card to the trick simultaneously, following suit if possible (except the Chair, who plays last.)
+- Highest trump (Shares) wins, or if no trump, highest card of the lead suit wins.
+
+
 ### Proposal Rules
 
 - Executives may propose any card from their hand.
 - An Executive whose proposal is approved does *not* play a deliverable that trick — their proposal *is* their card for that trick. It is the lead card.
 - The Point Person for a sprint proposes a card after viewing all other proposals.
-- After the Chair approves a proposal, each rejected Executive returns their proposal to their hand and selects a deliverable.
-- When selecting a deliverable, each Executive must follow the suit or the lead card if they can. Otherwise, they may play any card.
+- After the Chair approves a proposal, each rejected Executive returns their card to their hand and selects a deliverable.
+- When selecting a deliverable, each Executive must follow the suit of the lead card if they can. Otherwise, they may play any card.
 
 
 ---
@@ -154,7 +160,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 - The Shark-player names one Executive.
 - The named Executive must reveal all Shares cards in their hand, or state that they have none.
-- The Executive must comply honestly, and all players can see the revealed cards or hear their answer.
+- The Executive must comply honestly, and all players can see the revealed cards.
 - The Shark-player may not name the Chair.
 
 
@@ -162,7 +168,6 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 - The Snitch-player names one Executive.
 - That Executive must flip their Agenda card face-up for the rest of the Quarter.
-- Their Agenda is now public knowledge.
 
 
 ## The Chair's Quarterly Target
@@ -175,7 +180,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 - Each Executive draws one random Agenda per Quarter, secretly looks at it, and then places it face-down on the table.
 - Each Agenda is hidden until the end of the Quarter, unless a special card or effect reveals it.
-- Each Executive that meets their Agenda's win condition scores +2 points at the end of the Quarter.
+- Each Executive that meets their Agenda's win-condition scores +2 points at the end of the Quarter.
 
 
 **Climb the Ladder**
@@ -188,11 +193,11 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 
 **Dedication to the Company**
-- The Chair meets their Quarterly Target (wins 5 or more tricks).
+- The Chair meets their Quarterly Target (winning 5 or more tricks).
 
 
 **Hostile Takeover**
-- The Chair does not meet their Quarterly Target (wins fewer than 5 tricks).
+- The Chair does not meet their Quarterly Target (winning fewer than 5 tricks).
 
 
 **Severance Package**
@@ -200,7 +205,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 
 **Team Player**
-- Each Executive (including you, not including the Chair) wins at least one trick this Quarter.
+- Each Executive (including you, but not including the Chair) wins at least one trick this Quarter.
 
 
 ---

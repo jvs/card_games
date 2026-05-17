@@ -97,7 +97,7 @@ Players may not share information about their hand or intentions except through 
 
 ### Winning a Trick
 
-- The highest trump (spade) wins, if any trumps were played.
+- The highest trump (Spades) wins, if any trumps were played.
 - If no trumps were played, the highest card of the led suit wins.
 - The Joker always wins any trick it is played in.
 
