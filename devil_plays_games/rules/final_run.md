@@ -8,9 +8,9 @@ A two-player cooperative trick-taking game with hidden information and restricte
 
 You play as **the Specialist** and **the Fixer**, two operatives working for the Company.
 
-The Specialist is an undercover agent, embedded in the Family. Their handler was burned. The Family is watching their every move.
+The Specialist is an undercover agent, embedded in the Family. Their handler was burned. And the Family is watching their every move.
 
-The Company sent the Fixer to extract the Specialist. But first they must complete the mission.
+The Company sent the Fixer in to extract the Specialist. Together they must complete the mission.
 
 *This is your Final Run.*
 
