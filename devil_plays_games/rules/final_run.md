@@ -8,9 +8,9 @@ A two-player cooperative trick-taking game with hidden information and restricte
 
 You play as **the Specialist** and **the Fixer**, two operatives working for the Company.
 
-The Specialist is an undercover agent, embedded in the Family. Their handler was burned.
+The Specialist is an undercover agent, embedded in the Family. Their handler was burned. The Family is watching their every move.
 
-The Company sent the Fixer in cold to extract the Specialist. Together they must complete the mission. But the Family is watching their every move...
+The Company sent the Fixer to extract the Specialist. But first they must complete the mission.
 
 *This is your Final Run.*
 
@@ -42,7 +42,7 @@ Four suits of 6 cards, plus two Wild cards.
 - Each Prank card has a special effect.
 - **The Cat** (Clubs): choose who leads the next trick.
 - **The Devil** (Diamonds): players exchange cards.
-- **The Hound** (Hearts): draw from the Take.
+- **The Hound** (Hearts): draw from the deck.
 - **The Snitch** (Spades): undo a trick.
 
 **Ghost cards**
