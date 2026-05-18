@@ -8,9 +8,9 @@ A two-player cooperative trick-taking game with hidden information and restricte
 
 You play as **the Specialist** and **the Fixer**, two operatives working for the Company.
 
-The Specialist is an undercover agent, embedded in the Family. But their handler was burned.
+The Specialist is an undercover agent, embedded in the Family. Their handler was burned.
 
-Now the Company is sending the Fixer to extract the Specialist. But first they must complete the mission. And the Family is watching their every move.
+Now the Company is sending the Fixer to extract the Specialist. Together they must complete the mission. But the Family is watching their every move...
 
 *This is your Final Run.*
 
@@ -19,7 +19,7 @@ Now the Company is sending the Fixer to extract the Specialist. But first they m
 
 Each **Run** is played over 5 rounds. The Specialist executes operations for the Family (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs. Both players win or lose together.
 
-Players may not share information about their cards or intentions except through Ghost cards, Prank abilities, the Fox, and the information revealed through normal card play. Reactions and table talk are fine — just try not to let on too much. Remember, the Family is always watching...
+Players may not share information about their cards or intentions except through Ghost cards, Prank abilities, the Fox, and the information revealed through normal card play. Reactions and table talk are fine — just try not to let on too much. Remember, the Family is always watching!
 
 ---
 
@@ -35,15 +35,15 @@ Four suits of 6 cards, plus two Wild cards.
 - Spades is the trump suit.
 
 **Wild Cards (no suit or rank)**
-- **The Fox**: asks a question
 - **The Joker**: always wins
+- **The Fox**: always loses
 
 **Prank cards**
 - Each Prank card has a special effect.
 - **The Cat** (Clubs): choose who leads the next trick.
 - **The Devil** (Diamonds): players exchange cards.
-- **The Hound** (Hearts): look in the deck.
-- **The Snitch** (Spades): players reveal cards.
+- **The Hound** (Hearts): draw from the Take.
+- **The Snitch** (Spades): undo a trick.
 
 **Ghost cards**
 - Each Ghost card allows table-talk within a word limit.
@@ -51,6 +51,9 @@ Four suits of 6 cards, plus two Wild cards.
 - Ghost of Hearts: 2 words
 - Ghost of Clubs: 3 words
 - Ghost of Diamonds: 4 words
+
+**Token Cards**
+- 2 Cat token cards
 
 
 ### Job Deck
@@ -117,85 +120,63 @@ Reach the target score of 15 points at any point during the Run, and you win imm
 
 ---
 
-## Difficulty Settings
+## Learning the Game
 
-Players have a number of ways to customize the difficulty of their Run.
+For your first run:
 
-**Target Score**
-- Try for a higher or lower target score than 15.
-- Easy: 10 points
-- Medium: 15 points (recommended)
-- Hard: 20 points
-- Nightmare: 25 points
-
-**Assignment Difficulty**
-- Only use Jobs and Objectives within a smaller range of point values.
-- Easy: Levels 1-2
-- Medium: Levels 1-5 (recommended)
-- Hard: Levels 3-5
-- Nightmare: Level 5 only
-
-**Learning Mode**
-- When learning the game, you may also want to make some additional adjustments.
-- Play with both hands face-up, so you can see each other's cards. (Recommended for first run.)
-- Have the more experienced player take the Fixer role. (Recommended for first run.)
-- Play with the Objective card face-up. (Recommended with younger players.)
-- Allow table talk, so you can discuss strategy. (Not recommended. The Family is always watching...)
+- Play with both hands face-up even in the Shop, so you can see each other's cards.
+- Play with the Objective face-up.
+- Allow table talk, so you can discuss strategy.
 
 ---
 
 ## Special Cards
 
 
-### The Fox (Wild)
+### The Joker and the Fox (Wild)
 
-- The Fox always loses the trick it is played in.
-- The Fox is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
-- If the Fox is led, the other player may play any card in response.
-
-
-### The Joker (Wild)
-
-- The Joker always wins the trick it is played in.
-- The Joker is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
-- If the Joker is led, the other player may play any card in response.
+- The Joker and the Fox are wild cards. They have no suit or rank.
+- A wild card can be played on any trick, and always counts as following suit.
+- If a wild card is led, the other player may play any card in response.
+- The Joker always wins the trick.
+- The Fox always loses the trick, even if it was led.
 
 
 ### The Cat (Clubs Prank)
 
-After the trick resolves:
-
-- Take two Cat tokens.
-- At any time after a trick, you may spend a Cat token to choose who leads the next trick.
+- Take two Cat token cards.
+- At any time after a trick, you may discard a Cat token to choose who leads the next trick.
+- If the Cat is your last card, it has no effect.
 
 
 ### The Devil (Diamonds Prank)
 
-When you play this card, immediately place another card from your hand face-up on the table. The other player takes this card and hands you another card from their hand in exchange.
-
-Note: If you do not have enough cards in your hand to exchange, the Devil has no effect.
+- Select a card from your hand and face-up on the table.
+- The other player takes this card and gives you another card from their hand in exchange.
+- If the Devil is your last card, it has no effect.
 
 
 ### The Hound (Hearts Prank)
 
-Look at the top 2 cards of the Take and place them face-up on the table. The Fixer chooses one card to add to their hand, the other goes to the Specialist's hand.
-
-Note: If the Take does not have enough cards, the Hound has no effect.
+- If the Take does not have 2 cards, both players choose one card from their hand and add it to the Take.
+- Look at the top 2 cards of the Take and place them face-up on the table.
+- The Fixer chooses one card to add to their hand, then the Specialist adds the other card to their hand.
+- If the Hound is your last card, it has no effect.
 
 
 ### The Snitch (Spades Prank)
 
-- Look through both player's won tricks. Remove both cards from any one trick.
-- If there are still cards in the Take, return both cards to the Take and shuffle it.
-- If there are no cards in the Take, place both cards face-up on the table.
+- Look through both player's won tricks and choose one trick.
+- Remove both cards from the trick and place them face-up on the table.
 - The Specialist chooses one card to add to their hand, then the Fixer adds the other card to their hand.
 
 
 ### The Ghosts (one per suit)
 
-Played to a trick like any card. When a Ghost card is played, they Specialist say speak up to the Ghost's word budget. Then the Fixer must respond with either "yes" or "no".
+- When a Ghost card is played, the Specialist may speak up to the Ghost's word budget.
+- The Fixer must respond with either "yes" or "no".
 
-The Ghost's suit determines the budget:
+The Ghost's suit determines the word budget:
 
 - **Ghost of Spades:** 1 word
 - **Ghost of Hearts:** 2 words
