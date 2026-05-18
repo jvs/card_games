@@ -383,3 +383,34 @@ Other options for randomization:
 
 **War with the Families (5 points)**
 - (TODO)
+
+
+
+### Ghost Effects
+
+- Specialist may ask a yes or no question, using no more than five words.
+- One player reveals their hand.
+- Draw two cards from the Take and place them face-up on the table. The Fixer takes one, then the Specialist takes the other.
+
+
+- The Fixer draws 2 cards from the Take, adds one to their hand, and gives the other to the Specialist.
+
+- Use the effect of any face-down Ghost Effect.
+
+- Split the Take into two piles, one for the Specialist and one for the Fixer. Flip one pile face-up.
+
+
+- Fixer may say one word, which must be a suit.
+
+
+
+TMP: All effects (Prank and Ghost)
+
+- Specialist may ask a yes or no question, using no more than five words.
+- Fixer may name one suit.
+- One player reveals their hand.
+- Draw two cards from the Take and place them face-up on the table. The Fixer takes one, then the Specialist takes the other.
+- Both players exchange one card from their hand.
+- Look through any player's won tricks. Remove both cards from one trick, add them to the Take, then shuffle. Reopen the Shop if it was closed.
+- Choose who leads the next trick.
+- Repeat a Ghost Effect or Prank Card?
