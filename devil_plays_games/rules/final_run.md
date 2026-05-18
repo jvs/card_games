@@ -10,7 +10,7 @@ You play as **the Specialist** and **the Fixer**, two operatives working for the
 
 The Specialist is an undercover agent, embedded in the Family. But their handler was burned.
 
-Now the Company is sending the Fixer to extract the Specialist. But only after they finish five last jobs...
+Now the Company is sending the Fixer to extract the Specialist. But first they must complete the mission. And the Family is watching their every move.
 
 *This is your Final Run.*
 
@@ -53,11 +53,6 @@ Four suits of 6 cards, plus two Wild cards.
 - Ghost of Diamonds: 4 words
 
 
-### Joker Deck (10 cards)
-
-~10 Joker Effect cards. Each represents a different effect that triggers when the Joker is played.
-
-
 ### Job Deck
 
 ~25 Job cards. Each is one of the Family's operations. Visible to both players when in play.
@@ -75,10 +70,9 @@ A Run is 5 jobs. Each job follows the same structure.
 ### Setup (per job)
 
 1. The Specialist draws **3 Job cards**, picks one, places it face-up on the table. The others go back to the Job deck.
-2. The Specialist draws **3 Joker Effect cards**, picks one, places it face-up on the table. The others go back to the deck.
-3. The Fixer draws **5 Objective cards**, picks one, places it face-down on the table. The others go back to the Objective deck.
-4. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
-5. The Specialist leads the first trick, playing any card face-up.
+2. The Fixer draws **5 Objective cards**, picks one, places it face-down on the table. The others go back to the Objective deck.
+3. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
+4. The Specialist leads the first trick, playing any card face-up.
 
 ### Playing out the Job
 
@@ -94,13 +88,16 @@ The job has two stages.
 - (Trick piles may be kept face-up or flipped face-down. It's up to the players.)
 - Both players draw from the Take to refill hands to 6.
 - If a player has 6 or more cards, they do not draw from the Take.
+- When you win a trick, keep the cards face-up.
 - Winner leads the next trick.
 
 **The Field:** When the Take is empty.
 
 - There are no more cards to draw. Hands deplete from 6 down to 0 over the next 6 tricks.
+- Both players may play with their cards face-up on the table, visible to the other player.
 - In the Field, players **must follow suit** if they can. If they cannot follow suit, they may play any card.
 - There is no requirement to win the trick if you can (no forced-win rule).
+- When you take a trick, flip it face-down, to distinguish it from the Shop tricks.
 - Winner leads next trick.
 
 
@@ -138,12 +135,6 @@ Players have a number of ways to customize the difficulty of their Run.
 - Hard: Levels 3-5
 - Nightmare: Level 5 only
 
-**Trick Visibility**
-- Try keeping trick piles face-up or face-down.
-- Easy: Both face-up (recommended).
-- Medium: One face-up, the other face-down.
-- Hard: Both face-down.
-
 **Learning Mode**
 - When learning the game, you may also want to make some additional adjustments.
 - Play with both hands face-up, so you can see each other's cards. (Recommended for first run.)
@@ -153,140 +144,63 @@ Players have a number of ways to customize the difficulty of their Run.
 
 ---
 
-## Grades (Escalation)
-
-Special cards have three **Grades** of effect. The Grade is determined by the job number within the Run:
-
-- **Grade 1:** Jobs 1–2
-- **Grade 2:** Jobs 3–4
-- **Grade 3:** Job 5
-
-Each special card's effect is printed with three lines — the Grade 1, Grade 2, and Grade 3 versions. Players check the round number, read the corresponding line, apply.
-
----
-
 ## Special Cards
 
 
 ### The Fox (Wild)
 
-If the Specialist plays the Fox, the Specialist immediately asks the Fixer a question. The Fixer must answer truthfully within the available vocabulary.
-
-- **Grade 1:** One yes/no question.
-- **Grade 2:** One question. The answer may be: yes, no, a suit, or a rank.
-- **Grade 3:** Two questions. Each answer may be: yes, no, a suit, or a rank.
-
-Notes:
-- If the Fixer plays the Fox, it acts as a normal card (no effect).
-- If the Fox is led, the other player may play any card in response.
-- The Fox always loses the trick.
+- The Fox always loses the trick it is played in.
 - The Fox is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
+- If the Fox is led, the other player may play any card in response.
 
 
 ### The Joker (Wild)
 
-The Joker always wins the trick it is played in. Either player may play it.
-
-In addition, when the Joker is played, the player who played it immediately applies the Joker Effect card currently in play. This is set at the start of each job.
-
-The Joker is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
-
-
-### Joker Effects
-
-**Burner Phone**
-- Both players reveal their hands.
-
-**Fuhgeddaboudit**
-- Each player discards one card from their hand.
-
-**Getaway Driver**
-- Discard all cards in both hands. End the job immediately.
-- Has no effect in the Shop.
-
-**Handoff**
-- Both players swap hands.
-
-**Loose Cannon**
-- Discard all remaining cards in the Take and immediately move to the Field.
-- Has no effect in the Field.
-
-**On The Move**
-- Pick up the Take and deal the cards evenly between both players.
-- Immediately move to the Field.
-- Has no effect in the Field.
-
-**Smokescreen**
-- Look at the other player's hand. Take one card, exchanging it with one of your own.
-- Has no effect in the Shop.
-
-**Weapon Stash**
-- The Fixer draws 2 cards from the Take, adds one to their hand, and gives the other to the Specialist.
-- Has no effect if the Take does not have enough cards.
-
-**Scene of the Crime**
-- Each player takes one card from their trick pile and adds it to their hand.
-
-**Scramble**
-- Reshuffle the player's hand with the Take and re-deal six cards.
-- Has no effect in the Field.
+- The Joker always wins the trick it is played in.
+- The Joker is a wild card, and therefore can be played on any trick, even if you could follow suit with a non-wild card.
+- If the Joker is led, the other player may play any card in response.
 
 
 ### The Cat (Clubs Prank)
 
-Either player may play. After the trick resolves:
+After the trick resolves:
 
-- **Grade 1:** Choose who leads the next trick.
-- **Grade 2:** Choose who leads the next 2 tricks. (Choose before each trick.)
-- **Grade 3:** Choose who leads the next 3 tricks. (Choose before each trick.)
-
-Note: If fewer tricks remain than the Cat's current Grade would allow, the Cat has no effect.
+- Take two Cat tokens.
+- At any time after a trick, you may spend a Cat token to choose who leads the next trick.
 
 
 ### The Devil (Diamonds Prank)
 
 When you play this card, immediately place another card from your hand face-up on the table. The other player takes this card and hands you another card from their hand in exchange.
 
-- **Grade 1:** Exchange one card.
-- **Grade 2:** Exchange two cards, one at a time.
-- **Grade 3:** Exchange three cards, one at a time.
-
 Note: If you do not have enough cards in your hand to exchange, the Devil has no effect.
 
 
 ### The Hound (Hearts Prank)
 
-- **Grade 1:** Secretly look at the top card of the Take. Give it to either player to add to their hand.
-- **Grade 2:** Secretly look at the top 2 cards. Give one card to each player to add to their hand.
-- **Grade 3:** Look at the top 2 cards and place them face-up on the table. The Fixer chooses one card to add to their hand, the other goes to the Specialist's hand.
+Look at the top 2 cards of the Take and place them face-up on the table. The Fixer chooses one card to add to their hand, the other goes to the Specialist's hand.
 
 Note: If the Take does not have enough cards, the Hound has no effect.
 
 
 ### The Snitch (Spades Prank)
 
-If the Fixer plays the Snitch:
-
-- **Grade 1:** Look through the Specialist's won tricks. Remove both cards from one trick, add them to the Take, then shuffle the Take.
-- **Grade 2:** Look through any player's won tricks. Remove both cards from one trick, add them to the Take, then shuffle.
-- **Grade 3:** Look through both player's won tricks. Remove both cards from any two tricks, add them to the Take, then shuffle.
-
-Notes:
-- If the Shop is closed, the Snitch has no effect.
-- If there are not enough tricks to remove, the Snitch has no effect.
-- If the Specialist plays the Snitch, it acts as a normal card (no effect).
+- Look through both player's won tricks. Remove both cards from any one trick.
+- If there are still cards in the Take, return both cards to the Take and shuffle it.
+- If there are no cards in the Take, place both cards face-up on the table.
+- The Specialist chooses one card to add to their hand, then the Fixer adds the other card to their hand.
 
 
 ### The Ghosts (one per suit)
 
-Played to a trick like any card. When the Specialist plays a Ghost, they may speak up to the Ghost's word budget. The Ghost's suit determines the budget:
+Played to a trick like any card. When a Ghost card is played, they Specialist say speak up to the Ghost's word budget. Then the Fixer must respond with either "yes" or "no".
 
-- **Ghost of Spades:** 1 word (Grade 1) / 2 words (Grade 2) / 3 words (Grade 3)
-- **Ghost of Hearts:** 2 / 3 / 4 words
-- **Ghost of Clubs:** 3 / 4 / 5 words
-- **Ghost of Diamonds:** 4 / 5 / 6 words
+The Ghost's suit determines the budget:
 
-If the Fixer plays a Ghost, it acts as a normal card (no speech).
+- **Ghost of Spades:** 1 word
+- **Ghost of Hearts:** 2 words
+- **Ghost of Clubs:** 3 words
+- **Ghost of Diamonds:** 4 words
 
 ---
 
@@ -383,34 +297,3 @@ Other options for randomization:
 
 **War with the Families (5 points)**
 - (TODO)
-
-
-
-### Ghost Effects
-
-- Specialist may ask a yes or no question, using no more than five words.
-- One player reveals their hand.
-- Draw two cards from the Take and place them face-up on the table. The Fixer takes one, then the Specialist takes the other.
-
-
-- The Fixer draws 2 cards from the Take, adds one to their hand, and gives the other to the Specialist.
-
-- Use the effect of any face-down Ghost Effect.
-
-- Split the Take into two piles, one for the Specialist and one for the Fixer. Flip one pile face-up.
-
-
-- Fixer may say one word, which must be a suit.
-
-
-
-TMP: All effects (Prank and Ghost)
-
-- Specialist may ask a yes or no question, using no more than five words.
-- Fixer may name one suit.
-- One player reveals their hand.
-- Draw two cards from the Take and place them face-up on the table. The Fixer takes one, then the Specialist takes the other.
-- Both players exchange one card from their hand.
-- Look through any player's won tricks. Remove both cards from one trick, add them to the Take, then shuffle. Reopen the Shop if it was closed.
-- Choose who leads the next trick.
-- Repeat a Ghost Effect or Prank Card?
