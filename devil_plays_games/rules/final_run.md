@@ -10,7 +10,7 @@ You play as **the Specialist** and **the Fixer**, two operatives working for the
 
 The Specialist is an undercover agent, embedded in the Family. Their handler was burned.
 
-Now the Company is sending the Fixer to extract the Specialist. Together they must complete the mission. But the Family is watching their every move...
+The Company sent the Fixer in cold to extract the Specialist. Together they must complete the mission. But the Family is watching their every move...
 
 *This is your Final Run.*
 
