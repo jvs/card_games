@@ -17,9 +17,9 @@ The Fixer was sent in cold to extract the Specialist. Together they must complet
 
 ## Structure
 
-Each **Run** is played over 5 rounds. The Specialist executes operations for the Family (**Jobs**), while secretly serving the Company's real angle (**Objectives**). The Company will extract the Specialist after five jobs. Both players win or lose together.
+Each **Run** is played over 5 rounds. The Specialist executes **Jobs** for the Family, while secretly serving the Company's real **Objectives**. The Company will extract the Specialist after five jobs. Both players win or lose together.
 
-Players may not share information about their cards or intentions except through Ghost cards, Prank abilities, the Fox, and the information revealed through normal card play. Reactions and table talk are fine — just try not to let on too much. Remember, the Family is always watching!
+Players may not share information about their cards or intentions except through special cards and the information revealed through normal card play. Reactions and table talk are fine — just try not to let on too much. Remember, the Family is always watching!
 
 ---
 
@@ -27,10 +27,10 @@ Players may not share information about their cards or intentions except through
 
 ### Playing Deck (26 cards)
 
-Four suits of 6 cards, plus two Wild cards.
+Four suits of six cards, plus two Wild cards.
 
 **Suits: Spades, Hearts, Diamonds, Clubs**
-- Ghost, Prank (7), Goon (8), Fence (9), Boss (10), Ace.
+- Ghost, Prank, Goon, Fence, Boss, Ace.
 - Ghost is the lowest, Ace is the highest.
 - Spades is the trump suit.
 
@@ -42,81 +42,119 @@ Four suits of 6 cards, plus two Wild cards.
 - Each Prank card has a special effect.
 - **The Cat** (Clubs): choose who leads the next trick.
 - **The Devil** (Diamonds): players exchange cards.
-- **The Hound** (Hearts): draw from the deck.
-- **The Snitch** (Spades): undo a trick.
-
-**Ghost cards**
-- Each Ghost card allows table-talk within a word limit.
-- Ghost of Spades: 1 word
-- Ghost of Hearts: 2 words
-- Ghost of Clubs: 3 words
-- Ghost of Diamonds: 4 words
-
-**Token Cards**
-- 2 Cat token cards
+- **The Hound** (Hearts): undo a trick.
+- **The Snitch** (Spades): draw from the deck.
 
 
-### Job Deck
+### Scripts (10 cards, double-sided)
 
-~25 Job cards. Each is one of the Family's operations. Visible to both players when in play.
+A deck of 20 scripts. Each script defines:
 
-### Objective Deck
+- A title and difficulty rating (1-3 stars)
+- A sequence of five Jobs
 
-~25 Objective cards. Each is the Company's real angle. Drawn and chosen by the Fixer; hidden from the Specialist until end of the job.
+MOVE: The script is a self-contained run. Players pick a script before starting.
+
+
+### Objective Cards (10 cards, double-sided)
+
+Each Objective card has two sides: Secret Objectives (red) and Top-Secret Objectives (black).
+
+Each side lists 10 Objectives, each with a name and a victory condition.
+
+MOVE:
+**Procedure:** The Fixer draws an objective card, flips it to the appropriate side (secret or top secret), reads the list, and picks one. The Fixer covers the Objective card with the Guarantee card.
+
+
+### Extra Cards (3 cards)
+
+- 2 Cat tokens (used to track the effect of the Cat Prank card)
+- 1 Guarantee card (used to cover the Objective card or to replace a missing card)
+
+
+### Component Summary
+
+| Component | Count |
+|-----------|-------|
+| Playing deck | 26 cards |
+| Script cards | 10 cards (20 scripts) |
+| Objective cards | 10 cards (100 Secret + 100 Top Secret) |
+| Cat tokens | 2 cards |
+| Guarantee | 1 card |
+| **Total** | **49 cards** |
+
 
 ---
 
 ## The Run
 
-A Run is 5 jobs. Each job follows the same structure.
+A Run is 5 jobs.
 
-### Setup (per job)
+1. Players pick a **script**. The script lists your five jobs.
+2. Players pick a **difficulty level**. The difficulty level lists your secret objectives.
+3. Players tackle the jobs.
+4. For each job, the Fixer draws an **objective card** and picks an objective. The objective is covered with the Guarantee card.
+5. Play the job. At the end, check if the job condition and the objective condition are both met.
+6. **If the job fails:** the run ends immediately. The Specialist's cover is blown.
+7. **If the job succeeds but the objective fails:** use the same objective for the next job.
+ - The Fixer does not reveal the failed objective.
+ - The Fixer only tells the Specialist that they failed the objective.
+8. **If both succeed:** the Fixer reveals the objective. It is complete. Move to the next objective in the sequence.
+8. If you complete all of your objectives, **you win the run!**
+10. If you fail any job, or if you fail to complete all your objectives by the end of the run, **you lose the run.**
 
-1. The Specialist draws **3 Job cards**, picks one, places it face-up on the table. The others go back to the Job deck.
-2. The Fixer draws **5 Objective cards**, picks one, places it face-down on the table. The others go back to the Objective deck.
-3. Shuffle the playing deck. Deal **6 cards** to each player. Place the remaining **14 cards** face-down as the Take.
-4. The Specialist leads the first trick, playing any card face-up.
+---
 
-### Playing out the Job
+## Jobs
 
-The job has two stages.
+### Setup
 
-**The Shop:** While cards remain in the Take.
+1. Read the current job from your script. The job is public; both players can see it.
+2. For each job, the Fixer:
+ - secretly draws an objective card
+ - flips it to the appropriate side
+ - picks one of the objectives on the card
+ - and finally covers it with the Guarantee card.
+ - (Skip this step when retrying an objective.)
+3. Shuffle the playing deck. Deal 6 cards to each player. Place the remaining 14 cards face-down as the **Take**.
+4. Place two Cat tokens face-up on the table.
+
+### The Shop (while cards remain in the Take)
 
 - The Specialist leads the first trick, playing any card face-up.
 - The Fixer plays one card face-up in response.
 - In the Shop, players are not required to follow suit, and **players may play any card**.
 - Higher trump (Spades) wins; otherwise higher card of the led suit wins.
+- For wild cards, the Joker always wins any trick, and the Fox always loses.
 - Winner takes both cards to their trick pile.
-- (Trick piles may be kept face-up or flipped face-down. It's up to the players.)
-- Both players draw from the Take to refill hands to 6.
-- If a player has 6 or more cards, they do not draw from the Take.
-- When you win a trick, keep the cards face-up.
-- Winner leads the next trick.
+- When you win a trick, keep the cards face-up. This is your **Shop Pile**.
+- Both players draw from the Take to refill to 6 cards. If a player already has 6 or more cards, they do not draw.
+- The winner leads the next trick.
 
-**The Field:** When the Take is empty.
+### The Field (when the Take is empty)
 
 - There are no more cards to draw. Hands deplete from 6 down to 0 over the next 6 tricks.
-- Both players may play with their cards face-up on the table, visible to the other player.
+- Both players may play with their cards face-up on the table, visible to the other player. (Why? Because, if the players had perfect memories, they'd know exactly which cards are left in the game anyway.)
 - In the Field, players **must follow suit** if they can. If they cannot follow suit, they may play any card.
 - There is no requirement to win the trick if you can (no forced-win rule).
-- When you take a trick, flip it face-down, to distinguish it from the Shop tricks.
-- Winner leads next trick.
+- When you take a trick, flip it face-down, to distinguish it from the Shop tricks. This is your **Field Pile**.
+- The winner leads the next trick.
+
+
+### Separate Trick Piles
+
+Each player maintains **two trick piles**: one for Shop tricks and one for Field tricks. Leave Shop tricks face-up on the table, and flip Field tricks face-down. Job conditions and objective conditions can reference either pile independently.
 
 
 ### Resolution (per job)
 
 After all tricks have been played:
 
-1. Check the **Job** condition.
-2. Flip the **Objective** card. Check the Objective condition.
-3. Add to your score only if both Job and Objective were successful.
-- Add Job points plus Objective points to your score.
-4. Remove the Job and Objective cards from play for the remainder of the Run, regardless of success or failure. They are not returned to their decks.
-
-### Winning the Run
-
-Reach the target score of 15 points at any point during the Run, and you win immediately. Fail a catastrophic Job, and you lose immediately. Otherwise, after five jobs, if you have at least the target score, you win; if not, you lose.
+1. Check the **job condition** (public). Did the Specialist meet it?
+2. The Fixer privately checks the **objective condition** (secret).
+3. If the job failed, the run ends. Game over.
+4. If the job succeeded but the objective failed, the Fixer says "not met" without revealing the objective. The same objective carries forward to the next job.
+5. If both succeeded, the Fixer reveals the objective. Move to the next objective in the sequence. If that was the last objective, the run is won.
 
 ---
 
@@ -124,14 +162,13 @@ Reach the target score of 15 points at any point during the Run, and you win imm
 
 For your first run:
 
-- Play with both hands face-up even in the Shop, so you can see each other's cards.
-- Play with the Objective face-up.
+- Play with both hands face-up the whole time so you can see each other's cards.
+- Play with the Objective face-up as well.
 - Allow table talk, so you can discuss strategy.
 
 ---
 
 ## Special Cards
-
 
 ### The Joker and the Fox (Wild)
 
@@ -142,139 +179,45 @@ For your first run:
 - The Fox always loses the trick, even if it was led.
 
 
-### The Cat (Clubs Prank)
+### The Cat (Clubs)
 
 - Take two Cat token cards.
 - At any time after a trick, you may discard a Cat token to choose who leads the next trick.
-- If the Cat is your last card, it has no effect.
+- Discard any unused Cat tokens at the end of the job.
 
 
-### The Devil (Diamonds Prank)
+### The Devil (Diamonds)
 
 - Select a card from your hand and face-up on the table.
 - The other player takes this card and gives you another card from their hand in exchange.
 - If the Devil is your last card, it has no effect.
 
 
-### The Hound (Hearts Prank)
-
-- If the Take does not have 2 cards, both players choose one card from their hand and add it to the Take.
-- Look at the top 2 cards of the Take and place them face-up on the table.
-- The Fixer chooses one card to add to their hand, then the Specialist adds the other card to their hand.
-- If the Hound is your last card, it has no effect.
-
-
-### The Snitch (Spades Prank)
+### The Hound (Hearts)
 
 - Look through both player's won tricks and choose one trick.
 - Remove both cards from the trick and place them face-up on the table.
 - The Specialist chooses one card to add to their hand, then the Fixer adds the other card to their hand.
 
 
-### The Ghosts (one per suit)
+### The Snitch (Spades)
 
-- When a Ghost card is played, the Specialist may speak up to the Ghost's word budget.
-- The Fixer must respond with either "yes" or "no".
-
-The Ghost's suit determines the word budget:
-
-- **Ghost of Spades:** 1 word
-- **Ghost of Hearts:** 2 words
-- **Ghost of Clubs:** 3 words
-- **Ghost of Diamonds:** 4 words
-
----
-
-## Job Cards
-
-Once a Job has been chosen, it is removed from the Job deck for the rest of the Run, regardless of whether it succeeded or failed.
-
-TODO: Maybe have six cards each numbered 1-6, and each has six jobs, also numbered 1-6. To get a random job, roll two dice. One die determines the card, the other determines the job on that card.
-
-Other options for randomization:
-- Use an app to randomize the job and objective.
-- Come up with a way to randomly create a job from a smaller set of primitives.
+- If the Take does not have 2 cards, both players choose one card from their hand and add it to the Take.
+- Look at the top 2 cards of the Take and place them face-up on the table.
+- The Fixer chooses one card to add to their hand, then the Specialist adds the other card to their hand.
+- If the Snich is your last card, it has no effect.
 
 
-### Level 1: Training Day
+### The Ghost (one per suit)
 
-**Bust Some Heads (1 point)**
-- The Specialist wins 7 or more tricks total.
+- When a Ghost card is played (by either player), the Specialist may speak up to 4 words.
+- The Fixer must respond with "yes" or "no."
+- Note: Regardless of who plays the Ghost card, the Specialist is the one who gets to talk. The Fixer can only respond with "yes" or "no,
 
-**Guard The Door (1 point)**
-- The Specialist wins the final trick in the Field.
+For Rule Laywers, The Fixer should not:
+- ask for clarification or elaboration.
+- remain silent, or say "maybe" or "I don't know."
+- use facial expressions or body language to qualify their response.
+- delay their response in order to communicate information to the Specialist.
 
-**Run the Jewels (1 point)**
-- The Specialist wins at least 3 diamonds.
-
-**Shakedown (1 point)**
-- The Specialist wins 3 or more tricks in the Field.
-
-**Smuggler's Blues (1 point)**
-- The Specialist has at least 2 cards from each suit in their trick pile.
-
-
-### Level 2: Dirty Work
-
-**Blackmail (2 points)**
-- The Specialist wins at least 3 clubs and 3 spades.
-
-**Chop Shop (2 points)**
-- The Specialist wins at least 3 tricks in the Shop and at least 3 in the Field.
-
-**Hit them with the one-two (2 points)**
-- The Specialist wins the first 2 tricks in the Field.
-
-**Make sure they get the message (2 points)**
-- The Specialist wins the both the first trick and the final trick in the Field.
-
-**More Muscle (2 points)**
-- The Specialist has at least 3 Goon cards in their trick pile.
-
-**Pin the Mayor (2 points)**
-- The Specialist wins a trick containing the Boss of Spades in the Field.
-
-
-### Level 3: Part of the Family Now
-
-**Bust the Door (3 points)**
-- The Specialist wins the first 3 tricks in the Field.
-
-**Don't leave without the goods (3 points)**
-- The Specialist wins the last 3 tricks in the Field.
-
-**Hit List (3 points)**
-- The Specialist has a Goon, a Fence, and a Boss all with the same suit in their trick pile.
-
-**Show them who's boss (3 points)**
-- The Specialist has every Goon card in their trick pile.
-
-**Take the day off (3 points)**
-- The Specialist wins exactly 4 tricks total.
-
-**The Big Score (3 points)**
-- The Specialist has least 4 diamonds and at least 4 clubs in their trick pile.
-
-
-### Level 4: The Big Time
-
-**Take the Block (4 points)**
-- The Specialist wins all 6 tricks in the Field.
-
-**Heart of Darkness (4 points)**
-- The Specialist has at least 5 hearts in their trick pile.
-
-**Walk Out Clean (4 points)**
-- The Specialist wins eactly 1 trick in the Field.
-
-**Payback (4 points)**
-- The Specialist has all the cards from one suit in their trick pile.
-
-**Takeover (4 points)**
-- The Specialist has all four Boss cards in their trick pile.
-
-
-### Level 5: Legendary Feats
-
-**War with the Families (5 points)**
-- (TODO)
+**Remember: The Family is always watching!**

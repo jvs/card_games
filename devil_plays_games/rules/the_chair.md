@@ -85,7 +85,9 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ## The Sprint Cycle
 
-Throughout the game, when cards are revealed, the Chair tells Executives when to reveal them. All cards are flipped simultaneously.
+**Note:**
+- During the Sprint, the Chair should tell the Executives when to reveal their cards, and they should reveal simultaneously.
+- (This happens a few places in the Sprint Cycle.)
 
 
 1. **Sprint Planning:**
@@ -98,7 +100,7 @@ Throughout the game, when cards are revealed, the Chair tells Executives when to
 3. **Deliverables:**
    - Each rejected Executive returns their proposal to their hand.
    - Each then places one card face-down as their deliverable.
-   - This is the card they are playing in the current trick, following suit if possible.
+   - This is the card they are playing in the current trick, following the suit of the lead card if possible.
    - Once all cards are placed, Executives reveal their deliverables.
 4. **The Call:**
    - The Chair plays a card from their hand, following suit if possible.
@@ -114,7 +116,7 @@ Throughout the game, when cards are revealed, the Chair tells Executives when to
 **In Short:**
 - Everyone proposes a lead card (except the Chair).
 - The Chair chooses one to be the actual lead.
-- Everyone else then plays a card to the trick simultaneously, following suit if possible (except the Chair, who plays last.)
+- Everyone else then plays a card to the trick simultaneously, following suit if possible. The Chair plays last (also following suit).
 - Highest trump (Shares) wins, or if no trump, highest card of the lead suit wins.
 
 
