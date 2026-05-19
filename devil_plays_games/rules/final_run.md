@@ -91,13 +91,13 @@ A Run is 5 jobs.
 2. The Fixer secretly picks an **assignment**. The assignment lists ten objectives. The Fixer covers the assignment with the Guarantee card so that the Specialist cannot see the Objectives.
 3. Before each job, the Fixer secretly picks an Objective from the assignment.
 4. The players attempt the job. At the end, check if the job condition and the objective condition are both met.
-6. **If the job fails:** the run ends immediately. The Specialist's cover is blown. Game over.
-7. **If the job succeeds but the objective fails:** use the same objective for the next job.
- - The Fixer does not reveal the objective.
- - The Fixer only tells the Specialist that they failed the objective.
-8. **If both succeed:** the Fixer reveals the objective. It is complete. The Fixer picks a new objective for the next job.
-9. If you complete three of your objectives, **you win the run!**
-10. If you fail any job, or if you fail to complete three objectives by the end of the run, **you lose the run.**
+    - **If the job fails:** the run ends immediately. The Specialist's cover is blown. Game over.
+    - **If the job succeeds but the objective fails:** use the same objective for the next job.
+        - The Fixer does not reveal the objective.
+        - The Fixer only tells the Specialist that they failed the objective.
+    - **If both succeed:** the Fixer reveals the objective. It is complete. The Fixer picks a new objective for the next job.
+5. If you complete 3 of your 5 objectives, **you win the run!**
+6. If you fail any job, or if you fail to complete 3 objectives by the end of the run, **you lose the run.**
 
 ---
 
