@@ -173,12 +173,16 @@ For your first run:
 
 ### The Cat (Clubs)
 
+After playing the Cat, immediately apply its effect:
+
 - Take two Cat token cards.
 - At any time after a trick, you may discard a Cat token to choose who leads the next trick.
 - Discard any unused Cat tokens at the end of the job.
 
 
 ### The Devil (Diamonds)
+
+After playing the Devil, immediately apply its effect:
 
 - Select a card from your hand and face-up on the table.
 - The other player takes this card and gives you another card from their hand in exchange.
@@ -187,6 +191,8 @@ For your first run:
 
 ### The Hound (Hearts)
 
+After playing the Hound, immediately apply its effect:
+
 - Look through both player's won tricks and choose one trick.
 - Remove both cards from the trick and place them face-up on the table.
 - The Specialist chooses one card to add to their hand, then the Fixer adds the other card to their hand.
@@ -194,15 +200,18 @@ For your first run:
 
 ### The Snitch (Spades)
 
-- If the Take does not have 2 cards, both players choose one card from their hand and add it to the Take.
+After playing the Snitch, immediately apply its effect:
+
 - Look at the top 2 cards of the Take and place them face-up on the table.
 - The Fixer chooses one card to add to their hand, then the Specialist adds the other card to their hand.
-- If the Snich is your last card, it has no effect.
+- If the Take does not have at least 2 cards, the Snitch has no effect.
 
 
 ### The Ghost (one per suit)
 
-- When a Ghost card is played (by either player), the Specialist may speak up to 4 words.
+When a Ghost card is played by either player, immediately apply its effect:
+
+- The Specialist may speak up to 4 words.
 - The Fixer must respond with "yes" or "no."
 - Note: Regardless of who plays the Ghost card, the Specialist is the one who gets to talk. The Fixer can only respond with "yes" or "no".
 
