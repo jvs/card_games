@@ -108,7 +108,6 @@ A Run is 5 jobs.
 1. Read the current job from your script. The job is public; both players can see it.
 2. For each job, the Fixer secretly picks an Objective from the assignment. The Fixer covers the assignment with the Guarantee card so that the Specialist cannot see the Objectives. (Skip this step when retrying an objective.)
 3. Shuffle the playing deck. Deal 6 cards to each player. Place the remaining 14 cards face-down as the **Take**.
-- Each job is played over 13 tricks.
 4. Place two Cat tokens face-up on the table.
 
 ### The Shop (while cards remain in the Take)
@@ -205,12 +204,12 @@ For your first run:
 
 - When a Ghost card is played (by either player), the Specialist may speak up to 4 words.
 - The Fixer must respond with "yes" or "no."
-- Note: Regardless of who plays the Ghost card, the Specialist is the one who gets to talk. The Fixer can only respond with "yes" or "no,
+- Note: Regardless of who plays the Ghost card, the Specialist is the one who gets to talk. The Fixer can only respond with "yes" or "no".
 
 For Rule Laywers, The Fixer should not:
 - ask for clarification or elaboration.
-- remain silent, or say "maybe" or "I don't know."
+- remain silent, or say "maybe" or "I don't know".
 - use facial expressions or body language to qualify their response.
-- delay their response in order to communicate information to the Specialist.
+- use timing in order to communicate information to the Specialist.
 
 **Remember: The Family is always watching!**
