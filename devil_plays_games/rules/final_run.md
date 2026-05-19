@@ -206,7 +206,7 @@ For your first run:
 - The Fixer must respond with "yes" or "no."
 - Note: Regardless of who plays the Ghost card, the Specialist is the one who gets to talk. The Fixer can only respond with "yes" or "no".
 
-For Rule Laywers, The Fixer should not:
+For Rule Laywers, the Fixer should not:
 - ask for clarification or elaboration.
 - remain silent, or say "maybe" or "I don't know".
 - use facial expressions or body language to qualify their response.
