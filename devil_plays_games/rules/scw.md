@@ -9,7 +9,7 @@ Four player 2v2 wrestling card game. Fight over wrestlers with rock paper scisso
 
 ## Overview
 
-SCW (Super Championship Wrestling), is a game in two acts. In **Signing Season**, players compete to draft wrestlers by throwing Rock, Paper, Scissors. In **The Show**, players are paired into tag teams and compete in a series of wrestling matches played as tricks. The twist: you don't know who your partner will be until Signing Season is over.
+SCW (Super Championship Wrestling), is a game in two acts. In **the Draft**, players compete to draft wrestlers by throwing Rock, Paper, Scissors. In **the Show**, players are paired into tag teams and compete in a series of wrestling matches played as tricks. The twist: you don't know who your partner will be until the Draft is over.
 
 ---
 
@@ -43,16 +43,16 @@ The Star deck contains all the wrestlers available for drafting. Each Star card 
 - Shuffle the Belt, Manager, and Star decks separately.
 - Deal one Manager card face up to each player.
 - Deal 6 Belts face down.
-2. **Signing Season** — Draft wrestlers by throwing Rock Paper Scissors.
+2. **The Draft** — Draft wrestlers by throwing Rock Paper Scissors.
 3. **Partner Assignment** — Reveal a wrestler to determine tag teams.
 4. **The Show** — Play 6 matches (tricks). Each match awards a Belt.
 5. **Winner** — The team with more Belts wins.
 
 ---
 
-## Signing Season (The Draft)
+## The Draft
 
-Signing Season is how players build their roster of 6 wrestlers.
+The Draft is how players build their roster of 6 wrestlers.
 
 ### How It Works
 
@@ -140,7 +140,7 @@ If it's tied, then it's a tie. You've met your match!
 | Phase | What Happens | Time |
 |-------|-------------|------|
 | Setup | Deal Managers, shuffle decks | 1 min |
-| Signing Season | Flip cards, throw RPS, draft 6 wrestlers | 15–20 min |
+| The Draft | Flip cards, throw RPS, draft 6 wrestlers | 15–20 min |
 | Partner Assignment | Reveal a wrestler, match styles, form teams | 1 min |
 | The Show | 6 matches, flip Belt, play tricks, resolve | 5 min |
 | Winner | Score Belts | Instant |
@@ -194,7 +194,7 @@ If it's tied, then it's a tie. You've met your match!
 - "Believe in yourself!"
 
 ### Daddy's Little Princess
-- After Signing Season, skip the Partner Assignment step. Pick one player to be your partner instead.
+- After the Draft, skip the Partner Assignment step. Pick one player to be your partner instead.
 - "Gimme! Gimme! Gimme!"
 
 ### Gus "The Bus" Pappas
@@ -230,7 +230,7 @@ If it's tied, then it's a tie. You've met your match!
 - "Let's make some noise!"
 
 ### Jimmy "The Snitch" Montecarlo
-- Before Signing Season, secretly look at the Stars deck, without changing the order.
+- Before the Draft, secretly look at the Stars deck, without changing the order.
 - "I know a guy who knows a guy..."
 
 ### El Diablo
@@ -339,7 +339,7 @@ If it's tied, then it's a tie. You've met your match!
 - Style: Dirty
 - Effect: If your team wins this match, you may take one wrestler from the opposing team and add them to your hand. If you do, discard one card from your hand.
 
-#### Landlord Lars
+#### Tax Season
 - Power: 3
 - Style: Dirty
 - Effect: Target one player on the other team, look at their hand, and choose one card. The target player may discard the chosen card. If they do, their team immediately wins the match. Draw a card from the Star deck and add it to your hand. Then give the player a card from your hand.
@@ -396,7 +396,6 @@ If it's tied, then it's a tie. You've met your match!
 - Power: 4
 - Style: Flashy
 - Effect: If your partner's wrester's power is 3 or less, this wrestler gains +2 power this match.
-- Effect: If your team wins this match, you may return this wrestler to your hand.
 
 #### The Grudge
 - Power: 3
@@ -411,6 +410,7 @@ If it's tied, then it's a tie. You've met your match!
 #### "The Algorithm" Alice Green
 - Power: 3
 - Style: Flashy
+- Effect: If your team wins this match, you may return this wrestler to your hand.
 
 #### Jenny "Flash Drive" Carter
 - Power: 2
