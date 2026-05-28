@@ -223,7 +223,8 @@ If it's tied, then it's a tie. You've met your match!
 - "It's all going according to plan!"
 
 ### Professor Tanaka
-- After the partner assignment, your partner secretly gives you one card from their hand. Then give your partner one card from your hand in exchange.
+- Whenever you are called on to play a wrestler, you may call on your partner to play instead, if they haven't played a wresler yet.
+- Similarly, whenever you have to lead a match, you may call on your partner to lead instead.
 - "You are the student, and I am the professor!"
 
 ### Queen Sheila
