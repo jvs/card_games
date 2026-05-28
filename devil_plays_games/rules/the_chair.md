@@ -221,7 +221,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 
 **360 Review**
-- During the Call, before the Chair plays a card, you may flip your Agenda face-up. If you do, the Chair must play a losing card if possible, while still following suit.
+- During Deliverables (before the Call), you may flip your Agenda face-up. If you do, then during the Call, the Chair must play a losing card if possible, while still following suit.
 - (In short: Force the Chair to lose the trick.)
 
 
