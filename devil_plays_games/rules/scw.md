@@ -40,13 +40,13 @@ The Star deck contains all the wrestlers available for drafting. Each Star card 
 ## Game Play
 
 1. **Setup**
-- Shuffle the Belt, Manager, and Star decks separately.
-- Deal one Manager card face up to each player.
-- Deal 6 Belts face down.
+  - Shuffle the Belt, Manager, and Star decks separately.
+  - Deal one Manager card face up to each player.
+  - Deal 6 Belts face down.
 2. **The Draft** — Draft wrestlers by throwing Rock Paper Scissors.
 3. **Partner Assignment** — Reveal a wrestler to determine tag teams.
 4. **The Show** — Play 6 matches (tricks). Each match awards a Belt.
-5. **Winner** — The team with more Belts wins.
+5. **Winner** — The team with the most points wins.
 
 ---
 
@@ -61,11 +61,20 @@ The Draft is how players build their roster of 6 wrestlers.
 3. Resolve the throw:
    - **No one throws:** Discard the card. Nobody wanted them.
    - **One player throws:** They take the card.
-   - **Two players throw:** Standard RPS. Winner takes the card.
-   - **Three players throw:** If exactly one player threw the symbol that beats what the other two threw, that player wins. In any other case, all tied/conflicting players throw again. Anyone may drop out or stay in on any rethrow.
+   - **Two players throw:** Use standard rock paper scissors rules. Winner takes the card.
+   - **Three players throw:** If exactly one player thows a symbol that beats what the other two threw, that player wins. In any other case, throw again. Anyone may drop out or stay in on any rethrow.
    - **Four players throw:** You can only win by being the sole player who threw the symbol that beats what the other three threw. Otherwise, rethrow. Anyone may drop out or stay in.
 4. If a rethrow results in everyone dropping out, discard the card.
 5. Flip the next card and repeat.
+
+#### How to resolve three or four player rock paper scissors in SCW
+
+There are only three situations where one player wins a three or four player rock paper scissors:
+
+- One player throws Rock, and all the others throw Scissors. Rock wins.
+- One player throws Paper, and all the others throw Rock. Paper wins.
+- One player throws Scissors, and all the others throw Paper. Scissors wins.
+- In any other situation, there is no winner. Players can choose to drop out or stay in and throw again.
 
 ### Draft Ends
 
@@ -80,9 +89,9 @@ The draft ends when three players have exactly 6 wrestlers. The remaining player
 Once all players have their rosters, it's time to form tag teams.
 
 1. All four players simultaneously select one wrestler from their hand and play it face down.
-- You may not a pick "Wild Card" wrestler for this step. You must pick a wrestler with a fixed style (Clean, Dirty, or Flashy).
+  - You may not a pick "Wild Card" wrestler for this step. You must pick a wrestler with a fixed style (Clean, Dirty, or Flashy).
 2. All players reveal simultaneously.
-- Ignore wrestler effects and power levels during the reveal. Only style matters.
+  - Ignore wrestler effects and power levels during the reveal. Only style matters.
 3. Resolve partnerships:
    - **Two players revealed the same style:** Those two players are partners. The other two are partners.
    - **Three players revealed the same style:** The player who revealed a different style picks their partner. The remaining two are partners.
@@ -121,7 +130,7 @@ After all four wrestlers are in the ring and effects have been applied:
    - Dirty beats Clean (+2)
 3. **Apply Manager bonuses** — Add any bonuses from Manager abilities.
 4. **Compare totals** — The team with the higher combined total power wins the match and takes the Belt.
-5. **Ties** — If there's a tie, the team with the wrestler who has the highest individual Power wins. If still tied, it's a draw and nobody gets the Belt. Previous lead player leads the next match.
+5. **Ties** — If there's a tie, the team that led the match wins the belt.
 
 
 ---
@@ -186,7 +195,7 @@ If it's tied, then it's a tie. You've met your match!
 - "Your move!"
 
 ### Bobby "Chairman of the Board" Baker
-- For each belt worth 2 or more points that your team wins, gain 1 point.
+- The first belt and the last belt are each worth +1 point for your team.
 - "It's just business!"
 
 ### Coach Cory
@@ -194,12 +203,20 @@ If it's tied, then it's a tie. You've met your match!
 - "Believe in yourself!"
 
 ### Daddy's Little Princess
-- After the Draft, skip the Partner Assignment step. Pick one player to be your partner instead.
+- Immediately after Partner Assignment, you may look at your partner's hand and choose two cards to take. Then give your partner two cards from your hand in exchange.
 - "Gimme! Gimme! Gimme!"
+
+### El Diablo
+- After the Draft, skip the Partner Assignment step. Pick one player to be your partner instead.
+- "Let's make a deal!"
 
 ### Gus "The Bus" Pappas
 - When your team loses a match, your wrestlers gain +1 power in the next match.
 - "Get on the bus!"
+
+### Jimmy "The Snitch" Montecarlo
+- Before the Draft, secretly look at the Stars deck, without changing the order.
+- "I know a guy who knows a guy..."
 
 ### Marco "The Mind" Balducci
 - Before the Show, you may secretly look at the belt deck and rearrange the cards.
@@ -218,7 +235,7 @@ If it's tied, then it's a tie. You've met your match!
 - "Keep it above board!"
 
 ### The Baron
-- If you have a wrestler you fights dirty, and if this card is face-up, you may flip it face-down to return the wrestler to your hand at the end of the match. Leave this card face-down until the end of the game. (This effect can only be used once.)
+- If you have a wrestler who fights dirty, and if this card is face-up, you may flip it face-down to return the wrestler to your hand at the end of the match. Leave this card face-down until the end of the game. (This effect can only be used once.)
 - "The Baron always collects his dues!"
 
 ### Uncle Lou
@@ -228,13 +245,6 @@ If it's tied, then it's a tie. You've met your match!
 ### Willy "The Megaphone" McMasters
 - If you call on your partner, your wrestler gains +1 power.
 - "Let's make some noise!"
-
-### Jimmy "The Snitch" Montecarlo
-- Before the Draft, secretly look at the Stars deck, without changing the order.
-- "I know a guy who knows a guy..."
-
-### El Diablo
-- Immediately after Partner Assignment, you may look at your partner's hand and choose two cards to take. Then give your partner two cards from your hand in exchange.
 
 
 ## Stars
@@ -269,7 +279,7 @@ If it's tied, then it's a tie. You've met your match!
 - Power: 4
 - Style: Clean
 - Effect: Wrestlers with power 3 or less have no effect this match.
-- "You can't escape Gravity!"
+- "Nothing escapes Gravity!"
 
 #### "Hometown" Harry Hunt
 - Power: 4
