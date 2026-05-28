@@ -236,12 +236,9 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 
 **Piggyback**
-- (Copy another Executive's Action.)
 - Special: Use this Action without revealing your Agenda card.
 - When another Executive flips their Agenda card face-up and plays their Action, you may discard this card. If you do, wait for their Action card to resolve, and then take the Executive's Action card and move it in front of you. This is now your new Action card.
-- (Later, you will need to flip your Agenda face-up in order to use it, as usual.)
 - Timing: This effect does not interact with other effects. After an Executive plays their Action, you can take their card and use it later.
-- Your Agenda card must be face-down to use this Action.
 - (In short: Copy another Executive's Action and use it later.)
 
 
@@ -265,9 +262,11 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 **Audit**
 - The Chair names one Executive, calling for an audit.
 - The Chair secretly views the Executive's Agenda.
-- The Chair may then decide whether or not to flip the Agenda face up for the rest of the Quarter. If flipped face-up, the Executive's Agenda is now public knowledge.
+- The Chair may then decide whether or not to reveal the Agenda to the other players.
+- If the Chair chooses to reveal the Agenda, all players must be able to see it.
+- Finally, the Agenda is returned to the Executive and set face-down again.
 - Timing: This power may be played at any time during the Quarter.
-- (In short: Spy on an Executive's Agenda, and optionally reveal it.)
+- (In short: Spy on an Executive's Agenda, and optionally show it.)
 
 
 **Executive Assistant**
@@ -288,7 +287,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 
 **I need ideas, people!**
 - Name a suit during Chair Approval.
-- Executives leave their current proposal face-up on the table and place a second proposal face-down on the table as a second proposal.
+- Executives leave their current proposal face-up on the table and place a second proposal face-down on the table.
 - If an Executive has a card of the named suit, this second proposal must be of the named suit.
 - Once all proposals are placed, Executives reveal them.
 - The sprint then proceeds as normal, only with more proposals this time.
