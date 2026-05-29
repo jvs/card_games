@@ -8,6 +8,46 @@ import {
   choice, run, RandomAnswerer, AnswererOrMap, Game,
 } from "./cards.js";
 
+// ---------------------------------------------------------------------------
+// Config — tuneable levers for balance sweeps. The default reproduces the
+// original hard-coded values. Rules logic must not reference magic numbers;
+// use config fields instead.
+// ---------------------------------------------------------------------------
+export interface PantherConfig {
+  perilsCount:     number;   // how many Peril cards (1–5)
+  cardsPerSuit:    number;   // traditional cards per suit, incl. the Prank
+  woodsSize:       number;   // hidden reserve pile
+  scoreSuccess:    number;   // points per trick bid on Panther success
+  scoreFailure:    number;   // points per trick bid given to each Hunter on failure
+  perilsOnlyMult:  number;   // score multiplier for Perils-Only bids
+  targetScore:     number;   // game ends when this score is reached
+}
+
+export const DEFAULT_CONFIG: PantherConfig = {
+  perilsCount:    5,
+  cardsPerSuit:   10,
+  woodsSize:      5,
+  scoreSuccess:   10,
+  scoreFailure:   5,
+  perilsOnlyMult: 2,
+  targetScore:    250,
+};
+
+/** Derive the hand (and crow) size from the deck composition. Throws if the
+ *  arithmetic doesn't divide evenly — caller chose an incoherent config. */
+export function calcHandSize(cfg: PantherConfig): number {
+  const total = 4 * cfg.cardsPerSuit + cfg.perilsCount;
+  const remaining = total - cfg.woodsSize;
+  if (remaining % 4 !== 0 || remaining <= 0)
+    throw new Error(
+      `config incoherent: (4×${cfg.cardsPerSuit} + ${cfg.perilsCount} − ${cfg.woodsSize}) = ${remaining} must be divisible by 4`
+    );
+  return remaining / 4;
+}
+
+// ---------------------------------------------------------------------------
+// Card tables
+// ---------------------------------------------------------------------------
 const SUITS = ["Spades", "Diamonds", "Hearts", "Clubs"];
 const PRANK: Record<string, string> = {
   Spades: "Snitch", Diamonds: "Devil", Hearts: "Hound", Clubs: "Cat",
@@ -20,13 +60,18 @@ const PERILS: [string, number][] = [
   ["Goblin", 21], ["Ogre", 22], ["Dragon", 23], ["Witch", 24], ["Death", 25],
 ];
 
-function deck(): Card[] {
+export function deck(cfg: PantherConfig): Card[] {
+  if (cfg.perilsCount > PERILS.length)
+    throw new Error(`perilsCount ${cfg.perilsCount} exceeds available perils (${PERILS.length})`);
+  if (cfg.cardsPerSuit > TRAD.length)
+    throw new Error(`cardsPerSuit ${cfg.cardsPerSuit} exceeds defined ranks (${TRAD.length})`);
   const cs: Card[] = [];
+  const tradCards = TRAD.slice(0, cfg.cardsPerSuit);
   for (const s of SUITS)
-    for (const [lbl, v] of TRAD)
+    for (const [lbl, v] of tradCards)
       cs.push(Card.of({ suit: s, rank: v, label: lbl === "Prank" ? PRANK[s] : lbl,
                         prank: lbl === "Prank" ? PRANK[s] : null }));
-  for (const [lbl, v] of PERILS)
+  for (const [lbl, v] of PERILS.slice(0, cfg.perilsCount))
     cs.push(Card.of({ suit: "Perils", rank: v, label: lbl, prank: null }));
   return cs;
 }
@@ -57,9 +102,9 @@ function mustFollow(hand: Card[], led: string | null): Card[] {
   return same.length ? same : [...hand];
 }
 
-interface Bid { tricks: number; trump: string | null; perilsOnly: boolean; }
+export interface Bid { tricks: number; trump: string | null; perilsOnly: boolean; }
 
-function newState(players: Player[], rng: Rng): State {
+export function newState(players: Player[], rng: Rng): State {
   const st = new State(players, rng);
   st.zone("deck", Vis.HIDDEN);
   st.zone("crow", Vis.PUBLIC);
@@ -68,42 +113,49 @@ function newState(players: Player[], rng: Rng): State {
   st.perPlayerZone("hand", Vis.OWNER);
   return st;
 }
-const clockwise = (ps: Player[], start: Player) => {
+
+export const clockwise = (ps: Player[], start: Player) => {
   const i = ps.indexOf(start);
   return [...ps.slice(i), ...ps.slice(0, i)];
 };
 
-function* playHand(st: State, dealer: Player): Game<Record<Player, number>> {
-  const order = clockwise(st.players, dealer);
-  st.z("deck").cards = deck();
-  st.shuffle("deck");
-  for (const p of st.players) st.deal("deck", `hand:${p}`, 10);
-  st.deal("deck", "crow", 10);
-  st.deal("deck", "woods", 5);
+// ---------------------------------------------------------------------------
+// Trick-playing loop — extracted so the MC agent can call it on a freshly
+// constructed state without re-running the deal/auction.
+// ---------------------------------------------------------------------------
+export interface PlayTricksParams {
+  seats:              [Player, string][];
+  lead:               number;          // seat index to lead trick trickNum
+  handSize:           number;          // total tricks this hand
+  panther:            Player;
+  bid:                Bid;
+  trickNum:           number;          // first trick to play (0 = full hand)
+  partialPlays:       [number, Card][]; // [seatIdx, card] already played in trickNum
+  partialLed:         string | null;   // suit led so far in trickNum
+  forcedFromPartials: number | null;   // Cat-forced next-lead baked into partials
+  won:                Record<Player, number>;
+  crowWon:            number;
+}
 
-  const [panther, bid] = yield* auction(st, dealer);
-  st.vars.panther = panther;
-  st.vars.trump = bid.perilsOnly ? null : bid.trump;
+export function* playTricks(
+  st: State,
+  p: PlayTricksParams,
+  cfg: PantherConfig,
+): Game<Record<Player, number>> {
+  let lead = p.lead;
+  const won = { ...p.won };
+  let crowWon = p.crowWon;
 
-  const seats: [Player, string][] = [];
-  for (const p of order) {
-    seats.push([p, `hand:${p}`]);
-    if (p === panther) seats.push([panther, "crow"]);
-  }
-  st.vars.seats = seats;
+  for (let t = p.trickNum; t < p.handSize; t++) {
+    const plays: [number, Card][] = t === p.trickNum ? [...p.partialPlays] : [];
+    let led: string | null = t === p.trickNum ? p.partialLed : null;
+    let forced: number | null = t === p.trickNum ? (p.forcedFromPartials ?? null) : null;
+    const startOff = plays.length;
+    const rotation = [...p.seats.slice(lead), ...p.seats.slice(0, lead)];
 
-  const won: Record<Player, number> = Object.fromEntries(st.players.map((p) => [p, 0]));
-  let crowWon = 0;
-  let lead = seats.findIndex(([, z]) => z === `hand:${panther}`);
-
-  for (let t = 0; t < 10; t++) {
-    const plays: [number, Card][] = [];
-    let led: string | null = null;
-    let forced: number | null = null;
-    const rotation = [...seats.slice(lead), ...seats.slice(0, lead)];
-    for (let off = 0; off < rotation.length; off++) {
+    for (let off = startOff; off < rotation.length; off++) {
       const [controller, zname] = rotation[off];
-      const si = (lead + off) % seats.length;
+      const si = (lead + off) % p.seats.length;
       const card: Card = yield choice(controller, mustFollow(st.z(zname).cards, led),
         "play", { seat: zname, led, trick: t });
       st.emit("Played", { seat: zname, controller, card });
@@ -116,16 +168,47 @@ function* playHand(st: State, dealer: Player): Game<Record<Player, number>> {
       }
     }
     const wsi = trickWinner(plays, st.vars.trump);
-    const wseat = seats[wsi];
+    const wseat = p.seats[wsi];
     for (const [, c] of plays) st.z("discard").add(c);
     st.emit("TrickWon", { seat: wseat[1], winner: wseat[0], trick: t });
     if (wseat[1] === "crow") crowWon++; else won[wseat[0]]++;
     lead = forced !== null ? forced : wsi;
   }
-  return score(st, panther, bid, won[panther] + crowWon);
+  return score(st, p.panther, p.bid, won[p.panther] + crowWon, cfg);
 }
 
-function* auction(st: State, dealer: Player): Game<[Player, Bid]> {
+export function* playHand(st: State, dealer: Player, cfg: PantherConfig): Game<Record<Player, number>> {
+  const hs = calcHandSize(cfg);
+  const order = clockwise(st.players, dealer);
+  st.emit("HandStart", { dealer });
+  st.z("deck").cards = deck(cfg);
+  st.shuffle("deck");
+  for (const p of st.players) st.deal("deck", `hand:${p}`, hs);
+  st.deal("deck", "crow", hs);
+  st.deal("deck", "woods", cfg.woodsSize);
+
+  const [panther, bid] = yield* auction(st, dealer, hs, cfg);
+  st.vars.panther = panther;
+  st.vars.trump = bid.perilsOnly ? null : bid.trump;
+
+  const seats: [Player, string][] = [];
+  for (const p of order) {
+    seats.push([p, `hand:${p}`]);
+    if (p === panther) seats.push([panther, "crow"]);
+  }
+  st.vars.seats = seats;
+
+  const won: Record<Player, number> = Object.fromEntries(st.players.map((p) => [p, 0]));
+  const lead = seats.findIndex(([, z]) => z === `hand:${panther}`);
+
+  return yield* playTricks(st, {
+    seats, lead, handSize: hs, panther, bid,
+    trickNum: 0, partialPlays: [], partialLed: null, forcedFromPartials: null,
+    won, crowWon: 0,
+  }, cfg);
+}
+
+function* auction(st: State, dealer: Player, hs: number, cfg: PantherConfig): Game<[Player, Bid]> {
   const order = [...clockwise(st.players, dealer).slice(1), dealer];
   let high: Bid | null = null, highBidder: Player | null = null;
   const passed = new Set<Player>();
@@ -135,16 +218,17 @@ function* auction(st: State, dealer: Player): Game<[Player, Bid]> {
     if (passed.has(p)) continue;
     const floor = high ? high.tricks + 1 : 1;
     const first = high === null && p === order[0];
-    const opts = bidOptions(floor, first);
+    const opts = bidOptions(floor, first, hs);
     const c: Bid | "pass" = yield choice(p, opts, "bid", { high });
     if (c === "pass") { st.emit("Pass", { player: p }); passed.add(p); }
     else { st.emit("Bid", { player: p, ...c }); high = c; highBidder = p; }
   }
   return [highBidder ?? order[0], high!];
 }
-function bidOptions(floor: number, first: boolean): (Bid | "pass")[] {
+
+function bidOptions(floor: number, first: boolean, hs: number): (Bid | "pass")[] {
   const opts: (Bid | "pass")[] = first ? [] : ["pass"];
-  for (let t = floor; t <= 10; t++) {
+  for (let t = floor; t <= hs; t++) {
     for (const s of SUITS) opts.push({ tricks: t, trump: s, perilsOnly: false });
     opts.push({ tricks: t, trump: null, perilsOnly: true });
   }
@@ -161,7 +245,10 @@ function* prank(st: State, card: Card, controller: Player, zname: string): Game<
 }
 function* cat(st: State, controller: Player): Game<number> {
   const seats = st.vars.seats as [Player, string][];
-  return yield choice(controller, seats.map((_, i) => i), "cat_leader");
+  const result: number = yield choice(controller, seats.map((_, i) => i), "cat_leader");
+  // Emit so the log-reconstructor can recover the forced lead.
+  st.emit("CatLead", { seat: result });
+  return result;
 }
 function* devil(st: State, controller: Player, zname: string): Game<void> {
   const mine = [...st.z(zname).cards];
@@ -193,20 +280,25 @@ function* snitch(st: State, controller: Player): Game<void> {
   st.ask(controller, target, q);
 }
 
-function score(st: State, panther: Player, bid: Bid, total: number): Record<Player, number> {
+function score(
+  st: State, panther: Player, bid: Bid, total: number, cfg: PantherConfig
+): Record<Player, number> {
   const g: Record<Player, number> = Object.fromEntries(st.players.map((p) => [p, 0]));
-  const mult = bid.perilsOnly ? 2 : 1;
-  if (total >= bid.tricks) g[panther] = bid.tricks * 10 * mult;
-  else for (const p of st.players) if (p !== panther) g[p] = bid.tricks * 5 * mult;
+  const mult = bid.perilsOnly ? cfg.perilsOnlyMult : 1;
+  if (total >= bid.tricks) g[panther] = bid.tricks * cfg.scoreSuccess * mult;
+  else for (const p of st.players) if (p !== panther) g[p] = bid.tricks * cfg.scoreFailure * mult;
   return g;
 }
 
-export async function playGame(players: Player[], rng: Rng, answerer: AnswererOrMap, target = 250) {
+export async function playGame(
+  players: Player[], rng: Rng, answerer: AnswererOrMap,
+  cfg: PantherConfig = DEFAULT_CONFIG,
+) {
   const scores: Record<Player, number> = Object.fromEntries(players.map((p) => [p, 0]));
   let dealer = players[0], hands = 0;
-  while (Math.max(...Object.values(scores)) < target && hands < 200) {
+  while (Math.max(...Object.values(scores)) < cfg.targetScore && hands < 200) {
     const st = newState(players, rng);
-    const gained = await run(playHand(st, dealer), answerer);
+    const gained = await run(playHand(st, dealer, cfg), answerer);
     for (const p of players) scores[p] += gained[p];
     dealer = players[(players.indexOf(dealer) + 1) % players.length];
     hands++;
@@ -217,7 +309,6 @@ export async function playGame(players: Player[], rng: Rng, answerer: AnswererOr
 // --- run + scenario assertions when invoked directly ---
 async function main() {
   const C = (suit: string, rank: number) => Card.of({ suit, rank, label: "x", prank: null });
-  // deterministic, PRNG-independent: the trick-comparison contract
   console.assert(trickWinner([[0, C("Spades", 14)], [1, C("Hearts", 5)], [2, C("Perils", 21)]], "Hearts") === 2, "perils beat trump");
   console.assert(trickWinner([[0, C("Spades", 14)], [1, C("Hearts", 5)]], "Hearts") === 1, "trump beats led");
   console.assert(trickWinner([[0, C("Spades", 7)], [1, C("Spades", 13)], [2, C("Clubs", 14)]], "Hearts") === 1, "highest led wins");
