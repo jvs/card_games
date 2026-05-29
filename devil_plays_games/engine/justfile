@@ -1,0 +1,23 @@
+set shell := ["bash", "-euo", "pipefail", "-c"]
+
+# install pinned deps (use after clone or lockfile changes)
+install:
+    npm ci
+
+# run the test suite
+test:
+    npm test
+
+# run the panther reference game (200 random games + scenario assertions)
+panther:
+    npm run panther
+
+# type-check without emitting (catches type errors without running)
+check:
+    npx tsc --noEmit
+
+# install deps and run tests (useful first command after dormancy)
+up:
+    mise install
+    just install
+    just test
