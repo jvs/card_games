@@ -272,7 +272,7 @@ interface SampledWorld {
   woods: Card[];
 }
 
-function sampleWorld(
+export function sampleWorld(
   belief: Belief, player: Player, allPlayers: Player[], cfg: PantherConfig, rng: Rng,
 ): SampledWorld {
   const pool = unknownPool(belief, cfg, player);
@@ -299,7 +299,7 @@ function sampleWorld(
 // populated directly; no deal events are emitted (the log isn't used by the
 // simulation).
 // ---------------------------------------------------------------------------
-function buildSimState(
+export function buildSimState(
   belief: Belief,
   world: SampledWorld,
   player: Player,
@@ -354,6 +354,79 @@ class GreedyPantherAnswerer implements Answerer {
 }
 
 // ---------------------------------------------------------------------------
+// Competitive auction model.
+//
+// After the agent commits to agentDecision (a bid or "pass"), each remaining
+// active opponent randomly passes (p=0.6) or bids at the current floor (p=0.4).
+// The first bidder in auction order is forced to bid when no prior bid exists.
+// This is crude — opponent bid probability isn't calibrated to hand strength —
+// but it prices in losing the auction, which makes bid-success-rate meaningful.
+// ---------------------------------------------------------------------------
+const AUCTION_SUITS = ["Spades", "Diamonds", "Hearts", "Clubs"];
+
+function remainingAuction(
+  belief: Belief,
+  agentDecision: Bid | "pass",
+  player: Player,
+  allPlayers: Player[],
+  cfg: PantherConfig,
+  rng: Rng,
+): { panther: Player; bid: Bid } {
+  const hs = calcHandSize(cfg);
+  // Auction order: left of dealer through dealer (dealer bids last).
+  const order = [...clockwise(allPlayers, belief.dealer).slice(1), belief.dealer];
+
+  const passed = new Set<Player>(belief.auctionPassed);
+  let high: Bid | null = belief.auctionHighBid ? { ...belief.auctionHighBid } : null;
+  let highBidder: Player | null = belief.auctionHighBidder;
+
+  // Apply agent's decision.
+  if (agentDecision === "pass") {
+    passed.add(player);
+  } else {
+    high = agentDecision;
+    highBidder = player;
+  }
+
+  // Continue until one active player remains.  Cycle through order; passed
+  // players and the agent (already decided) are skipped.
+  let cycles = 0;
+  const maxCycles = allPlayers.length * (hs + 2);
+  while (order.length - passed.size > 1 && cycles < maxCycles) {
+    cycles++;
+    for (const p of order) {
+      if (passed.has(p) || p === player) continue;
+      if (order.length - passed.size <= 1) break;
+
+      const floor = high ? high.tricks + 1 : 1;
+      if (floor > hs) { passed.add(p); continue; }
+
+      // order[0] must bid when no prior bid exists (same rule as real auction).
+      const mustBid = high === null && p === order[0];
+      // Bid probability declines with floor: opponents need increasingly strong
+      // hands to justify bidding at higher levels.  Formula: (hs - floor + 1) /
+      // (hs * 2), giving ~0.5 at floor=1 down to ~0.05 at floor=hs.
+      const pBid = mustBid ? 1 : (hs - floor + 1) / (hs * 2);
+      if (rng.next() >= pBid) {
+        passed.add(p);
+      } else {
+        const perilsOnly = rng.next() < 0.2;
+        high = perilsOnly
+          ? { tricks: floor, trump: null, perilsOnly: true }
+          : { tricks: floor, trump: rng.choice(AUCTION_SUITS), perilsOnly: false };
+        highBidder = p;
+      }
+    }
+  }
+
+  if (high && highBidder) return { panther: highBidder as Player, bid: high };
+  // Fallback: find any active non-agent player; if none, agent wins.
+  const active = order.filter(p => !passed.has(p) && p !== player);
+  const winner = (active[0] ?? player) as Player;
+  return { panther: winner, bid: high ?? { tricks: 1, trump: AUCTION_SUITS[0], perilsOnly: false } };
+}
+
+// ---------------------------------------------------------------------------
 // Simulate one playout from the current belief, with a specific first answer
 // for the MC player's pending decision.
 // ---------------------------------------------------------------------------
@@ -376,9 +449,10 @@ async function simulatePlayout(
   let simBid: Bid;
 
   if (isBidDecision) {
-    // Assume MC agent wins auction with this bid
-    simPanther = player;
-    simBid = opt as Bid;
+    // Run the competitive auction: agent commits to opt, opponents bid/pass randomly.
+    const auction = remainingAuction(belief, opt as Bid | "pass", player, allPlayers, cfg, rng);
+    simPanther = auction.panther;
+    simBid = auction.bid;
     simSt.vars.trump = simBid.perilsOnly ? null : simBid.trump;
   } else {
     if (!belief.panther || !belief.bid) return 0;
@@ -481,79 +555,11 @@ export class MCAnswerer implements Answerer {
 
     const isBid = key === "bid";
 
-    // For bid decisions: skip "pass" through MC (evaluate by random sampling),
-    // and for concrete bids evaluate each option fully.
-    // Evaluating pass properly would require simulating the competitive auction,
-    // which is more complexity than it's worth for balance measurement — instead
-    // we score "pass" by randomly assigning one remaining player as Panther.
     const scores = new Map<any, number>();
     for (const opt of c.options) scores.set(opt, 0);
 
     for (let i = 0; i < this.iterations; i++) {
       for (const opt of c.options) {
-        let optToSim = opt;
-        let isPass = false;
-
-        if (isBid && opt === "pass") {
-          // Simulate pass: pick random active opponent as Panther with random bid
-          const active = this.allPlayers.filter(
-            p => p !== this.player && !belief.auctionPassed.has(p)
-          );
-          if (!active.length) { scores.set(opt, (scores.get(opt) ?? 0)); continue; }
-          const fakePlayer = this.rng.choice(active);
-          const floor = belief.auctionHighBid ? belief.auctionHighBid.tricks + 1 : 1;
-          const hs = calcHandSize(this.cfg);
-          const fakeBids: Bid[] = [];
-          for (let t = floor; t <= hs; t++) {
-            fakeBids.push({ tricks: t, trump: "Hearts", perilsOnly: false });
-            fakeBids.push({ tricks: t, trump: null, perilsOnly: true });
-          }
-          if (!fakeBids.length) { scores.set(opt, (scores.get(opt) ?? 0)); continue; }
-          const fakeBid = this.rng.choice(fakeBids);
-
-          // Build belief variant with fake panther
-          const fakeBelief: Belief = {
-            ...belief,
-            panther: fakePlayer,
-            bid: fakeBid,
-            phase: "tricks",
-            trickNumber: 0,
-            partialPlays: [],
-            partialLed: null,
-            forcedFromPartials: null,
-            won: Object.fromEntries(this.allPlayers.map(p => [p, 0])),
-            crowWon: 0,
-          };
-
-          const world = sampleWorld(fakeBelief, this.player, this.allPlayers, this.cfg, this.rng);
-          const simSt = buildSimState(fakeBelief, world, this.player, this.allPlayers, this.cfg,
-            new Rng(this.rng.int(2 ** 30)));
-          simSt.vars.trump = fakeBid.perilsOnly ? null : fakeBid.trump;
-          const order = clockwise(this.allPlayers, belief.dealer);
-          const seats: [Player, string][] = [];
-          for (const p of order) {
-            seats.push([p, `hand:${p}`]);
-            if (p === fakePlayer) seats.push([fakePlayer, "crow"]);
-          }
-          simSt.vars.seats = seats;
-          simSt.vars.panther = fakePlayer;
-
-          const hs2 = calcHandSize(this.cfg);
-          const params: PlayTricksParams = {
-            seats, lead: seats.findIndex(([, z]) => z === `hand:${fakePlayer}`),
-            handSize: hs2, panther: fakePlayer, bid: fakeBid,
-            trickNum: 0, partialPlays: [], partialLed: null, forcedFromPartials: null,
-            won: Object.fromEntries(this.allPlayers.map(p => [p, 0])), crowWon: 0,
-          };
-
-          const answerers = new Map<Player | null, Answerer>([
-            [null, { answer: (req: Choice) => this.rng.choice(req.options) }]
-          ]);
-          const result = await run(playTricks(simSt, params, this.cfg), answerers);
-          scores.set(opt, (scores.get(opt) ?? 0) + (result[this.player] ?? 0));
-          continue;
-        }
-
         const fromZone = isBid ? undefined : (c.meta?.seat as string | undefined);
         const score = await simulatePlayout(
           opt, belief, this.player, this.allPlayers, this.cfg, this.rng, this.policy, isBid, fromZone

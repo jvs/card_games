@@ -20,6 +20,7 @@ export interface PantherConfig {
   scoreSuccess:    number;   // points per trick bid on Panther success
   scoreFailure:    number;   // points per trick bid given to each Hunter on failure
   perilsOnlyMult:  number;   // score multiplier for Perils-Only bids
+  perilsOnlyBonus: number;   // flat bonus added to Panther score on Perils-Only success
   targetScore:     number;   // game ends when this score is reached
 }
 
@@ -29,7 +30,8 @@ export const DEFAULT_CONFIG: PantherConfig = {
   woodsSize:      5,
   scoreSuccess:   10,
   scoreFailure:   5,
-  perilsOnlyMult: 2,
+  perilsOnlyMult:  1,
+  perilsOnlyBonus: 0,
   targetScore:    250,
 };
 
@@ -285,8 +287,12 @@ function score(
 ): Record<Player, number> {
   const g: Record<Player, number> = Object.fromEntries(st.players.map((p) => [p, 0]));
   const mult = bid.perilsOnly ? cfg.perilsOnlyMult : 1;
-  if (total >= bid.tricks) g[panther] = bid.tricks * cfg.scoreSuccess * mult;
-  else for (const p of st.players) if (p !== panther) g[p] = bid.tricks * cfg.scoreFailure * mult;
+  if (total >= bid.tricks) {
+    g[panther] = bid.tricks * cfg.scoreSuccess * mult;
+    if (bid.perilsOnly) g[panther] += cfg.perilsOnlyBonus;
+  } else {
+    for (const p of st.players) if (p !== panther) g[p] = bid.tricks * cfg.scoreFailure * mult;
+  }
   return g;
 }
 

@@ -124,13 +124,13 @@ After all 10 tricks have been played, count the Panther's tricks. Tricks won by 
 ### Panther Succeeds (meets or exceeds bid)
 
 - Panther gains **bid × 10** points.
-- If "Perils Only" was declared: double the Panther's points for this hand.
+If "Perils Only" was declared: Panther gains an additional **+5 points**.
 
 ### Panther Fails (fewer tricks than bid)
 
 - Panther gains **nothing**.
 - Each Hunter gains **bid × 5** points.
-- If "Perils Only" was declared: double the Hunters' points for this hand.
+If "Perils Only" was declared: Each hunter gains an additional **+5 points**.
 
 ---
 
