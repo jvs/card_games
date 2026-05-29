@@ -138,7 +138,7 @@ Players can approach challenges however they like — pick one at random, try on
 5. **The Emperor Has No Clothes:** No King may win a trick.
 6. **Amateur Hour:** No Ace may win a trick.
 7. **Stamp Collection:** One player must win at least one card from each of the four suits across all their won tricks.
-8. **Alpha Omega:** The player who wins the first trick must also win the last trick.
+8. **Bookends:** The player who wins the first trick must also win the last trick.
 
 ### Getting Serious
 

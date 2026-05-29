@@ -185,7 +185,7 @@ If it's tied, then it's a tie. You've met your match!
 - Worth 2 points. The team that wins this match must discard one manager card.
 
 ### Super Championship Belt
-- Worth 2 points. The player on the other team who played latest must lead the next mattch.
+- Worth 2 points. The player on the other team who played latest must lead the next match.
 
 
 ## Managers
@@ -223,12 +223,12 @@ If it's tied, then it's a tie. You've met your match!
 - "It's all going according to plan!"
 
 ### Professor Tanaka
-- Whenever you are called on to play a wrestler, you may call on your partner to play instead, if they haven't played a wresler yet.
+- Whenever you are called on to play a wrestler, you may call on your partner to play instead, if they haven't played a wrestler yet.
 - Similarly, whenever you have to lead a match, you may call on your partner to lead instead.
 - "You are the student, and I am the professor!"
 
 ### Queen Sheila
-- You may start the Show with one extra wrestler in your hand.
+- Immediately after the Draft ends, draw two cards from the Star deck, reveal them, and add one to your hand. Discard the other.
 - "Bow down to the Queen!"
 
 ### Roy Classic
@@ -255,13 +255,13 @@ If it's tied, then it's a tie. You've met your match!
 #### Rufus
 - Power: 7
 - Style: Clean
-- Effect: Your partner’s wrestler has no effect.
+- Effect: Your partner’s wrestlers have no effect.
 - "Two thumbs up!"
 
 #### Wrestle Bot 9000
 - Power: 6
 - Style: Clean
-- Effect: You may copy your the effect of your partner's wrestler in this match.
+- Effect: You may copy the effect of one of your partner's wrestlers in this match.
 - "Beep boop"
 
 #### "Sunshine" Adam Maguire

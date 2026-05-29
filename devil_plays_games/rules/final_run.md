@@ -184,8 +184,8 @@ After playing the Cat, immediately apply its effect:
 
 After playing the Devil, immediately apply its effect:
 
-- Select a card from your hand and face-up on the table.
-- The other player takes this card and gives you another card from their hand in exchange.
+- Select a card from your hand and give it to the other player.
+- The other player gives you another card from their hand in exchange.
 - If the Devil is your last card, it has no effect.
 
 
@@ -195,7 +195,8 @@ After playing the Hound, immediately apply its effect:
 
 - Look through both player's won tricks and choose one trick.
 - Remove both cards from the trick and place them face-up on the table.
-- The Specialist chooses one card to add to their hand, then the Fixer adds the other card to their hand.
+- The other player chooses one card to add to their hand.
+- Add the remaining card to your own hand.
 
 
 ### The Snitch (Spades)
@@ -205,6 +206,7 @@ After playing the Snitch, immediately apply its effect:
 - Look at the top 2 cards of the Take and place them face-up on the table.
 - The Fixer chooses one card to add to their hand, then the Specialist adds the other card to their hand.
 - If the Take does not have at least 2 cards, the Snitch has no effect.
+- Note: Remember not to draw any cards during the draw step if you have 6 or more cards in your hand.
 
 
 ### The Ghost (one per suit)

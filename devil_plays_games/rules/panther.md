@@ -44,7 +44,7 @@ Rank order (low to high): Goblin, Ogre, Dragon, Witch, Death.
 1. Shuffle the deck.
 2. Deal **10 cards** to each player.
 3. Deal **10 cards face-up** to the center of the table. This is the **Crow hand** (or just "the Crow").
-4. Deal **5 cards face-down** to the side. These are **the Woods** — out of play and not revealed until the hand is over.
+4. Deal **5 cards face-down** to the side. These cards form **the Woods** — out of play and not revealed until the hand is over.
 5. The dealer sorts the Crow by suit and rank, so all players can read it easily.
 
 All players may examine the Crow before bidding begins.

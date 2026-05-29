@@ -85,15 +85,10 @@ After the final Quarter, the player with the most points wins. If there's a tie,
 
 ## The Sprint Cycle
 
-**Note:**
-- During the Sprint, the Chair should tell the Executives when to reveal their cards, and they should reveal simultaneously.
-- (This happens a few places in the Sprint Cycle.)
-
-
 1. **Sprint Planning:**
    - Each Executive selects one card from their hand and places it face-down on the table. This is their proposal for the sprint.
    - If this sprint has a Point Person, that player waits before selecting their proposal.
-   - Once all cards are placed, Executives reveal their proposals.
+   - Once all cards are placed, Executives reveal their proposals simultaneously.
    - Finally, the Point Person selects a proposal from their hand and reveals it. (Skip if there's no Point.)
 2. **Chair Approval:**
    - The Chair approves one proposal, making it the **lead card** for this trick.
@@ -273,7 +268,7 @@ Prank effects happen during Parking Lot Items. If multiple Pranks are played in 
 - Name one Executive and place this card face-up in front of them.
 - The Executive scores +1 if the Chair achieves their Quarterly Target, and -1 if the Chair fails.
 - Timing: This power may be played at any time during the Quarter.
-- (In short: Tie an Executive to your success.)
+- (In short: Bind an Executive to your success.)
 
 
 **Golden Handcuffs**
