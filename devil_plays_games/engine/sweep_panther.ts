@@ -183,25 +183,29 @@ async function main() {
   console.log(`Panther balance sweep — ${N_HANDS} hands/config, MC iterations=${MC_ITER}`);
   console.log("=".repeat(70));
 
-  for (const { label, cfg } of SWEEP_GRID) {
+  for (let gi = 0; gi < SWEEP_GRID.length; gi++) {
+    const { label, cfg } = SWEEP_GRID[gi];
     const hs = calcHandSize(cfg);
     console.log(`\nConfig: ${label}`);
     console.log(`  perils=${cfg.perilsCount} cardsPerSuit=${cfg.cardsPerSuit} woods=${cfg.woodsSize} handSize=${hs}`);
     console.log(`  scoreSuccess=${cfg.scoreSuccess} scoreFailure=${cfg.scoreFailure} perilsOnlyMult=${cfg.perilsOnlyMult}`);
 
     for (const policy of ["random", "greedy"] as const) {
-      // --- mc_vs_random: A=MC, B=random, C=random ---
+      // Distinct seedBase per (config, policy, pairing). Stride of 100000 keeps
+      // per-hand seed ranges (seedBase + h) non-overlapping across all cells.
+      const policyOff = policy === "greedy" ? 2 : 0;
+      const baseRandom = (gi * 4 + policyOff + 0) * 100000 + 1;
+      const baseMc     = (gi * 4 + policyOff + 1) * 100000 + 1;
+
       const mcVsRandom = await runHands(players, cfg, N_HANDS, (st) => {
         const gameRng = st.rng;
         const mcRng   = new Rng(gameRng.int(2 ** 30) + 999983);
-        const ans = new Map<Player | null, Answerer>([
+        return new Map<Player | null, Answerer>([
           ["A", new MCAnswerer("A", st, players, cfg, mcRng, MC_ITER, policy)],
           [null, new RandomAnswerer(gameRng)],
         ]);
-        return ans;
-      }, 1000 * SWEEP_GRID.indexOf({ label, cfg } as any) || 0);
+      }, baseRandom);
 
-      // --- mc_vs_mc: all MC ---
       const mcVsMc = await runHands(players, cfg, N_HANDS, (st) => {
         const gameRng = st.rng;
         const ans = new Map<Player | null, Answerer>();
@@ -211,17 +215,12 @@ async function main() {
         }
         ans.set(null, { answer: (req: Choice) => gameRng.choice(req.options) });
         return ans;
-      }, 2000 * SWEEP_GRID.indexOf({ label, cfg } as any) || 0);
+      }, baseMc);
 
       console.log(`\n  policy=${policy}, MC vs Random:`);
       console.log(formatStats(computeStats(mcVsRandom)));
       console.log(`\n  policy=${policy}, MC vs MC:`);
       console.log(formatStats(computeStats(mcVsMc)));
-
-      // Flag divergence between policies
-      const rStats = computeStats(mcVsRandom);
-      const gStats = computeStats(mcVsRandom); // same setup repeated, but comparing within policy
-      // (The meaningful divergence is random-policy vs greedy-policy — collected in the loop)
     }
 
     console.log("-".repeat(70));
