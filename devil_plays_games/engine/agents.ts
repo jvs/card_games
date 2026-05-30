@@ -32,7 +32,7 @@ import { Answerer, Choice }      from "./core.js";
 import { State, Card }           from "./cards.js";
 import {
   PantherConfig, calcHandSize, deck,
-  newState, playTricks, Bid, PlayTricksParams,
+  newState, playTricks, Bid, PlayTricksParams, firstLeadSeat,
 } from "./panther.js";
 
 // ---------------------------------------------------------------------------
@@ -91,7 +91,7 @@ function buildContinuationParams(
 
   // Lead for the current trick: winner of the last completed trick,
   // overridden by any CatLead event inside that trick.
-  let lead = seats.findIndex(([, z]) => z === `hand:${panther}`);
+  let lead = firstLeadSeat(seats, panther, allPlayers, cfg);
   for (let i = 0; i < wonEvents.length; i++) {
     const e  = wonEvents[i];
     const wi = seats.findIndex(([, z]) => z === e.payload.seat);

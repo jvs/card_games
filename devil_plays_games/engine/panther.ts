@@ -22,7 +22,15 @@ export interface PantherConfig {
   perilsOnlyMult:  number;   // score multiplier for Perils-Only bids
   perilsOnlyBonus: number;   // flat bonus added to Panther score on Perils-Only success
   targetScore:     number;   // game ends when this score is reached
+  firstLeader:     FirstLeader; // which seat leads the first trick of a hand
 }
+
+// Who leads the opening trick. "panther" is the rules-accurate default; the
+// others exist to probe whether leading first is the source of the Panther's
+// edge. Note "panther" and "crow" are BOTH Panther-controlled seats — the
+// Panther leads either way, only the seat differs; "left-of-panther" hands the
+// opening lead to a Hunter instead.
+export type FirstLeader = "panther" | "crow" | "left-of-panther";
 
 export const DEFAULT_CONFIG: PantherConfig = {
   perilsCount:    5,
@@ -33,6 +41,7 @@ export const DEFAULT_CONFIG: PantherConfig = {
   perilsOnlyMult:  1,
   perilsOnlyBonus: 0,
   targetScore:    250,
+  firstLeader:    "panther",
 };
 
 /** Derive the hand (and crow) size from the deck composition. Throws if the
@@ -121,6 +130,42 @@ export const clockwise = (ps: Player[], start: Player) => {
   return [...ps.slice(i), ...ps.slice(0, i)];
 };
 
+/** Seat index (into `seats`) that leads the first trick, per cfg.firstLeader.
+ *  Centralizes the opening-lead rule so every caller — the live game, the MC
+ *  belief reconstruction, and the experiment runners — agree. */
+/** Table seating, clockwise, with the Crow seated ACROSS from the Panther so
+ *  play alternates Panther-team / Hunter-team. For the 3-player game this yields
+ *  [Panther-hand, Hunter1-hand, Crow, Hunter2-hand] — the Crow no longer plays
+ *  back-to-back with the Panther's own hand (which was a bug: it handed both
+ *  Hunters the last-to-act position and let the Panther see neither Hunter before
+ *  committing both its cards). Anchored at the Panther; callers pick who starts
+ *  via firstLeadSeat()+lead, so the anchor point doesn't affect play order. */
+export function buildSeats(players: Player[], panther: Player): [Player, string][] {
+  const [, ...hunters] = clockwise(players, panther); // hunters, clockwise from panther
+  const seats: [Player, string][] = [[panther, `hand:${panther}`]];
+  hunters.forEach((h, i) => {
+    seats.push([h, `hand:${h}`]);
+    if (i === Math.floor((hunters.length - 1) / 2)) seats.push([panther, "crow"]);
+  });
+  return seats;
+}
+
+export function firstLeadSeat(
+  seats: [Player, string][], panther: Player, players: Player[], cfg: PantherConfig,
+): number {
+  switch (cfg.firstLeader) {
+    case "crow":
+      return seats.findIndex(([, z]) => z === "crow");
+    case "left-of-panther": {
+      const left = clockwise(players, panther)[1 % players.length];
+      return seats.findIndex(([, z]) => z === `hand:${left}`);
+    }
+    case "panther":
+    default:
+      return seats.findIndex(([, z]) => z === `hand:${panther}`);
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Trick-playing loop — extracted so the MC agent can call it on a freshly
 // constructed state without re-running the deal/auction.
@@ -181,7 +226,6 @@ export function* playTricks(
 
 export function* playHand(st: State, dealer: Player, cfg: PantherConfig): Game<Record<Player, number>> {
   const hs = calcHandSize(cfg);
-  const order = clockwise(st.players, dealer);
   st.emit("HandStart", { dealer });
   st.z("deck").cards = deck(cfg);
   st.shuffle("deck");
@@ -193,15 +237,11 @@ export function* playHand(st: State, dealer: Player, cfg: PantherConfig): Game<R
   st.vars.panther = panther;
   st.vars.trump = bid.perilsOnly ? null : bid.trump;
 
-  const seats: [Player, string][] = [];
-  for (const p of order) {
-    seats.push([p, `hand:${p}`]);
-    if (p === panther) seats.push([panther, "crow"]);
-  }
+  const seats = buildSeats(st.players, panther);
   st.vars.seats = seats;
 
   const won: Record<Player, number> = Object.fromEntries(st.players.map((p) => [p, 0]));
-  const lead = seats.findIndex(([, z]) => z === `hand:${panther}`);
+  const lead = firstLeadSeat(seats, panther, st.players, cfg);
 
   return yield* playTricks(st, {
     seats, lead, handSize: hs, panther, bid,

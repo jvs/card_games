@@ -14,7 +14,7 @@ import { Rng, Player, run } from "./core.js";
 import { Answerer, Choice } from "./core.js";
 import {
   PantherConfig, DEFAULT_CONFIG, calcHandSize, deck,
-  newState, playTricks, clockwise, Bid, PlayTricksParams,
+  newState, playTricks, clockwise, Bid, PlayTricksParams, firstLeadSeat,
 } from "./panther.js";
 import { makeAgent, AgentMode } from "./agents.js";
 
@@ -73,7 +73,7 @@ async function runDeal(
   const bid: Bid = { tricks: 1, trump, perilsOnly: false };
   await run(playTricks(st, {
     seats,
-    lead:               seats.findIndex(([, z]) => z === `hand:${PANTHER}`),
+    lead:               firstLeadSeat(seats, PANTHER, PLAYERS, cfg),
     handSize:           hs,
     panther:            PANTHER,
     bid,

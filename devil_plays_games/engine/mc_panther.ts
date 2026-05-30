@@ -30,7 +30,7 @@ import { Answerer, Effect, Choice, Player, Rng, Event } from "./core.js";
 import { State, Card } from "./cards.js";
 import {
   PantherConfig, Bid, PlayTricksParams, calcHandSize, deck as pantherDeck,
-  newState, playTricks, clockwise,
+  newState, playTricks, clockwise, firstLeadSeat, buildSeats,
 } from "./panther.js";
 import { run } from "./core.js";
 
@@ -102,13 +102,7 @@ export function reconstructBelief(
 
   // Reconstruct seats (needed for mapping zone names → seat indices)
   let seats: [Player, string][] = [];
-  if (panther !== null) {
-    const order = clockwise(allPlayers, dealer);
-    for (const p of order) {
-      seats.push([p, `hand:${p}`]);
-      if (p === panther) seats.push([panther, "crow"]);
-    }
-  }
+  if (panther !== null) seats = buildSeats(allPlayers, panther);
 
   // --- Card knowledge ---
   const myHand: Card[] = [];
@@ -161,7 +155,8 @@ export function reconstructBelief(
   let crowWon = 0;
 
   // Compute lead at end of each completed trick
-  let lead = seats.length > 0 ? seats.findIndex(([, z]) => z === `hand:${panther}`) : 0;
+  let lead = seats.length > 0 && panther !== null
+    ? firstLeadSeat(seats, panther, allPlayers, cfg) : 0;
   for (let idx = 0; idx < trickWonEvents.length; idx++) {
     const e = trickWonEvents[idx];
     if (e.payload.seat === "crow") crowWon++;
@@ -462,12 +457,7 @@ async function simulatePlayout(
   }
 
   // Build seats
-  const order = clockwise(allPlayers, belief.dealer);
-  const seats: [Player, string][] = [];
-  for (const p of order) {
-    seats.push([p, `hand:${p}`]);
-    if (p === simPanther) seats.push([simPanther, "crow"]);
-  }
+  const seats = buildSeats(allPlayers, simPanther);
   simSt.vars.seats = seats;
   simSt.vars.panther = simPanther;
 
@@ -479,7 +469,7 @@ async function simulatePlayout(
   let params: PlayTricksParams;
   if (isBidDecision) {
     params = {
-      seats, lead: seats.findIndex(([, z]) => z === `hand:${simPanther}`),
+      seats, lead: firstLeadSeat(seats, simPanther, allPlayers, cfg),
       handSize: hs, panther: simPanther, bid: simBid,
       trickNum: 0, partialPlays: [], partialLed: null, forcedFromPartials: null,
       won: Object.fromEntries(allPlayers.map(p => [p, 0])), crowWon: 0,
