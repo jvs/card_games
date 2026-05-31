@@ -43,9 +43,9 @@ Rank order within a suit (low to high): Prank, 5, 6, 7, 8, 9, 10, Jack, Queen, K
 
 Rank order (low to high): Goblin, Ogre, Dragon, Witch, Death.
 
-**Recourses (4 cards)**
+**Plans (4 cards)**
 
-- Fight, Run, Hide, Panic
+- Fight, Panic, Run, Vanish
 
 
 ---
@@ -66,13 +66,13 @@ All players may examine the Crow before the Curse.
 
 The Curse decides who becomes the Panther and what their strategy is.
 
-The player to the dealer's left goes first. Each player may tell a story or pass.
+The player to the dealer's left goes first. Each player must either tell a story or pass to the next player.
 
-A story consists of a **Recourse** and a **Ground**.
+A story consists of a **Plan** and a **Ground**.
 
-The Ground is either a lesser trump suit or "Perils Only". For example: "Fight on Hearts" or "Hide on Perils Only".
+The Ground is either a lesser trump suit or "Perils Only". For example: "Fight on Hearts" or "Vanish on Perils Only".
 
-### Recourses
+### Plans
 
 **Fight**
 - Goal: Crow and Panther take tricks.
@@ -94,23 +94,35 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 - Otherwise: +1 points to each Hunter
 
 **Panic**
-- Special: This Recourse is only used when each player passes.
+- Special: This Plan is only used when all players pass.
 - Goal: win 4, 5, or 6 tricks.
 - If Crow and Panther take 4 or 6 tricks: +3 point
 - If Crow and Panther take 5 tricks: +4 points
 - Otherwise: +1 point to each Hunter
 
+**If no one tells a story:**
+- The player to the left of the dealer must tell a story using the Panic Plan.
+- They may name any Ground or declare Perils only.
+- This player becomes the Panther.
 
-### Resolution
+**If only one player tells a story:**
+- This player becomes the Panther.
 
-**After each player has gone:**
-- If no one tells a story: The player to the left of the dealer must tell a story using the Panic Recourse. They may name any Ground or declare Perils only. The curse falls on them.
-- If one player tells a story: That player takes the curse.
-- If multiple players tell a story:
-  - The player with the latest Recourse (when sorted alphabetically) takes the curse: Fight < Run < Vanish. (For example, players with Fight lose out to players with Run, and players with Run lose out to players with Vanish.)
-  - If two players have the latest Recourse, the player nearest to the dealer's left takes the curse.
+**If two players tell a story:**
+- The player who passed chooses which of the other two players becomes the Panther.
 
-The player with the winning story becomes the Panther. Place the appropriate Recourse card in front of the Panther player. Place the Crow across from the Panther, and the Panther leads the first trick.
+**If all three players tell a story:**
+- The player to the dealer's left chooses which player becomes the Panther. (They may choose themselves, but they don't have to.)
+
+**Choosing the Panther:**
+- When one player must choose who becomes the Panther, they decide on their own, without discussion.
+- The chosen player becomes the Panther and plays their own story.
+
+**Setting up the Panther:**
+- Place the appropriate Plan card in front of the Panther player, and place the Crow hand across from them.
+- The Panther and the Crow sit across from each other. The two Hunters take the other two seats.
+- Play proceeds clockwise: Panther, to Hunter, to Crow, to the other Hunter.
+- The Panther leads the first trick.
 
 ---
 
@@ -119,7 +131,7 @@ The player with the winning story becomes the Panther. Place the appropriate Rec
 Cards from strongest to weakest:
 
 1. **Perils** (greater trump) — Death > Witch > Dragon > Ogre > Goblin
-2. **Ground** (the lesser trump suit named in the winning story) — normal rank order within the suit
+2. **Ground** (the lesser trump suit named in the Panther's story) — normal rank order within the suit
 3. **Led suit** — the suit of the first card played in a trick
 4. **Off-suit cards** — cannot win a trick
 
@@ -131,7 +143,7 @@ If "Perils Only" was declared, there is no lesser trump — only Perils outrank 
 
 ## Playing a Hand
 
-The Panther controls two hands: their own hand (hidden, like any player's) and the Crow (face-up, visible to all). These are separate hands — each follows suit independently, and each plays in its own seat in the turn order.
+The Panther controls two hands: their own hand (hidden, like any player's) and the Crow (face-up, visible to all). The Crow is a dummy hand — the Panther plays it the way declarer plays the dummy in Bridge. These are separate hands — each follows suit independently, and each plays in its own seat in the turn order.
 
 The Panther leads the first trick. After that, the winner of each trick leads the next. If the Crow wins a trick, the Crow leads the next trick (with the Panther choosing which card to play from it). Play proceeds clockwise. On the Crow's turn, the Panther plays a card from the Crow.
 
@@ -170,7 +182,7 @@ Ask one player a single yes-or-no question about the cards currently in their ha
 
 ## Scoring
 
-After all 10 tricks have been played, check the Panther's Recourse card and award points.
+After all 10 tricks have been played, check the Panther's Plan card and award points.
 
 ---
 
@@ -185,8 +197,8 @@ If multiple players cross 25 on the same hand, the player with the higher score 
 ## Turn Summary
 
 1. **Deal** — 10 to each player, 10 face-up to the Crow, 5 face-down to the Woods.
-2. **Curse** — Each player may tell a story. Players select the winning story.
+2. **Curse** — Each player may tell a story. One player becomes the Panther.
 3. **Setup** — Crow placed across from the Panther.
 4. **Play** — 10 tricks, normal clockwise play. Panther leads first.
-5. **Score** — Award points based on the Panther's Recourse and result.
+5. **Score** — Award points based on the Panther's Plan and result.
 6. **Rotate** — Dealer passes clockwise. Shuffle and deal a new hand.
