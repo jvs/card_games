@@ -147,12 +147,19 @@ Blank Shot vs Dead Shot: If Blank Shot and Dead Shot are played in the same tric
 
 ## Deception
 
-The Agent is not required to deceive the other players. While your badge is face-down, you may verbally claim to be the Agent (or deny it) at any time. Sniping is allowed regardless of what you say. Your badge stays face-down until you are unmasked through play.
+The Agent is not required to deceive the other players. While your badge is face-down, you may verbally claim to be the Agent (or deny it) at any time. Sniping is allowed regardless of what you say. Your badge stays face-down until you are unmasked through play(cover blown, double cross, or ratted out).
 
-## Reneging
+## Failing to Follow Suit
 
-If you fail to follow suit when you are able to, you have reneged. In Secret Agent, until the Agent is unmasked, only the Agent can renege. If you suspect someone has reneged, you may call them out on it. If they are the Agent, they are unmasked immediately. If they are not the Agent, they are penalized by losing one trick from their total at the end of the hand.
+If you fail to follow suit when you are required to, you either made a mistake, or you cheated.
 
+My advice:
+
+- If you make a mistake, let the table know right away, and together work out whether or not the mistake can be corrected. If you cheat and got caught, there's no rule to save you. (If there was, then it wouldn't be cheating, it would just be part of the game.)
+
+- If you catch someone cheating, stop playing the game and do something else. There's not much you can do when someone wants to cheat. They're playing a different game, with their own rules. You can play along too if you want to, but I can't help you with that from here.
+
+Note: One wrinkle is that the Agent is not required to follow suit while their badge is face down. We call that "sniping". So if you catch someone not following suit, you haven't necessarily caught someone cheating. They might be sniping. It just means you now know who the Agent is. Does that stop them from being able to snipe? Well, is their badge face up or face down? As long as it's face down, they can keep sniping. It's good for you that you caught them, but that alone doesn't stop them.
 
 ---
 
