@@ -86,7 +86,7 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 - If Crow and Panther take 3 tricks: +2 point
 - If Crow and Panther take 2 tricks: +3 points
 - If Crow and Panther take 1 or 0 tricks: +4 points
-- Otherwise: +2 points to each Hunter
+- Otherwise: +1 points to each Hunter
 
 **Vanish**
 - Goal: Panther avoids tricks.
