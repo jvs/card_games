@@ -336,6 +336,163 @@ function score(
   return g;
 }
 
+// ---------------------------------------------------------------------------
+// Stories — the six contract types from Panther v2.
+// ---------------------------------------------------------------------------
+export type StoryKind =
+  | "BothAttack" | "BothDefend" | "PantherDefends";
+
+export const ALL_STORIES: StoryKind[] = [
+  "BothAttack", "BothDefend", "PantherDefends",
+];
+
+export const STORY_LABELS: Record<StoryKind, string> = {
+  BothAttack:     "Both Attack",
+  BothDefend:     "Both Defend",
+  PantherDefends: "Panther Defends",
+};
+
+/** Does the contract succeed? */
+export function storyMakes(
+  pantherTricks: number, crowTricks: number, story: StoryKind,
+): boolean {
+  const sum = pantherTricks + crowTricks;
+  switch (story) {
+    case "BothAttack":     return sum >= 7;
+    case "BothDefend":     return sum <= 3;
+    case "PantherDefends": return pantherTricks === 0;
+  }
+}
+
+export type StoryOutcome = "large" | "medium" | "small" | "fail";
+
+/** Classify into large/medium/small/fail per the scoring thresholds. */
+export function storyOutcome(
+  pantherTricks: number, crowTricks: number, story: StoryKind,
+): StoryOutcome {
+  const sum = pantherTricks + crowTricks;
+  switch (story) {
+    case "BothAttack":
+      if (sum >= 9) return "large";
+      if (sum === 8) return "medium";
+      if (sum === 7) return "small";
+      return "fail";
+    case "BothDefend":
+      if (sum <= 1) return "large";
+      if (sum === 2) return "medium";
+      if (sum === 3) return "small";
+      return "fail";
+    case "PantherDefends":
+      return pantherTricks === 0 ? "medium" : "fail";
+  }
+}
+
+/** Point payouts for a story result.
+ *  panther = points the Panther earns; hunters = points EACH Hunter earns. */
+export interface StoryPointResult { panther: number; hunters: number; }
+
+export function storyPoints(
+  pantherTricks: number, crowTricks: number, story: StoryKind,
+): StoryPointResult {
+  const outcome = storyOutcome(pantherTricks, crowTricks, story);
+  switch (story) {
+    case "BothAttack":
+    case "BothDefend":
+      if (outcome === "large")  return { panther: 5, hunters: 0 };
+      if (outcome === "medium") return { panther: 2, hunters: 0 };
+      if (outcome === "small")  return { panther: 1, hunters: 0 };
+      return { panther: 0, hunters: 3 };
+    case "PantherDefends":
+      if (outcome === "medium") return { panther: 2, hunters: 0 };
+      return { panther: 0, hunters: 5 };
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Fast synchronous rollout for MC inner loops.
+// Plays the remaining tricks randomly, without the async generator machinery.
+// Does NOT emit events. Mutates `hands` in place — callers must pass copies.
+// ---------------------------------------------------------------------------
+export interface RolloutResult { pantherTricks: number; crowTricks: number; }
+
+export function rolloutSync(
+  hands:        Record<string, Card[]>,   // zone → remaining cards (MUTATED)
+  seats:        [Player, string][],
+  lead:         number,                   // seat index leading trick `trickNum`
+  trickNum:     number,                   // first trick to play
+  handSize:     number,                   // total tricks in hand
+  partialPlays: [number, Card][],         // cards already played in trick `trickNum`
+  partialLed:   string | null,
+  forcedLead:   number | null,            // Cat-forced lead for next trick
+  trump:        string | null,
+  panther:      Player,
+  rng:          Rng,
+): RolloutResult {
+  let pTricks = 0, cTricks = 0;
+  const n = seats.length;
+  for (let t = trickNum; t < handSize; t++) {
+    const plays: [number, Card][] = t === trickNum ? [...partialPlays] : [];
+    let led:    string | null = t === trickNum ? partialLed  : null;
+    let forced: number | null = t === trickNum ? forcedLead  : null;
+    const startOff = plays.length;
+    for (let off = startOff; off < n; off++) {
+      const si     = (lead + off) % n;
+      const zname  = seats[si][1];
+      const hand   = hands[zname];
+      const legal  = mustFollow(hand, led);
+      const card   = rng.choice(legal);
+      rolloutRemove(hand, card);
+      led = led ?? (card.get("suit") as string);
+      plays.push([si, card]);
+      const prank = card.get("prank") as string | null;
+      if (prank !== null) {
+        const f = rolloutPrank(prank, hands, seats, zname, rng);
+        if (f !== null) forced = f;
+      }
+    }
+    const wsi = trickWinner(plays, trump);
+    if      (seats[wsi][1] === "crow")           cTricks++;
+    else if (seats[wsi][0] === panther)          pTricks++;
+    lead = forced !== null ? forced : wsi;
+  }
+  return { pantherTricks: pTricks, crowTricks: cTricks };
+}
+
+function rolloutRemove(hand: Card[], card: Card): void {
+  const i = hand.indexOf(card);
+  if (i >= 0) { hand.splice(i, 1); return; }
+  // Value-equality fallback (guards against any card-instance differences)
+  const s = card.get("suit") as string, r = card.get("rank") as number;
+  const j = hand.findIndex(c => c.get("suit") === s && c.get("rank") === r);
+  if (j >= 0) hand.splice(j, 1);
+}
+
+function rolloutPrank(
+  name:  string,
+  hands: Record<string, Card[]>,
+  seats: [Player, string][],
+  zname: string,
+  rng:   Rng,
+): number | null {
+  if (name === "Cat") {
+    return rng.int(seats.length);           // random next-leader
+  }
+  if (name === "Devil") {
+    const mine    = hands[zname];
+    if (!mine.length) return null;
+    const targets = seats.map(([, z]) => z).filter(z => z !== zname && (hands[z]?.length ?? 0) > 0);
+    if (!targets.length) return null;
+    const tgt  = rng.choice(targets);
+    const them = hands[tgt];
+    const give = rng.choice(mine);
+    const take = rng.choice(them);
+    rolloutRemove(mine, give);  them.push(give);
+    rolloutRemove(them, take);  mine.push(take);
+  }
+  // Hound, Snitch: no effect on card positions in a random rollout
+  return null;
+}
+
 export async function playGame(
   players: Player[], rng: Rng, answerer: AnswererOrMap,
   cfg: PantherConfig = DEFAULT_CONFIG,
