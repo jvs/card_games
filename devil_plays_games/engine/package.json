@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "test": "tsx test_substrate.ts",
-    "panther": "tsx panther.ts"
+    "test": "tsx panther/tests/test_substrate.ts",
+    "panther": "tsx panther/panther.ts"
   },
   "devDependencies": {
     "@types/node": "^22",
