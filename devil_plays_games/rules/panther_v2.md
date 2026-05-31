@@ -12,7 +12,7 @@ Long ago, a wicked witch turned a kindly sorcerer into a crow. You went deep int
 
 ## Overview
 
-Three players compete across multiple hands. Each hand, one player becomes **the Panther** through an auction, taking control of a face-up **Crow hand** and playing two hands against the other two players (**the Hunters**). The first player to **25 points** wins.
+Three players compete across multiple hands. Each hand, one player becomes **the Panther** through the Curse, taking control of a face-up **Crow hand** and playing two hands against the other two players (**the Hunters**). The first player to **25 points** wins.
 
 ---
 
@@ -94,7 +94,7 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 - Otherwise: +1 points to each Hunter (or +2 with raised stakes)
 
 **Panic**
-- Special: This story is only used when each player passes.
+- Special: This Recourse is only used when each player passes.
 - Goal: win 4, 5, or 6 tricks.
 - If Crow and Panther take 4 or 6 tricks: +3 point
 - If Crow and Panther take 5 tricks: +4 points
@@ -104,16 +104,16 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 ### Resolution
 
 **After each player has gone:**
-- If no one tells a story: The player to the left of the dealer must tell a story using the Panic Recourse. They may name any Ground or declare Perils only. They get the curse.
-- If one player tells a story: That player gets the curse.
+- If no one tells a story: The player to the left of the dealer must tell a story using the Panic Recourse. They may name any Ground or declare Perils only. The curse falls on them.
+- If one player tells a story: That player takes the curse.
 - If multple players tell: Each player with a story may **raise the stakes** of their own story.
 
 **Raising the stakes**:
 When a player raises the stakes, they double the failure penalty of their story. Other players who don't raise the stakes of their own stories are then forced to retract.
 
 **Tie breaking**:
-- If the auction has two stories: The other player (the player who passed or retracted) selects the winning story.
-- If the auction has three stories: The player to the left of the dealer selects the winning story. They may select their own, but they don't have to.
+- If the Curse has two stories: The other player (the player who passed or retracted) selects the winning story.
+- If the Curse has three stories: The player to the left of the dealer selects the winning story. They may select their own, but they don't have to.
 
 The player with the winning story becomes the Panther. Place the appropriate Recourse card in front of the Panther player. Place the Crow across from the Panther, and the Panther leads the first trick.
 
@@ -175,8 +175,8 @@ Ask one player a single yes-or-no question about the cards currently in their ha
 
 ## Scoring
 
-After all 10 tricks have been played, check the Panther's Story card and award points. 
-- Award double points to the Panther if the player was forced to tell a story.
+After all 10 tricks have been played, check the Panther's Recourse card and award points.
+- Award double points to the Panther if the curse fell on them (forced).
 - Award double points to the Hunters if the Panther raised the stakes.
 
 ---
@@ -195,5 +195,5 @@ If multiple players cross 25 on the same hand, the player with the higher score 
 2. **Curse** — Each player may tell a story. Players select the winning story.
 3. **Setup** — Crow placed across from the Panther.
 4. **Play** — 10 tricks, normal clockwise play. Panther leads first.
-5. **Score** — Award points based on the Panther's Story and result.
+5. **Score** — Award points based on the Panther's Recourse and result.
 6. **Rotate** — Dealer passes clockwise. Shuffle and deal a new hand.
