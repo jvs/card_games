@@ -4,11 +4,15 @@ A trick-taking card game for 3 players.
 
 (Work in progress.)
 
+## Premise
+
+Long ago, a wicked witch turned a kindly sorcerer into a crow. You went deep into the woods to break the curse. The witch caught you and turned you into a panther. Now night is falling and perils hide in the dark. Hunters are tracking you with their hound. Will you hide, flee, or stand your ground and fight? *You are The Panther.*
+
 ---
 
 ## Overview
 
-Three players compete across multiple hands. Each hand, one player becomes **the Panther** through an auction, taking control of a face-up **Crow hand** and playing two hands against the other two players (**the Hunters**). The first player to **50 points** wins.
+Three players compete across multiple hands. Each hand, one player becomes **the Panther** through an auction, taking control of a face-up **Crow hand** and playing two hands against the other two players (**the Hunters**). The first player to **25 points** wins.
 
 ---
 
@@ -39,12 +43,9 @@ Rank order within a suit (low to high): Prank, 5, 6, 7, 8, 9, 10, Jack, Queen, K
 
 Rank order (low to high): Goblin, Ogre, Dragon, Witch, Death.
 
-**Stories (4 cards)**
+**Recourses (4 cards)**
 
-- Fight
-- Run
-- Hide
-- Panic
+- Fight, Run, Hide, Panic
 
 
 ---
@@ -57,16 +58,21 @@ Rank order (low to high): Goblin, Ogre, Dragon, Witch, Death.
 4. Deal **5 cards face-down** to the side. These cards form **the Woods** — out of play and not revealed until the hand is over.
 5. The dealer sorts the Crow by suit and rank, so all players can read it easily.
 
-All players may examine the Crow before bidding begins.
+All players may examine the Crow before the Curse.
 
 ---
 
-## The Auction
+## The Curse
 
-The player to the dealer's left bids first. Each player may bid or pass.
+The Curse decides who becomes the Panther and what their strategy is.
 
-A bid consists of a **Story** and a **trump declaration** - either a lesser trump suit or "Perils Only". For example: "Fight with Hearts" or "Hide with Perils Only".
+The player to the dealer's left goes first. Each player may tell a story or pass.
 
+A story consists of a **Recourse** and a **Ground**.
+
+The Ground is either a lesser trump suit or "Perils Only". For example: "Fight on Hearts" or "Hide on Perils Only".
+
+### Recourses
 
 **Fight**
 - Goal: Crow and Panther take tricks.
@@ -95,19 +101,21 @@ A bid consists of a **Story** and a **trump declaration** - either a lesser trum
 - Otherwise: +1 point to each Hunter
 
 
-**After each player has bid:**
-- If no one bid: The player to the left of the dealer must bid using the Panic story. The may select any suit as trump or declare Perils only. This is the only time when a player may bid using Panic.
-- If one player bid: That player wins the auction.
-- If multple players bid: Each player who bid may **raise the stakes** of their own bid.
+### Resolution
+
+**After each player has gone:**
+- If no one tells a story: The player to the left of the dealer must tell a story using the Panic Recourse. They may name any Ground or declare Perils only. They get the curse.
+- If one player tells a story: That player gets the curse.
+- If multple players tell: Each player with a story may **raise the stakes** of their own story.
 
 **Raising the stakes**:
-When a player raises the stakes, they double the failure penalty of their bid. Other players who don't raise the stakes of their own bids are then forced to retract their bids.
+When a player raises the stakes, they double the failure penalty of their story. Other players who don't raise the stakes of their own stories are then forced to retract.
 
 **Tie breaking**:
-- If the auction has two bids: The other player (the player who passed or retracted) selects the winning bid.
-- If the auction has three bids: The player to the left of the dealer selects the winning bid. They may select their own, but they don't have to.
+- If the auction has two stories: The other player (the player who passed or retracted) selects the winning story.
+- If the auction has three stories: The player to the left of the dealer selects the winning story. They may select their own, but they don't have to.
 
-The player with the winning bid becomes the Panther. Place the appropriate Story card in front of the Panther player. Place the Crow across from the Panther, and the Panther leads the first trick.
+The player with the winning story becomes the Panther. Place the appropriate Recourse card in front of the Panther player. Place the Crow across from the Panther, and the Panther leads the first trick.
 
 ---
 
@@ -116,7 +124,7 @@ The player with the winning bid becomes the Panther. Place the appropriate Story
 Cards from strongest to weakest:
 
 1. **Perils** (greater trump) — Death > Witch > Dragon > Ogre > Goblin
-2. **Lesser trump** (the suit named in the winning bid) — normal rank order within the suit
+2. **Ground** (the lesser trump suit named in the winning story) — normal rank order within the suit
 3. **Led suit** — the suit of the first card played in a trick
 4. **Off-suit cards** — cannot win a trick
 
@@ -168,7 +176,7 @@ Ask one player a single yes-or-no question about the cards currently in their ha
 ## Scoring
 
 After all 10 tricks have been played, check the Panther's Story card and award points. 
-- Award double points to the Panther if the player was forced to bid.
+- Award double points to the Panther if the player was forced to tell a story.
 - Award double points to the Hunters if the Panther raised the stakes.
 
 ---
@@ -184,7 +192,7 @@ If multiple players cross 25 on the same hand, the player with the higher score 
 ## Turn Summary
 
 1. **Deal** — 10 to each player, 10 face-up to the Crow, 5 face-down to the Woods.
-2. **Auction** — Each player may bid a story and a trump declaration. Players select the winning bid.
+2. **Curse** — Each player may tell a story. Players select the winning story.
 3. **Setup** — Crow placed across from the Panther.
 4. **Play** — 10 tricks, normal clockwise play. Panther leads first.
 5. **Score** — Award points based on the Panther's Story and result.
