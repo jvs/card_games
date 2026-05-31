@@ -6,7 +6,7 @@ A trick-taking card game for 3 players.
 
 ## Premise
 
-Long ago, a wicked witch turned a kindly sorcerer into a crow. You went deep into the woods to break the curse. The witch caught you and turned you into a panther. Now night is falling and perils hide in the dark. Hunters are tracking you with their hound. Will you hide, flee, or stand your ground and fight? *You are The Panther.*
+Long ago, a wicked witch turned a kindly sorcerer into a crow. You went deep into the woods to break the curse. The witch caught you and turned you into a panther. Now night is falling and perils hide in the dark. Hunters are tracking you with their hound. Will you vanish, run, or stand your ground and fight? *You are The Panther.*
 
 ---
 
@@ -79,19 +79,19 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 - If Crow and Panther take 7 tricks: +2 points
 - If Crow and Panther take 8 tricks: +3 points
 - If Crow and Panther take 9 or 10 tricks: +4 points
-- Otherwise: +1 point to each Hunter (or +2 with raised stakes)
+- Otherwise: +1 point to each Hunter
 
 **Run**
 - Goal: Crow and Panther avoid tricks.
 - If Crow and Panther take 3 tricks: +2 point
 - If Crow and Panther take 2 tricks: +3 points
 - If Crow and Panther take 1 or 0 tricks: +4 points
-- Otherwise: +2 points to each Hunter (or +4 with raised stakes)
+- Otherwise: +2 points to each Hunter
 
-**Hide**
+**Vanish**
 - Goal: Panther avoids tricks.
 - If Panther takes 0 tricks: +4 points
-- Otherwise: +1 points to each Hunter (or +2 with raised stakes)
+- Otherwise: +1 points to each Hunter
 
 **Panic**
 - Special: This Recourse is only used when each player passes.
@@ -106,14 +106,9 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 **After each player has gone:**
 - If no one tells a story: The player to the left of the dealer must tell a story using the Panic Recourse. They may name any Ground or declare Perils only. The curse falls on them.
 - If one player tells a story: That player takes the curse.
-- If multple players tell: Each player with a story may **raise the stakes** of their own story.
-
-**Raising the stakes**:
-When a player raises the stakes, they double the failure penalty of their story. Other players who don't raise the stakes of their own stories are then forced to retract.
-
-**Tie breaking**:
-- If the Curse has two stories: The other player (the player who passed or retracted) selects the winning story.
-- If the Curse has three stories: The player to the left of the dealer selects the winning story. They may select their own, but they don't have to.
+- If multiple players tell a story:
+  - The player with the latest Recourse (when sorted alphabetically) takes the curse: Fight < Run < Vanish. (For example, players with Fight lose out to players with Run, and players with Run lose out to players with Vanish.)
+  - If two players have the latest Recourse, the player nearest to the dealer's left takes the curse.
 
 The player with the winning story becomes the Panther. Place the appropriate Recourse card in front of the Panther player. Place the Crow across from the Panther, and the Panther leads the first trick.
 
@@ -176,8 +171,6 @@ Ask one player a single yes-or-no question about the cards currently in their ha
 ## Scoring
 
 After all 10 tricks have been played, check the Panther's Recourse card and award points.
-- Award double points to the Panther if the curse fell on them (forced).
-- Award double points to the Hunters if the Panther raised the stakes.
 
 ---
 
