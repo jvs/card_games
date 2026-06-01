@@ -10,10 +10,6 @@ You are a troupe of acrobats, performing daredevil deeds and impossible feats, a
 
 The audience is enthralled, holding its breath. The only sound is a single drop of sweat hitting the stage floor.
 
-You have an urgent message for the troupe. The show is in danger, but you must not break the spell.
-
-Luckily, every theater has its ghosts. Some of them are old friends. They can carry your message for you.
-
 This is Acrobatics.
 
 ## Overview
