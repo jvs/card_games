@@ -322,8 +322,26 @@ export function buildSimState(
 // After the agent commits to agentDecision (a story or "pass"), each remaining
 // undecided opponent independently tells a random story (p=0.5) or passes.
 // Curse resolution is then applied per the v2 rules.
+//
+// Chooser modelling:
+//   2-story case — the one passer is the chooser. If that is the agent,
+//     they pick adversarially: the story with the highest expected fail rate
+//     (maximising Hunter earnings). Otherwise random.
+//   3-story case — left-of-dealer is the chooser. If that is the agent and
+//     they declared, they self-select (rational: being Panther beats being
+//     Hunter if your story has positive EV). Otherwise random.
 // ---------------------------------------------------------------------------
 const CURSE_SUITS = ["Spades", "Diamonds", "Hearts", "Clubs"];
+
+// Expected Hunter earnings on failure = P(contract_fails) × fail_bonus.
+// Used by the passer to pick the story most likely to yield Hunter points.
+// Fight fail = +2/Hunter; all others = +1/Hunter.
+const PLAN_FAIL_PRIOR: Record<PlanKind, number> = {
+  Fight:  1.10,  // ~55% fail × 2 pts — highest expected Hunter earnings
+  Vanish: 0.72,  // ~72% fail × 1 pt
+  Run:    0.55,  // ~55% fail × 1 pt
+  Panic:  0.42,  // ~42% fail × 1 pt
+};
 
 function remainingCurse(
   belief: Belief,
@@ -372,11 +390,31 @@ function remainingCurse(
     }
     case 1:
       return { panther: storyTellers[0][0], story: storyTellers[0][1] };
+    case 2: {
+      // The one passer is the chooser.
+      // If that is the agent: pick the story with the highest expected fail
+      // rate — adversarial choice maximises Hunter point earnings.
+      if (passers.has(player)) {
+        const chosen = storyTellers.slice().sort(
+          (a, b) => PLAN_FAIL_PRIOR[b[1].plan] - PLAN_FAIL_PRIOR[a[1].plan]
+        )[0];
+        return { panther: chosen[0], story: chosen[1] };
+      }
+      // Someone else is the chooser: random model.
+      const chosen = rng.choice(storyTellers);
+      return { panther: chosen[0], story: chosen[1] };
+    }
     default: {
-      // 2 or 3 stories: chooser picks randomly in simulation.
-      const chosen = rng.choice(storyTellers.map(([p]) => p));
-      const chosenStory = storyTellers.find(([p]) => p === chosen)![1];
-      return { panther: chosen, story: chosenStory };
+      // 3 stories: left-of-dealer is the chooser.
+      // If the agent IS left-of-dealer and declared, they self-select —
+      // rational because being Panther with your own story beats being Hunter.
+      const agentIdx = storyTellers.findIndex(([p]) => p === player);
+      if (player === leftOfDealer && agentIdx >= 0) {
+        return { panther: player, story: storyTellers[agentIdx][1] };
+      }
+      // Otherwise random model.
+      const chosen = rng.choice(storyTellers);
+      return { panther: chosen[0], story: chosen[1] };
     }
   }
 }
@@ -519,6 +557,31 @@ export class MCAnswerer implements Answerer {
       const s = scores.get(opt) ?? 0;
       if (s > bestScore) { bestScore = s; best = opt; }
     }
+
+    // Ground refinement pass: if the winner is a Story, run a second round of
+    // simulations over the 5 grounds for that plan only, accumulating on top
+    // of stage-1 scores. This concentrates extra budget where the signal is
+    // weakest (suit selection) without re-evaluating pass / other plans.
+    if (isBidDecision && best !== "pass" && typeof best === "object") {
+      const chosenPlan = (best as Story).plan;
+      const sameplan = c.options.filter(
+        (o): o is Story => o !== "pass" && typeof o === "object" && o.plan === chosenPlan
+      );
+      for (let i = 0; i < this.iterations; i++) {
+        for (const opt of sameplan) {
+          const score = await simulatePlayout(
+            opt, belief, this.player, this.allPlayers, this.cfg, this.rng, true, undefined
+          );
+          scores.set(opt, (scores.get(opt) ?? 0) + score);
+        }
+      }
+      // Re-pick best within the same plan using the now-doubled ground scores.
+      for (const opt of sameplan) {
+        const s = scores.get(opt) ?? 0;
+        if (s > bestScore) { bestScore = s; best = opt; }
+      }
+    }
+
     return best;
   }
 }

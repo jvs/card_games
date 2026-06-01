@@ -428,10 +428,10 @@ export function storyMakes(
 
 /** Point payouts: panther = points the Panther earns; hunters = points EACH Hunter earns.
  *
- *  Fight:  large→4p, medium→3p, small→2p, fail→1p each Hunter
- *  Run:    large→4p, medium→3p, small→2p, fail→2p each Hunter
- *  Vanish: large→4p,                      fail→1p each Hunter
- *  Panic:  large→4p, medium→3p,           fail→1p each Hunter
+ *  Fight:  large→4p, medium→2p, small→1p, fail→2p each Hunter
+ *  Run:    large→4p, medium→2p, small→1p, fail→1p each Hunter
+ *  Vanish: large→3p,                      fail→1p each Hunter
+ *  Panic:  large→4p, medium→2p,           fail→1p each Hunter
  */
 export interface StoryPointResult { panther: number; hunters: number; }
 
@@ -442,19 +442,19 @@ export function storyPoints(
   switch (story.plan) {
     case "Fight":
       if (outcome === "large")  return { panther: 4, hunters: 0 };
-      if (outcome === "medium") return { panther: 3, hunters: 0 };
-      if (outcome === "small")  return { panther: 2, hunters: 0 };
-      return { panther: 0, hunters: 1 };
+      if (outcome === "medium") return { panther: 2, hunters: 0 };
+      if (outcome === "small")  return { panther: 1, hunters: 0 };
+      return { panther: 0, hunters: 2 };
     case "Run":
       if (outcome === "large")  return { panther: 4, hunters: 0 };
-      if (outcome === "medium") return { panther: 3, hunters: 0 };
-      if (outcome === "small")  return { panther: 2, hunters: 0 };
-      return { panther: 0, hunters: 2 };
+      if (outcome === "medium") return { panther: 2, hunters: 0 };
+      if (outcome === "small")  return { panther: 1, hunters: 0 };
+      return { panther: 0, hunters: 1 };
     case "Vanish":
-      return outcome !== "fail" ? { panther: 4, hunters: 0 } : { panther: 0, hunters: 1 };
+      return outcome !== "fail" ? { panther: 3, hunters: 0 } : { panther: 0, hunters: 1 };
     case "Panic":
       if (outcome === "large")  return { panther: 4, hunters: 0 };
-      if (outcome === "medium") return { panther: 3, hunters: 0 };
+      if (outcome === "medium") return { panther: 2, hunters: 0 };
       return { panther: 0, hunters: 1 };
   }
 }
@@ -577,19 +577,19 @@ async function main() {
   console.assert(trickWinner([[0, C("Spades", 7)], [1, C("Hearts", 14)]], null) === 0, "perils-only: hearts off-suit");
 
   // Scoring assertions
-  console.assert(storyPoints(7, 3, { plan: "Fight", ground: "Spades" }).panther === 4, "Fight large");
-  console.assert(storyPoints(4, 4, { plan: "Fight", ground: "Spades" }).panther === 3, "Fight medium");
-  console.assert(storyPoints(3, 4, { plan: "Fight", ground: "Spades" }).panther === 2, "Fight small");
-  console.assert(storyPoints(2, 4, { plan: "Fight", ground: "Spades" }).hunters === 1, "Fight fail hunters");
-  console.assert(storyPoints(0, 1, { plan: "Run", ground: null }).panther === 4, "Run large");
-  console.assert(storyPoints(1, 1, { plan: "Run", ground: null }).panther === 3, "Run medium");
-  console.assert(storyPoints(2, 1, { plan: "Run", ground: null }).panther === 2, "Run small");
-  console.assert(storyPoints(2, 3, { plan: "Run", ground: null }).hunters === 2, "Run fail hunters=2");
-  console.assert(storyPoints(0, 5, { plan: "Vanish", ground: "Clubs" }).panther === 4, "Vanish success");
-  console.assert(storyPoints(1, 4, { plan: "Vanish", ground: "Clubs" }).hunters === 1, "Vanish fail");
-  console.assert(storyPoints(2, 3, { plan: "Panic", ground: "Hearts" }).panther === 4, "Panic large (5)");
-  console.assert(storyPoints(2, 4, { plan: "Panic", ground: "Hearts" }).panther === 3, "Panic medium (6)");
-  console.assert(storyPoints(1, 2, { plan: "Panic", ground: "Hearts" }).hunters === 1, "Panic fail");
+  console.assert(storyPoints(7, 3,  { plan: "Fight",  ground: "Spades" }).panther  === 4, "Fight large");
+  console.assert(storyPoints(4, 4,  { plan: "Fight",  ground: "Spades" }).panther  === 2, "Fight medium");
+  console.assert(storyPoints(3, 4,  { plan: "Fight",  ground: "Spades" }).panther  === 1, "Fight small");
+  console.assert(storyPoints(2, 4,  { plan: "Fight",  ground: "Spades" }).hunters  === 2, "Fight fail hunters");
+  console.assert(storyPoints(0, 1,  { plan: "Run",    ground: null      }).panther  === 4, "Run large");
+  console.assert(storyPoints(1, 1,  { plan: "Run",    ground: null      }).panther  === 2, "Run medium");
+  console.assert(storyPoints(2, 1,  { plan: "Run",    ground: null      }).panther  === 1, "Run small");
+  console.assert(storyPoints(2, 3,  { plan: "Run",    ground: null      }).hunters  === 1, "Run fail hunters");
+  console.assert(storyPoints(0, 5,  { plan: "Vanish", ground: "Clubs"   }).panther  === 3, "Vanish success");
+  console.assert(storyPoints(1, 4,  { plan: "Vanish", ground: "Clubs"   }).hunters  === 1, "Vanish fail");
+  console.assert(storyPoints(2, 3,  { plan: "Panic",  ground: "Hearts"  }).panther  === 4, "Panic large (5)");
+  console.assert(storyPoints(2, 4,  { plan: "Panic",  ground: "Hearts"  }).panther  === 2, "Panic medium (6)");
+  console.assert(storyPoints(1, 2,  { plan: "Panic",  ground: "Hearts"  }).hunters  === 1, "Panic fail");
 
   console.log("scenario assertions: passed");
 

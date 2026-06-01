@@ -76,27 +76,27 @@ The Ground is either a lesser trump suit or "Perils Only". For example: "Fight o
 
 **Fight**
 - Goal: Crow and Panther take tricks.
-- If Crow and Panther take 7 tricks: +2 points
-- If Crow and Panther take 8 tricks: +3 points
+- If Crow and Panther take 7 tricks: +1 points
+- If Crow and Panther take 8 tricks: +2 points
 - If Crow and Panther take 9 or 10 tricks: +4 points
-- Otherwise: +1 point to each Hunter
+- Otherwise: +2 point to each Hunter
 
 **Run**
 - Goal: Crow and Panther avoid tricks.
-- If Crow and Panther take 3 tricks: +2 point
-- If Crow and Panther take 2 tricks: +3 points
+- If Crow and Panther take 3 tricks: +1 point
+- If Crow and Panther take 2 tricks: +2 points
 - If Crow and Panther take 1 or 0 tricks: +4 points
 - Otherwise: +1 points to each Hunter
 
 **Vanish**
 - Goal: Panther avoids tricks.
-- If Panther takes 0 tricks: +4 points
+- If Panther takes 0 tricks: +3 points
 - Otherwise: +1 points to each Hunter
 
 **Panic**
 - Special: This Plan is only used when all players pass.
 - Goal: win 4, 5, or 6 tricks.
-- If Crow and Panther take 4 or 6 tricks: +3 point
+- If Crow and Panther take 4 or 6 tricks: +2 point
 - If Crow and Panther take 5 tricks: +4 points
 - Otherwise: +1 point to each Hunter
 
