@@ -21,3 +21,9 @@ up:
     mise install
     just install
     just test
+
+clear-pt-file:
+    rm panther/rl/curse_policy_mc.pt
+
+train-pt-file:
+    cd panther/rl && ENTROPY=0.05 EPISODES=20000 python3 train_mc.py

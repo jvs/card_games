@@ -1,0 +1,1 @@
+{"root":["./src/app.ts","./src/main.ts","./src/state.ts","./src/game/renderer.ts","./src/net/ws.ts","./src/ui/game-screen.ts","./src/ui/lobby.ts"],"version":"5.9.3"}

@@ -1,0 +1,39 @@
+set dotenv-load
+
+default:
+    just --list
+
+# Install client dependencies
+install:
+    cd client && npm install
+
+# Run Go server (dev mode: reads client/dist from disk)
+server:
+    go run -tags dev ./cmd/server
+
+# Run Vite dev server (proxies /api to :8080)
+client:
+    cd client && npm run dev
+
+# Run both in parallel for local development
+dev:
+    #!/usr/bin/env bash
+    go run -tags dev ./cmd/server &
+    cd client && npm run dev
+    wait
+
+# Build client into web/dist/
+build-client:
+    cd client && npm run build
+
+# Build production binary (embed client, requires build-client first)
+build: build-client
+    go build -o bin/server ./cmd/server
+
+# Set up from scratch (only needed after adding new Go deps)
+setup: install
+    go mod tidy
+
+# Run Go tests
+test:
+    go test ./...

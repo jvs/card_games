@@ -58,14 +58,16 @@ The Draft is how players build their roster of 6 wrestlers.
 
 1. Flip the top card of the Star deck face up.
 2. Any player who wants the card throws Rock, Paper, or Scissors simultaneously with the other interested players.
+   If a player already has six wrestlers, they cannot throw.
 3. Resolve the throw:
    - **No one throws:** Discard the card. Nobody wanted them.
    - **One player throws:** They take the card.
    - **Two players throw:** Use standard rock paper scissors rules. Winner takes the card.
-   - **Three players throw:** If exactly one player thows a symbol that beats what the other two threw, that player wins. In any other case, throw again. Anyone may drop out or stay in on any rethrow.
-   - **Four players throw:** You can only win by being the sole player who threw the symbol that beats what the other three threw. Otherwise, rethrow. Anyone may drop out or stay in.
+   - **Three players throw:** If exactly one player thows a symbol that beats what the other two threw, that player wins. In any other case, throw again. Anyone may drop out or jump in on any rethrow.
+   - **Four players throw:** You can only win by being the sole player who threw the symbol that beats what the other three threw. Otherwise, rethrow. Anyone may drop out or jump in.
 4. If a rethrow results in everyone dropping out, discard the card.
-5. Flip the next card and repeat.
+5. After 6 throws for the same card (including the initial throw), if there is still no winner, discard the card.
+6. Flip the next card and repeat.
 
 #### How to resolve three or four player rock paper scissors in SCW
 
@@ -74,7 +76,7 @@ There are only three situations where one player wins a three or four player roc
 - One player throws Rock, and all the others throw Scissors. Rock wins.
 - One player throws Paper, and all the others throw Rock. Paper wins.
 - One player throws Scissors, and all the others throw Paper. Scissors wins.
-- In any other situation, there is no winner. Players can choose to drop out or stay in and throw again.
+- In any other situation, there is no winner. Players can choose to drop out or jump in and throw again.
 
 ### Draft Ends
 
@@ -91,7 +93,7 @@ Once all players have their rosters, it's time to form tag teams.
 1. All four players simultaneously select one wrestler from their hand and play it face down.
   - You may not a pick "Wild Card" wrestler for this step. You must pick a wrestler with a fixed style (Clean, Dirty, or Flashy).
 2. All players reveal simultaneously.
-  - Ignore wrestler effects and power levels during the reveal. Only style matters.
+  - Ignore wrestler effects and power levels during the reveal. Only Style matters.
 3. Resolve partnerships:
    - **Two players revealed the same style:** Those two players are partners. The other two are partners.
    - **Three players revealed the same style:** The player who revealed a different style picks their partner. The remaining two are partners.
@@ -124,10 +126,10 @@ The Show consists of 6 matches. Each match is played as a trick.
 After all four wrestlers are in the ring and effects have been applied:
 
 1. **Calculate base power** — Each team adds up the Power numbers of their two wrestlers.
-2. **Apply type advantages** — Each wrestler checks the styles of both opposing wrestlers. For each opponent with a disadvantaged style, that wrestler gains +2 Power.
-   - Clean beats Flashy (+2)
-   - Flashy beats Dirty (+2)
-   - Dirty beats Clean (+2)
+2. **Apply type advantages** — Each wrestler checks the styles of both opposing wrestlers. For each opponent with a disadvantaged style, that wrestler gains +1 Power.
+   - Clean beats Flashy (+1)
+   - Flashy beats Dirty (+1)
+   - Dirty beats Clean (+1)
 3. **Apply Manager bonuses** — Add any bonuses from Manager abilities.
 4. **Compare totals** — The team with the higher combined total power wins the match and takes the Belt.
 5. **Ties** — If there's a tie, the team that led the match wins the belt.
@@ -196,13 +198,13 @@ If it's tied, then it's a tie. You've met your match!
 
 ### Bobby "Chairman of the Board" Baker
 - The first belt and the last belt are each worth +1 point for your team.
-- "It's just business!"
+- "It's business, baby!"
 
 ### Coach Cory
 - When you play a wrestler who fights clean, that wrestler gains +1 power.
 - "Believe in yourself!"
 
-### Daddy's Little Princess
+### Big Daddy and His Little Princess
 - Immediately after Partner Assignment, you may look at your partner's hand and choose two cards to take. Then give your partner two cards from your hand in exchange.
 - "Gimme! Gimme! Gimme!"
 
@@ -274,7 +276,7 @@ If it's tied, then it's a tie. You've met your match!
 - Power: 5
 - Style: Clean
 - Effect: Select one wrestler in the match whose style is Flashy. That wrestler has no effect this match.
-- "How cold? Ice cold!"
+- "Ice cold!"
 
 #### Gravity
 - Power: 4
@@ -384,6 +386,7 @@ If it's tied, then it's a tie. You've met your match!
 - Power: 1
 - Style: Dirty
 - Effect: You may forfeit the current match. If you do, draw a card from the Star deck, reveal it to all players, and add it to your hand. You may play two wrestlers during the next match.
+- OR maybe: You may forfeit the current match. If you do, take one of the opposing wrestler cards, and add it to your hand. You may play two wrestlers during the next match.
 
 
 ### Flashy
@@ -451,7 +454,7 @@ If it's tied, then it's a tie. You've met your match!
 
 ### Wild
 
-#### "Wild Card" Wes Parker
+#### "Wild Man" Wes Parker
 - Power: 4
 - Style: Variable
 - Effect: Choose a style, Clean, Dirty, or Flashy. This wrestler's style becomes the chosen style until the end of this match.

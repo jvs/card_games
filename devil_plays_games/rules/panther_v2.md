@@ -72,6 +72,8 @@ A story consists of a **Plan** and a **Ground**.
 
 The Ground is either a lesser trump suit or "Perils Only". For example: "Fight on Hearts" or "Vanish on Perils Only".
 
+When a story is selected for the hand, it becomes the Curse.
+
 ### Plans
 
 **Fight**
