@@ -64,7 +64,7 @@ Starting with the player left of the dealer, each player either:
 Once someone takes the bank:
 
 1. They become the banker
-2. They may declare "going for broke" (before looking at bank cards)
+2. They may declare "going for broke"
 3. They take the 2 bank cards into their hand (now 9 cards)
 4. They bank 2 cards face-down from their hand (back to 7 cards)
 5. Banked cards count toward the banker's coins at the end (unless going for broke)
@@ -130,7 +130,7 @@ After all 7 tricks, count coins. The team with the most coins wins, with ties go
 
 ## Going for Broke
 
-Before looking at the bank cards, the banker may declare "going for broke" — attempting to score 0 or fewer coins. (Prank cards subtract from the total, so negative scores are possible.)
+After looking at the bank cards, the banker may declare "going for broke" — attempting to score 0 or fewer coins. (Prank cards subtract from the total, so negative scores are possible.)
 
 **Changes:**
 - The 2 discarded cards do not count as the banker's coins
