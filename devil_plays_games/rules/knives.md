@@ -16,9 +16,9 @@ Worst, 2, 3, 4, 5, 6, 7, 8, Best
 ### Four Traditional Suits (28 cards)
 Spades, Clubs, Diamonds, Hearts — each containing:
 
-Ghost, Prank, Maid, Jack, Queen, King, Ace
+Prank, Ghost, Jill, Jack, Queen, King, Ace
 
-- Ghost is the lowest, Ace is the highest
+- Prank is the lowest, Ace is the highest
 
 ### Prank Cards
 Each Prank card has a special effect when played:
@@ -33,12 +33,17 @@ Each Prank card has a special effect when played:
 
 | Card            | Coins |
 |-----------------|-------|
-| Aces            | 3     |
-| Kings           | 2     |
-| Queens          | 1     |
-| All other cards | 0     |
+| Aces            | 5     |
+| Kings           | 4     |
+| Queens          | 3     |
+| Jacks           | 2     |
+| Jills           | 1     |
+| Ghosts          | 0     |
+| Pranks          | -1    |
 
-**Total coins in deck: 24. Banker needs 13 to win.**
+**Total coins in deck: 56. Banker needs 29 to win.**
+
+Each Prank card in your won tricks subtracts 1 coin from your total. Ghosts are worth 0 coins.
 
 
 ## Setup
@@ -118,26 +123,26 @@ After all 7 tricks, count coins. The team with the most coins wins, with ties go
 
 | Result | Points Each |
 |--------|-------------|
-| Banker + Shadow win (13+ coins) | +1 each |
-| Solo Banker win (13+ coins, no Shadow) | +2 |
-| Defenders win (12+ coins) | +1 each |
+| Banker + Shadow win (29+ coins) | +1 each |
+| Solo Banker win (29+ coins, no Shadow) | +2 |
+| Defenders win (28+ coins) | +1 each |
 
 
 ## Going for Broke
 
-Before looking at the bank cards, the banker may declare "going for broke" — attempting to take zero coins.
+Before looking at the bank cards, the banker may declare "going for broke" — attempting to score 0 or fewer coins. (Prank cards subtract from the total, so negative scores are possible.)
 
 **Changes:**
 - The 2 discarded cards do not count as the banker's coins
 - The shadow banker's coins don't count toward the banker's total
 - The shadow banker should actively try to take coins (to help the banker avoid them)
 
-**If the banker takes 0 coins:**
+**If the banker scores 0 coins (or less):**
 - Banker + Shadow: +1 points each
 - Solo Banker: +2 points
 - The defenders score nothing.
 
-**If the banker takes 1 or more coins:**
+**If the banker scores 1 or more coins:**
 - Each defender: +1 points
 - The banker and shadow banker score nothing.
 
@@ -163,8 +168,8 @@ If a player fails to follow suit when they could have, and it's caught immediate
 
 **Each Suit (7):** Ghost, Prank, Maid, Jack, Queen, King, Ace
 
-### Coins (24 total)
-A = 3 | K = 2 | Q = 1
+### Coins (58 total)
+Ace = 5 | King = 4 | Queen = 3 | Jack = 2 | Jill = 1 | Prank = 0 | Ghost = -1
 
 ### Each Hand
 1. Deal 7 cards each + 2 to bank
@@ -191,8 +196,8 @@ Worst of Knives = secret partner (revealed when played). If banker plays Worst =
 
 | Situation | Points |
 |-----------|--------|
-| Banker + Shadow win (13+) | +1 each |
+| Banker + Shadow win (29+) | +1 each |
 | Solo Banker win | +2 |
-| Defenders win (12+) | +1 each |
+| Defenders win (28+) | +1 each |
 | Going for Broke (success) | +1 each (+2 solo) |
 | Going for Broke (fail) | Defenders +1 each |
