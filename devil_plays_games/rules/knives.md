@@ -166,10 +166,10 @@ If a player fails to follow suit when they could have, and it's caught immediate
 ### Deck (37 cards)
 **Knives (9):** Worst, 2, 3, 4, 5, 6, 7, 8, Best
 
-**Each Suit (7):** Ghost, Prank, Maid, Jack, Queen, King, Ace
+**Each Suit (7):** Prank, Ghost, Jill, Jack, Queen, King, Ace
 
-### Coins (58 total)
-Ace = 5 | King = 4 | Queen = 3 | Jack = 2 | Jill = 1 | Prank = 0 | Ghost = -1
+### Coins (56 total)
+Ace = 5 | King = 4 | Queen = 3 | Jack = 2 | Jill = 1 | Ghost = 0 | Prank = -1
 
 ### Each Hand
 1. Deal 7 cards each + 2 to bank
